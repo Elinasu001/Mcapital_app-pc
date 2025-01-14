@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>약정진행요청</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+        <div class="popup-header">			  
+			<div class="popup-title">약정진행요청</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section space-s">
+
+						<div class="conts-part">
+							<h6 class="se-title">기본정보</h6><!-- 20220411 수정내역: 타이틀번호삭제-->
+
+							<div class="sp-tbl ty-box">
+								<table>
+									<caption>기본정보</caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">고객이름</th>
+											<td>김봄</td>			
+										</tr>
+										<tr>
+											<th scope="row">생년월일</th>
+											<td>1988.01.01</td>			
+										</tr>
+										<tr>
+											<th scope="row">휴대폰번호</th>
+											<td>010-1111-1111</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div> 
+						</div>
+
+						<div class="conts-part">
+							<h6 class="se-title">차량정보</h6><!-- 20220411 수정내역: 타이틀번호삭제-->
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="name">현대 그랜저</div>		
+										<div class="cash">41,280,000원</div>
+									</div>
+									<div class="col-right">
+										<div class="car">
+											<img src="../../../../resource/image/contents/car/car04.png" alt="모델명">
+										</div>
+									</div>
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>차량정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">	
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">세부모델</th>
+														<td>더 뉴 그랜저 IG</td>  	
+													</tr>
+													<tr>
+														<th scope="row">트림</th>
+														<td>스마트스트림 가솔린 2.5 르블랑</td>		
+													</tr>
+													<tr>
+														<th scope="row">옵션</th>
+														<td>
+															기본옵션, 탁송 <br>
+															빌트인 공기청정기
+														</td>		
+													</tr>
+													<tr>
+														<th scope="row">탁송위치</th>
+														<td>
+															06054 경기도 성남시 분당구 <br>
+															판교원로 22번길 000건물 10층
+														</td>		
+													</tr>
+													<tr>
+														<th scope="row">외장컬러</th>
+														<td>
+															<span class="color">
+																<img src="../../../../resource/image/contents/color/temp02.png" alt="색상명">
+															</span>	
+															포레스트블랙펄
+														</td>		
+													</tr>
+													<tr>
+														<th scope="row">내장컬러</th>
+														<td>베이직</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">차대번호 <span class="sub-text">(선택)</span></h6><!-- 20220511 sub-text 영역 추가 -->							
+								<div class="se-textfld" data-fld-clear="on">	
+									<input type="text" placeholder="차대번호 입력" value="" title="차대번호 입력">									
+								</div>
+							</div>
+						</div>						
+
+						<div class="conts-part">
+							<h6 class="se-title">상품정보</h6><!-- 20220411 수정내역: 타이틀번호삭제-->					
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="title">신차운용리스(수입)</div>
+									</div>									
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">유형</th>
+														<td>
+															개인사업자
+															<!-- 개인사업자인 경우 노출 -->
+															<div class="info">
+																M캐피탈 <br>
+																사업자등록번호 11*-**-**545 <br>
+																개설일 2005.02.01 <br>
+																서울 **** 강남구 **동 1-1
+															</div>
+														</td>		
+													</tr>
+													<tr>
+														<th scope="row">이용기간</th>
+														<td>24개월</td>		
+													</tr>
+													<tr>
+														<th scope="row">계약주행거리</th><!-- 20220615 수정: 항목명 -->
+														<td>30,000km</td>		
+													</tr>						
+												</tbody>
+											</table>
+										</div>
+
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>									
+													<tr>
+														<th scope="row">보증금</th>
+														<td>10,000,000원</td>		
+													</tr>
+													<tr>
+														<th scope="row">보증율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">장기선수금</th>
+														<td>10,000,000원</td>		
+													</tr>
+													<tr>
+														<th scope="row">장기선수율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">잔가</th>
+														<td>10,000,000원</td>		
+													</tr>
+													<tr>
+														<th scope="row">잔가율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">자동차세</th>
+														<td>포함</td>		
+													</tr>
+													<tr><!-- 20220615 수정: 취등록세 추가 -->
+														<th scope="row">취등록세</th>
+														<td>1,000,000 원</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+										<div class="sp-tbl ty-list">
+											<h6 class="sub-title">지급수수료</h6>
+	
+											<div class="sub-conts">
+												<div class="sp-tbl ty-list">
+													<table>
+														<caption>상품정보</caption>
+														<colgroup>
+															<col style="width: 40%;">
+															<col style="width: 60%;">		
+														</colgroup>		
+														<tbody>
+															<tr>
+																<th scope="row">AG</th>
+																<td>10.0%</td>		
+															</tr>
+															<tr>
+																<th scope="row">CM</th>
+																<td>3.2%</td>		
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>	
+										</div>
+									</div>													
+								</div>
+							</div>
+						</div>
+						
+						<div class="conts-part">
+							<h6 class="se-title">신청조건</h6><!-- 20220411 수정내역: 타이틀번호삭제-->
+
+							<div class="amount-pack ty-box">
+								<div class="title">차량가격</div>
+								<div class="value">
+									<span class="val">41,280,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">기본차량가</h6>								
+								<div class="se-textfld" data-fld-align="right">	
+									<input type="tel" placeholder="기본차량가 입력" value="41,280,000" title="기본차량가 입력" disabled>	
+									<span class="e-back">
+										<span class="unit">원</span>
+									</span>									
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">옵션</h6>								
+								<div class="se-textfld" data-fld-align="right">	
+									<input type="tel" placeholder="옵션가 입력" value="" title="옵션가 입력">	
+									<span class="e-back">
+										<span class="unit">원</span>
+									</span>									
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">할인</h6>								
+								<div class="se-textfld" data-fld-align="right">	
+									<input type="tel" placeholder="할인가 입력" value="" title="할인가 입력">	
+									<span class="e-back">
+										<span class="unit">원</span>
+									</span>									
+								</div>
+							</div>
+							
+							<hr class="section-linebar">
+
+							<div class="amount-pack ty-box space-l">
+								<div class="title">취득원가</div>
+								<div class="value">
+									<span class="val">41,280,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+
+							<div class="conts-pack space-l">
+								<p class="text gry-01">체크 선택 후 금액을 입력해주세요.</p>
+							</div>
+
+							<div class="sp-formset space-s">
+								<h6 class="se-title">공채비용</h6>
+								<!-- 
+									data-chk-tgl="on" -> 체크박스 활성화에 따른 폼요소 활성화처리 기능 
+									data-chk-tgl="target" -> 활성화처리 타겟
+								-->
+								<div class="sp-formgrid ty-chk" data-chk-tgl="on">
+									<div class="p-col">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex00" id="chk1">
+										</div>
+									</div>
+									<div class="p-col">			
+										<div class="se-textfld" data-fld-align="right">				
+											<input type="tel" data-chk-tgl="target" placeholder="공채비용 입력" value="" title="공채비용 입력" disabled=""/>
+											<span class="e-back">
+												<span class="unit">원</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<div class="p-title-pack">
+									<div class="col">
+										<h6 class="se-title">기타부대비용</h6>
+									</div>
+									<div class="col-right">
+										<span class="text">최대 <span>15</span>만원</span>
+									</div>
+								</div>
+								<!-- 
+									data-chk-tgl="on" -> 체크박스 활성화에 따른 폼요소 활성화처리 기능 
+									data-chk-tgl="target" -> 활성화처리 타겟
+								-->
+								<div class="sp-formgrid ty-chk" data-chk-tgl="on">
+									<div class="p-col">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex02" id="chk2">
+										</div>
+									</div>
+									<div class="p-col">			
+										<div class="se-textfld" data-fld-align="right">		
+											<input type="tel" data-chk-tgl="target" placeholder="기타부대비용 입력" value="" title="기타부대비용 입력" disabled=""/>
+											<span class="e-back">
+												<span class="unit">원</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<div class="p-title-pack">
+									<div class="col">
+										<h6 class="se-title">탁송요금</h6>
+									</div>
+									<div class="col-right">
+										<span class="text">최대 <span>50</span>만원</span>
+									</div>
+								</div>
+								<!-- 
+									data-chk-tgl="on" -> 체크박스 활성화에 따른 폼요소 활성화처리 기능 
+									data-chk-tgl="target" -> 활성화처리 타겟
+								-->
+								<div class="sp-formgrid ty-chk" data-chk-tgl="on">
+									<div class="p-col">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex03" id="chk3">
+										</div>
+									</div>
+									<div class="p-col">			
+										<div class="se-textfld" data-fld-align="right">		
+											<input type="tel" data-chk-tgl="target" placeholder="탁송요금 입력" value="" title="탁송요금 입력" disabled=""/>
+											<span class="e-back">
+												<span class="unit">원</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr class="section-linebar"><!-- 20220610 수정: 구분선 추가 -->
+
+						<!-- 20220511 수정내역 : 딜러사 추가 -->
+						<div class="conts-part">
+							<h6 class="se-title">딜러사</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="딜러사 입력" value="" title="딜러사"><!-- 20220520 수정내역: placeholder 수정 -->
+								<span class="e-back">
+									<button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+								</span>
+							</div>
+							<!-- 조회시 노출 -->
+							<div class="sp-tbl ty-box has-close">
+								<button type="button" class="se-btn"><span class="se-ico ico-close gray">닫기</span></button>
+								<table>
+									<caption>딜러사</caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">딜러사</th>
+											<td>효성</td>			
+										</tr>
+										<tr>
+											<th scope="row">사업자번호</th>
+											<td>105-81-87072</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //20220511 수정내역 : 딜러사 추가 -->
+
+						<!-- 20220511 수정내역 : 은행명, 계좌번호 추가 -->
+						<div class="conts-part">
+							<div class="sp-formset">
+								<h6 class="se-title">은행</h6><!-- 20220520 수정내역: 타이틀 수정 -->							
+								<button type="button" class="se-btn btn-fake-slt">
+									<span class="placeholder">은행 선택</span>
+									<span class="value">은행명</span>
+								</button>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">계좌번호</h6>								
+								<div class="se-textfld" data-fld-clear="on"><!-- 20220531 data-fld-align 제거, data-fld-clear="on" 추가 -->
+									<input type="number" placeholder="계좌번호 입력" value="" title="계좌번호 입력">
+								</div>
+							</div>
+
+							<!-- 20220615 수정: 예금주 추가 -->
+							<div class="sp-formset">
+								<h6 class="se-title">예금주</h6>								
+								<div class="se-textfld" data-fld-clear="on">
+									<input type="text" placeholder="예금주 입력" value="" title="예금주 입력">
+								</div>
+							</div>
+						</div>
+						<!-- //20220511 수정내역 : 은행명, 계좌번호 추가 -->
+
+					</div>					
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">				
+				<div class="btn-wrap">
+					<!-- 버튼 활성화 시 disabled 삭제 -->
+					<button type="button" class="se-btn btn-main" disabled>약정진행요청</button>
+				</div>		
+			</div>			
+		</div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

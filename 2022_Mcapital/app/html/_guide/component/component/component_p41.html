@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>Form Set 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../../z_eilab/template/guide/guide.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; Form Set &gt;</h1>
+
+<!-- <div class="example_box">
+	<div class="ex_title">title h2~h6</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_wrap">
+			<div class="source_code">
+소스
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div> -->
+
+<div class="example_box">
+	<div class="ex_title">form set</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.sp-formset > (label + form element class + .form-msg)</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<h6 class="p-title">title</h6>
+	<div class="se-textfld" data-fld-clear="on">	
+		<input type="text" placeholder="placeholder" value="" title="" />	
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<h6 class="p-title">title</h6>
+	<div class="se-textfld" data-fld-clear="on">
+		<input type="text" class="has-error" placeholder="placeholder" value="" title=""/>
+	</div>
+	<p class="p-error-msg">error msg error msg error msg error msg</p>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<h6 class="p-title">title</h6>
+	<div class="se-textarea">
+		<textarea class="has-error" placeholder="placeholder" title=""></textarea>
+	</div>
+	<p class="p-error-msg">error msg error msg error msg error msg</p>
+</div>
+
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<h6 class="p-title">title</h6>
+	<div class="se-textarea">
+		<textarea class="" placeholder="placeholder" title=""></textarea>
+	</div>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<div class="p-title-pack">
+		<div class="col">
+			<h6 class="se-title">title title title title</h6>
+		</div>
+		<div class="col-right">
+			<span class="text">최대 <span class="num">1,000</span>만원</span>
+		</div>
+	</div>
+	<div class="se-textfld" data-fld-clear="on">	
+		<input type="text" placeholder="placeholder" value="" title="" />	
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<div class="p-title-pack">
+		<div class="col">
+			<h6 class="se-title">보증금</h6>
+			<div class="tooltip">
+				<button type="button" class="se-btn">
+					<span class="se-ico ico-tooltip">툴팁보기</span>
+				</button>
+			</div>
+		</div>
+		<div class="col-right">
+			<span class="text">최대 <span class="num">1,000</span>만원</span>
+		</div>
+	</div>
+	<div class="sp-formgrid ty-btnform">
+		<div class="p-col">
+			<button type="button" class="se-btn btn-solid size-xs">10%</button>
+			<button type="button" class="se-btn btn-solid size-xs">20%</button>
+			<button type="button" class="se-btn btn-solid size-xs">30%</button>
+			<button type="button" class="se-btn btn-solid size-xs">40%</button>
+		</div>	
+		<div class="p-col">
+			<div class="se-textfld" data-fld-align="right">
+				<input type="number" placeholder="보증료" title="직접입력">
+				<span class="e-back">
+					<span class="unit">%</span>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="se-textfld tar" style="position: relative;">
+		<!-- <div style="position: absolute; left: 0; top: 10px">보증료 10%</div> -->
+		<input type="number" placeholder="보증금 입력" title="보증금 입력">
+		<span class="e-back">
+			<span class="unit">원</span>
+		</span>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">form grid</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.sp-formgrid > .p-col</span></div>
+		<div class="etc_info_wrap">default : 동일한 크기로 나뉨 </div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid">
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title=""/>	
+		</div>
+	</div>	
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid">
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>	
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">16 columns</span><span class="class_name">.sp-formgrid > (.p-col-1 ~ .p-col-16)</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid">
+	<div class="p-col-2">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>	
+	<div class="p-col-14">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid">
+	<div class="p-col-4">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>	
+	<div class="p-col-6">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-col-6">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="text" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">form grid - 고정 타입</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">전화번호</span><span class="class_name">ty-tel</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-tel">
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="tel" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="tel" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">주민등록번호</span><span class="class_name">ty-idnum</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-idnum">
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="number" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="number" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-idnum">
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="number" placeholder="주민번호 입력" value="" title="주민번호 입력">	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld ty-pw">	
+			<input type="text" placeholder="" value="" maxlength="1" title="주민번호 뒷자리">	
+			<div class="e-masking">
+				<span class="sign"></span>
+				<span class="sign"></span>
+				<span class="sign"></span>
+				<span class="sign"></span>
+				<span class="sign"></span>
+				<span class="sign"></span>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">폰번호</span><span class="class_name">.ty-phone</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-phone">
+	<div class="p-col">
+		<div class="se-select" data-stove="select" data-uicase="slide">
+			<div class="e-hidden-title">통신사 선택</div>
+			<select class="" required title="">
+				<option value="" hidden>통신사</option>
+				<option value="">SKT</option>	
+				<option value="">KT</option>				
+			</select>
+		</div>
+	</div>
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="tel" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="tel" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">카드번호</span><span class="class_name">.ty-cardnum</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-cardnum">
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">사업자등록번호</span><span class="class_name">.ty-corpnum</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-corpnum">
+	<div class="p-col-5">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="사업자등록번호 앞자리" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col-4">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="사업자등록번호 가운데 자리" />	
+		</div>
+	</div>
+	<div class="p-sign va-hypen"></div>
+	<div class="p-col-7">
+		<div class="se-textfld">	
+			<input type="number" placeholder="placeholder" value="" title="사업자등록번호 뒤자리" />	
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">메일주소</span><span class="class_name">.ty-mail</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-mail">
+	<div class="p-col">
+		<div class="se-textfld" data-fld-clear="on">	
+			<input type="email" placeholder="placeholder" value="" title="" />	
+		</div>
+	</div>
+	<div class="p-sign va-at"></div>
+	<div class="p-col">
+		<div class="se-select" data-stove="select" data-uicase="slide">
+			<div class="e-hidden-title">이메일 선택</div>
+			<select class="" required title="">
+				<option value="" hidden>이메일 주소</option>
+				<option value="">hamail.net</option>
+				<option value="">naver.com</option>
+				<option value="">직접입력</option>				
+			</select>
+		</div>		
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">날짜 범위</span><span class="class_name">.ty-date</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formgrid ty-date">
+	<div class="p-col">
+		<div class="se-date">
+			<input type="date" data-placeholder="날짜 선택" required="" value="" title="">
+		</div>
+	</div>
+	<div class="p-sign va-wave"></div>
+	<div class="p-col">
+		<div class="se-date">
+			<input type="date" data-placeholder="날짜 선택" required="" value="" title="">
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">버튼 세트</span><span class="class_name">.ty-btnset</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<div class="sp-formgrid ty-btnform">
+		<div class="p-col">
+			<button type="button" class="se-btn btn-solid size-xs">10%</button>
+			<button type="button" class="se-btn btn-solid size-xs">20%</button>
+			<button type="button" class="se-btn btn-solid size-xs">30%</button>
+			<button type="button" class="se-btn btn-solid size-xs">40%</button>
+		</div>	
+		<div class="p-col">
+			<div class="se-textfld" data-fld-align="right">			
+				<input type="text" placeholder="" value="33" title="직접입력" >
+				<span class="e-back">
+					<span class="unit">%</span>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="se-textfld tar">
+		<span class="e-front">
+			<span class="val">보증율 <span>30</span>%</span>
+		</span>
+		<input type="tel" placeholder="보증금 입력" title="보증금 입력">
+		<span class="e-back">
+			<span class="unit">원</span>
+		</span>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">체크박스</span><span class="class_name">ty-chk</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-formset">
+	<!-- 
+		data-chk-tgl="on" -> 체크박스 활성화에 따른 폼요소 활성화처리 기능 
+		data-chk-tgl="target" -> 활성화처리 타겟
+	-->
+	<div class="sp-formgrid ty-chk" data-chk-tgl="on">
+		<div class="p-col">
+			<div class="se-chkbx">
+				<input type="checkbox" name="ex00" id="chk1">
+			</div>
+		</div>
+		<div class="p-col">			
+			<div class="se-textfld" data-fld-align="right">				
+				<input type="tel" data-chk-tgl="target" placeholder="제목 입력" value="" title="" disabled/>
+				<span class="e-back">
+					<span class="unit">원</span>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="example_box">
+	<div class="ex_title">form + btn</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.sp-form-btn</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-form-btn">
+	<div class="se-textfld" data-fld-clear="on">
+		<input type="text" placeholder="placeholder" value="" title="" />
+	</div>
+	<div class="p-side-btn">
+		<button type="button" class="se-btn btn-solid-line">button</button>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.sp-form-btn</span></div> -->
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-form-btn">
+	<div class="sp-formgrid">
+		<div class="p-col">
+			<div class="se-textfld" data-fld-clear="on">	
+				<input type="text" placeholder="placeholder" value="" title="" />	
+			</div>
+		</div>	
+		<div class="p-col">
+			<div class="se-textfld" data-fld-clear="on">	
+				<input type="text" placeholder="placeholder" value="" title="" />	
+			</div>
+		</div>
+	</div>
+	<div class="p-side-btn">
+		<button type="button" class="se-btn btn-solid-line">button</button>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<!-- E : layout -->
+
+<!-- zEiLAB - Guide(가이드에만 선언) -->
+<script src="../../../../z_eilab/template/guide/guide.js"></script>
+
+</body>
+</html>

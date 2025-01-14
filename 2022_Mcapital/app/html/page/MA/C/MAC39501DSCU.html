@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>신차운용리스</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				신차운용리스 
+			</div>
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">상품설명서</h2>
+				</div>
+
+                
+				<div class="section">
+                    <!-- 20220615 수정내역 : pdf 영역 추가 -->
+                    <div class="conts-part">
+						<div class="pdf-wrap">
+							<img src="../../../../resource/image/temp/temp_terms01.png" alt="" />
+							<img src="../../../../resource/image/temp/temp_terms02.png" alt="" />
+						</div>
+                    </div>
+                    <!-- //20220615 수정내역 : pdf 영역 추가 -->
+                    <div class="conts-part">
+                        <ul class="prod-guide-list">
+                            <li>
+                                <div class="info-bg-box">
+                                    <ul class="sp-list ty-num">
+                                        <li>
+											<span class="num">1.</span>
+                                        	본 상품을 연체하셨을 때에는 법에서 정하는 범위 내에서 지연배상금*을 납부하셔야 합니다. 예를 들어 리스료 100만원을 10일 연체하셨을 경우(지연배상금율 가산 시 연20% 가정 시), 최대 5,479원의 지연배상금이 발생합니다. 이 내용을 확인하셨습니까?<br>
+											<ul class="sp-bullet-list ty-star row space-s"><!-- 20220622 수정: 디자인현행화 -->
+												<li>
+													지연배상금 산식 : 리스료 × 지연배상금율 × 연체일수/365
+												</li>
+											</ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="se-formtab ty-fix2">
+                                    <div class="se-radio">
+                                        <input type="radio" name="ex200" id="rd200">
+                                        <label for="rd200">아니요</label>
+                                    </div>
+                                    <div class="se-radio">
+                                        <input type="radio" name="ex200" id="rd201">
+                                        <label for="rd201">네</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-bg-box">
+                                    <ul class="sp-list ty-num">
+                                        <li>
+                                            <span class="num">2.</span>
+											본 상품은 일반적인 대출상품과 달리 계약이 성립한 날로부터 3년 경과 후에도 중도상환수수료가 부과(중도해지 후 물건 반납 시 중도해지손해배상금, 물건 매입 시 규정손해배상금 부과)됩니다. 이를 납부하셔야만 중도에 리스계약을 해지하실 수 있다는 점을 확인하셨습니까?
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="se-formtab ty-fix2">
+                                    <div class="se-radio">
+                                        <input type="radio" name="ex300" id="rd300">
+                                        <label for="rd300">아니요</label>
+                                    </div>
+                                    <div class="se-radio">
+                                        <input type="radio" name="ex300" id="rd301">
+                                        <label for="rd301">네</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-bg-box">
+                                    <ul class="sp-list ty-num">
+                                        <li>
+											<span class="num">3.</span>
+                                            본 상품은 일반적인 대출상품(신용대출, 오토론 등)과 달리 금융소비자보호법상 청약철회권 대상*이 아닙니다. 재화를 제공받은 후에는 청약 철회가 불가능하기에 계약 체결에 신중을 기해주시기 바랍니다. 이 내용을 확인하셨습니까?<br>
+											<ul class="sp-bullet-list ty-star row space-s"><!-- 20220622 수정: 디자인현행화 -->
+												<li>
+													재화를 제공받은 경우에 금융소비자보호법 상 청약철회권 행사가 불가능(금융소비자보호법 시행령 제 37조제1항제3호가목)
+												</li>
+											</ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="se-formtab ty-fix2">
+                                    <div class="se-radio">
+                                        <input type="radio" name="ex400" id="rd400">
+                                        <label for="rd400">아니요</label>
+                                    </div>
+                                    <div class="se-radio">
+                                        <input type="radio" name="ex400" id="rd401">
+                                        <label for="rd401">네</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+
+					<div class="conts-part">
+						<div class="se-chkbx">
+							<input type="checkbox" name="ex00" id="chk2">
+							<label for="chk2">상품설명서를 충분히 확인했으며, 약정신청을 진행하겠습니다.</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- 비활성화 해제 시 disabled 제거 -->
+						<button type="button" class="se-btn btn-main" disabled>약정신청</button><!-- 20220615 텍스트 변경 -->
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+</body>
+</html>

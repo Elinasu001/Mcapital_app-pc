@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Typography 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../../z_eilab/template/guide/guide.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; button &gt;</h1>
+
+<!-- <div class="example_box">
+	<div class="ex_title">title h2~h6</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_wrap">
+			<div class="source_code">
+소스
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div> -->
+
+<div class="example_box">
+	<!-- <div class="ex_title">title h2~h6</div> -->
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">h*.se-h2~h6</span><span class="class_name"></span></div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+
+
+
+<div style="height:20px;"></div>
+
+<div class="se-pagination">
+	<ul class="prev">
+		<li><a href="#" class="se-btn first"></a></li>
+		<li><a href="#" class="se-btn prev"></a></li>
+	</ul>
+	<ul class="pages">
+		<li class="on"><a href="#" class="se-btn">1</a></li>
+		<li><a href="#" class="se-btn">2</a></li>
+	</ul>
+	<ul class="next">
+		<li><a href="#" class="se-btn next"></a></li>
+		<li><a href="#" class="se-btn last"></a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+<div style="height:20px;"></div>
+
+<div class="se-datepicker">
+	<input type="text" />
+</div>
+
+
+<div style="height:20px;"></div>
+
+					
+					
+<ul class="sp-input-row">
+	<li>
+		<div class="se-textfld">
+			<input type="text" title="" placeholder="placeholder" value="" />
+		</div>
+	</li>
+	<li>
+		@
+	</li>
+	<li>
+		<div class="se-select" data-stove="select">
+			<select class="" title="select title">
+				<option value="" disabled selected hidden>선택하세요</option>
+				<option value="0">option 00</option>
+				<option value="1" disabled>option 01</option>
+				<option value="2">option 02</option>
+				<option value="3" hidden>option 03</option>
+			</select>
+			<div class="e-select-dim"></div>
+		</div>
+	</li>
+	<li>
+		<button type="button" class="se-btn ty-01 small">Soli</button>
+	</li>
+</ul>
+<div style="height:20px;"></div>
+
+<div class="se-textarea">
+	<!-- <label for="textarea01">입력힌트</label> -->
+	<textarea class="" id="textarea01" rows="8" placeholder="placeholder" title=""></textarea>
+</div>
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+<ul class="se-tab ty-01">
+	<li><button type="button" class="se-btn">Tab1</button></li>
+	<li class="on"><button type="button" class="se-btn">Tab2</button></li>
+</ul>
+<div style="height:20px;"></div>
+<ul class="se-tab ty-02">
+	<li><button type="button" class="se-btn">Tab1</button></li>
+	<li><button type="button" class="se-btn">Tab1</button></li>
+	<li class="on"><button type="button" class="se-btn">Tab2</button></li>
+</ul>
+
+
+<div style="height:20px;"></div>
+
+<div class="se-breadcrumbs">
+	<a href="#">depth 1</a>
+	<a href="#">depth 2</a>
+	<a href="#">depth 3</a>
+</div>
+
+
+<div style="height:20px;"></div>
+
+<div class="sp-tbl ty-mix">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div style="height:20px;"></div>
+
+<div class="sp-tbl ty-list">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+			<col style="width: 50%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>1</th>
+				<th>1</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="se-select" data-stove="select">
+	<select class="" title="select title">
+		<option value="" disabled selected hidden>선택하세요</option>
+		<option value="0">option 00</option>
+		<option value="1" disabled>option 01</option>
+		<option value="2">option 02</option>
+		<option value="3" hidden>option 03</option>
+	</select>
+	<div class="e-select-dim"></div>
+</div>
+
+<div style="height:20px;"></div>
+
+<div class="se-select" data-stove="select">
+	<select class="" title="select title" disabled>
+		<option value="" disabled selected hidden>선택하세요</option>
+		<option value="0">option 00</option>
+		<option value="1" disabled>option 01</option>
+		<option value="2">option 02</option>
+		<option value="3" hidden>option 03</option>
+	</select>
+	<div class="e-select-dim"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" />
+</div>
+
+<div style="height:20px;"></div>
+
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" value="normal" />
+</div>
+
+<div style="height:20px;"></div>
+
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" value="readonly" readonly />
+</div>
+
+<div style="height:20px;"></div>
+
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" value="disabled" disabled />
+</div>
+
+<div style="height:20px;"></div>
+
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" value="disabled" data-status="error" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+<div class="se-switch">
+	<input type="checkbox" id="switch1" name="switch1" value="" title="" />
+	<label for="switch1">
+		<span class="se-btn"></span>
+	</label>
+</div>
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+<div class="se-check">
+	<input type="radio" id="radio" name="radio" value="" title="" disabled />
+	<label for="radio">
+		11<br>dfs
+	</label>
+</div>
+
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+<div class="se-check">
+	<input type="checkbox" id="checkbox" name="checkbox" value="" title="" />
+	<label for="checkbox">
+		11<br>dfsfwfgw
+	</label>
+</div>
+
+
+<div style="height:20px;"></div>
+
+
+
+<div class="se-toggle">
+	<!-- set -->
+	<input type="radio" id="tog04-01" name="tog04" class="" value=""  title="" >
+	<label for="tog04-01">토글</label>
+	<!-- //set -->
+
+	<!-- set -->
+	<input type="radio" id="tog04-02" name="tog04" class="" value=""  title="">
+	<label for="tog04-02">토글</label>
+	<!-- //set -->
+
+	<!-- set -->
+	<input type="radio" id="tog04-04" name="tog04" class="" value=""  title="">
+	<label for="tog04-04">토글토글 토글 토글 <br>토글<br>토글</label>
+	<!-- //set -->
+</div>
+
+<div class="se-toggle small">
+	<!-- set -->
+	<input type="radio" id="tog05" name="tog05" class="" value=""  title="" >
+	<label for="tog05">토글</label>
+	<!-- //set -->
+
+	<!-- set -->
+	<input type="radio" id="tog06" name="tog05" class="" value=""  title="">
+	<label for="tog06">토글</label>
+	<!-- //set -->
+
+	<!-- set -->
+	<input type="radio" id="tog07" name="tog05" class="" value=""  title="">
+	<label for="tog07">토글토글 토글 토글 <br>토글<br>토글</label>
+	<!-- //set -->
+</div>
+
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+
+<button type="button" class="se-btn ty-01">SoliddSolid</button>
+<button type="button" class="se-btn ty-02">Solid<br>SolidSolidSolidSolidSolidSolid</button>
+<button type="button" class="se-btn ty-03">Solid<br>SolidSolidSolidSolidSolidSolid</button>
+
+<button type="button" class="se-btn ty-01 small">Solid</button>
+<button type="button" class="se-btn ty-02 small">Solid</button>
+<button type="button" class="se-btn ty-03 small">Solid</button>
+
+
+
+
+<div style="height:20px;"></div>
+
+
+
+
+
+
+
+
+
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<!-- E : layout -->
+
+<!-- zEiLAB - Guide(가이드에만 선언) -->
+<script src="../../../../z_eilab/template/guide/guide.js"></script>
+
+</body>
+</html>

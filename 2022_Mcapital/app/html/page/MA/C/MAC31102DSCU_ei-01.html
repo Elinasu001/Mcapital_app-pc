@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>확정동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				약정정보입력 
+			</div>
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">약정확인</h2>
+				</div>
+
+				<div class="section">
+					<div class="conts-part">
+						<h6 class="se-title">기본정보</h6>
+						<div class="sp-tbl ty-box"><!-- 20220610 수정: 클래스 -->
+                            <table>
+                                <caption>기본정보</caption>
+                                <colgroup>
+									<!-- 20220615 수정:  col넓이-->
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">이름</th>
+                                        <td>김겨울</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">생년월일</th>
+                                        <td>2010.02.02</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연락처</th>
+                                        <td>010-0000-0000</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주소</th>
+                                        <td>서울시 강남구 도산대로</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+					</div>
+
+					<div class="conts-part">
+						<h6 class="se-title">차량정보</h6>
+						<!-- 20220622 수정: 차량정보 -->
+						<div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="name">현대 더 뉴 그랜저</div>			
+									<div class="cash">41,280,000원</div>
+								</div>
+							</div>	
+							
+							<div class="info-body">
+								<div class="conts">
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>차량정보</caption>
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">연식</th>
+													<td>2020년식</td>		
+												</tr>
+                                                <tr>
+													<th scope="row">배기량</th>
+													<td>2,500cc</td>		
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+                        <div class="sp-tbl ty-box-info">
+                            <table>
+                                <caption>차량정보</caption>
+                                <colgroup>
+									<!-- 20220615 수정:  col넓이-->
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">자동차 구입가격</th>
+                                        <td>1,000,000원</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">차량번호</th>
+                                        <td>12가 1234</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">판매자</th>
+                                        <td>홍길동</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">자동차 인수일자</th>
+                                        <td>2010.06.06</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <caption>차량정보</caption>
+                                <colgroup>
+									<!-- 20220615 수정:  col넓이-->
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">차량매매가</th>
+                                        <td>2,000,000원</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+						<!--// 20220622 수정: 차량정보 -->
+					</div>
+
+					<div class="conts-part">
+						<h6 class="se-title">
+							상품정보
+						</h6>
+
+						<div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="title">중고오토론</div>
+								</div>						
+							</div>	
+							
+							<div class="info-body">
+								<div class="conts">
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>상품정보</caption>
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<!-- 20220622 수정: 상품정보 -->
+												<tr>
+													<th scope="row">판매자정보</th>
+													<td>M자동차상사</td>		
+												</tr>
+												<tr>
+													<th scope="row">실구입가격</th>
+													<td>28,500,000원</td>		
+												</tr>
+												<tr>
+													<th scope="row">대출신청금액</th>
+													<td>28,500,000원</td>		
+												</tr>		
+												<tr>
+													<th scope="row">이용기간</th>
+													<td>36개월</td>		
+												</tr>						
+												<tr>
+													<th scope="row">상환방식</th>
+													<td>원리금균등상환</td>		
+												</tr>
+												<tr>
+													<th scope="row">근저당설정금액</th>
+													<td>320,000원</td>		
+												</tr>
+                                                <tr>
+													<th scope="row">금리</th>
+													<td>5%</td>		
+												</tr>
+                                                <tr>
+													<th scope="row">월 상환금액</th>
+													<td>320,000원</td>		
+												</tr>
+												<!--// 20220622 수정: 상품정보 -->
+											</tbody>
+										</table>
+									</div>
+
+								</div>									
+							</div>
+						</div>
+					</div>
+
+					<div class="conts-part">
+						<h6 class="se-title">
+							결제정보
+						</h6>
+
+						<div class="sp-tbl ty-box-info">
+							<table>
+								<caption>결제정보</caption>
+								<colgroup>
+									<!-- 20220615 수정:  col넓이-->
+									<col style="width: 40%;">
+									<col style="width: 60%;">		
+								</colgroup>		
+								<tbody>
+									<tr>
+										<th scope="row">결제일</th>
+										<td>25일</td>			
+									</tr>
+									<tr>
+										<th scope="row">최초 결제일</th>
+										<td>2020.02.02</td>			
+									</tr>
+                                    <tr>
+										<th scope="row">최초 납입금</th>
+										<td>20,000,000원</td>			
+									</tr>
+									<tr>
+										<th scope="row">결제방법</th>
+										<td>
+											자동이체<br>
+											신한은행 (0000-0000-*****)
+										</td>			
+									</tr>
+									<tr>
+										<th scope="row">입금계좌</th>
+										<td>
+											신한은행 (0000-0000-*****)
+										</td>			
+									</tr>
+								</tbody>
+							</table>
+
+							<table>
+								<caption>결제정보</caption>
+								<colgroup>
+									<!-- 20220615 수정:  col넓이-->
+									<col style="width: 40%;">
+									<col style="width: 60%;">		
+								</colgroup>		
+								<tbody>
+									<tr>
+										<th scope="row">청구서 수령</th>
+										<td>
+											우편<br>
+											010-0000-0000
+										</td>			
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+					<div class="conts-part">
+						<h6 class="se-title">
+							약정정보
+						</h6>
+						<div class="sp-tbl ty-box-info">
+							<table>
+								<caption>약정정보</caption>
+								<colgroup>
+									<col style="width: 40%;">
+									<col style="width: 60%;">		
+								</colgroup>		
+								<tbody>
+									<tr>
+										<th scope="row">중도상환수수료율</th>
+										<td>3.0%</td>			
+									</tr>
+									<tr>
+										<th scope="row">연체이자율</th>
+										<td>5.0%</td>			
+									</tr>
+									<tr>
+										<th scope="row">
+											인지세
+											<!-- 툴팁 -->
+											<span class="se-tooltip">
+												<button type="button" class="se-btn">
+													<span class="se-ico ico-tooltip">툴팁</span>
+												</button>
+												<span class="se-tooltip-box">
+													<span class="tooltip-inner">
+														<button type="button" class="se-btn btn-tooltip-close">
+															<span class="se-ico ico-tooltip-close">툴팁 닫기</span>
+														</button>
+														<span class="conts">
+															<span class="text">
+																인지세는 당사50%, 이용자50% 부담입니다.
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</th>
+										<td><!-- 20220617 수정: 문구 -->
+											30,000원 (초회차 청구)
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="conts-part">
+						<h6 class="se-title">
+							약관동의
+						</h6>
+
+                        <div class="chk-link-pack">
+							<ul>
+								<!-- 할부상품 -->
+								<li class="on"><!-- 약관동의 후, on -->
+                                    <div class="chk-link">
+                                        <div class="chk">
+                                            <div class="se-chkbx ty-box">
+                                                <input type="checkbox" name="ex00" id="chk10" checked>
+                                                <label for="chk10">할부금 지급관련 위임동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="link">
+                                            <button type="button" class="se-btn btn-text-arrow">
+                                                필수확인
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sp-tbl ty-box-info">
+										<div class="conts">
+											<div class="sub-title"><!-- 20220615 수정: 타이틀 -->
+												할부금 지급처
+											</div>
+											<div class="sub-conts">
+												<table>
+													<caption>할부금 지급처</caption><!-- 20220615 수정: 캡션 -->
+													<colgroup>
+														<!-- 20220615 수정:  col넓이-->
+														<col style="width: 40%;">
+														<col style="width: 60%;">		
+													</colgroup>		
+													<tbody>
+														<tr>
+															<th scope="row">은행</th>
+															<td>00은행</td>			
+														</tr>
+														<tr>
+															<th scope="row">예금주명</th>
+															<td>홍길동</td>			
+														</tr>
+														<tr>
+															<th scope="row">계좌번호</th>
+															<td>000-00000-00-0</td>			
+														</tr>
+														<tr>
+															<th scope="row">지급금액</th>
+															<td>1,000,000원</td>			
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+                                    </div>
+								</li>
+								<!--// 할부상품 -->
+								<!-- 론상품 -->
+								<li class="on"><!-- 약관동의 후, on -->
+                                    <div class="chk-link">
+                                        <div class="chk">
+                                            <div class="se-chkbx ty-box">
+                                                <input type="checkbox" name="ex00" id="chk12" checked>
+                                                <label for="chk12">대출금 입금요청 동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="link">
+                                            <button type="button" class="se-btn btn-text-arrow">
+                                                필수확인
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sp-tbl ty-box-info">
+										<div class="conts">
+											<div class="sub-title">
+												대출금 지급처
+											</div>
+											<div class="sub-conts">
+												<table>
+													<caption>대출금 지급처</caption>
+													<colgroup>
+														<!-- 20220615 수정:  col넓이-->
+														<col style="width: 40%;">
+														<col style="width: 60%;">		
+													</colgroup>		
+													<tbody>
+														<tr>
+															<th scope="row">은행</th><!-- 20220513 수정내역: 문구수정-->
+															<td>00은행</td>			
+														</tr>
+														<tr>
+															<th scope="row">예금주명</th>
+															<td>홍길동</td>			
+														</tr>
+														<tr>
+															<th scope="row">계좌번호</th>
+															<td>000-00000-00-0</td>			
+														</tr>
+														<tr>
+															<th scope="row">지급금액</th>
+															<td>1,000,000원</td>			
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+                                    </div>
+								</li>
+								<!--// 론상품 -->
+								<li class="on"><!-- 약관동의 후, on -->
+									<div class="chk-link">
+										<div class="chk">
+											<div class="se-chkbx ty-box">
+												<input type="checkbox" name="ex00" id="chk13" checked>
+												<label for="chk13">자동차인수증 및 제출동의</label>
+											</div>
+										</div>
+										<div class="link">
+											<button type="button" class="se-btn btn-text-arrow">
+												필수확인
+											</button>
+										</div>
+									</div>
+									<div class="sp-tbl ty-box-info">
+										<!-- 20220610 수정: 항목 | 20220615 수정: 항목 -->
+										<table>
+											<caption>자동차인수증 및 제출동의</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">차량번호</th>
+													<td>123가 1234</td>			
+												</tr>
+												<tr>
+													<th scope="row">연식</th>
+													<td>2010년식</td>			
+												</tr>
+												<tr>
+													<th scope="row">차종</th>
+													<td>쏘나타</td>			
+												</tr>
+												<tr>
+													<th scope="row">차명</th>
+													<td>TG쏘나타</td>			
+												</tr>
+											</tbody>
+										</table>
+										<table>
+											<caption>자동차인수증 및 제출동의</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">구입가격</th>
+													<td>100,000,000원</td>			
+												</tr>
+												<tr>
+													<th scope="row">인수연월일</th>
+													<td>2022.01.01</td>			
+												</tr>
+											</tbody>
+										</table>
+										<!--// 20220610 수정: 항목 | 20220615 수정: 항목  -->
+                                    </div>
+								</li>
+								<li class="on"><!-- 약관동의 후, on -->
+									<div class="chk-link">
+										<div class="chk">
+											<div class="se-chkbx ty-box">
+												<input type="checkbox" name="ex00" id="chk14" checked>
+												<label for="chk14">자동차 저당권 설정계약</label>
+											</div>
+										</div>
+										<div class="link">
+											<button type="button" class="se-btn btn-text-arrow">
+												필수확인
+											</button>
+										</div>
+									</div>
+									<!-- 20220610 수정: 항목 -->
+									<div class="sp-tbl ty-box-info">
+										<table>
+											<caption>자동차 저당권 설정계약</caption>
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">채권자 겸 저당권자</th>
+													<td>엠캐피탈</td>			
+												</tr>
+											</tbody>
+										</table>
+										<table>
+											<caption>자동차 저당권 설정계약</caption>
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">저당권설정자(채무자)</th>
+													<td>홍길동</td>			
+												</tr>
+											</tbody>
+										</table>
+										<div class="conts">
+											<div class="sub-title">
+												자동차의 표시
+											</div>
+											<div class="sub-conts">
+												<table>
+													<caption>자동차의 표시</caption>
+													<colgroup>
+														<!-- 20220615 수정:  col넓이-->
+														<col style="width: 40%;">
+														<col style="width: 60%;">		
+													</colgroup>		
+													<tbody>
+														<tr>
+															<th scope="row">차량번호</th>
+															<td>123가 1234</td>			
+														</tr>
+														<tr>
+															<th scope="row">차량명</th>
+															<td>TG쏘나타</td>			
+														</tr>
+														<tr>
+															<th scope="row">차량연식</th>
+															<td>2010년식</td>			
+														</tr>
+														<tr>
+															<th scope="row">차대번호</th>
+															<td>00000000000</td>			
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<table>
+											<caption>자동차 저당권 설정계약</caption>
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">근저당설정금액</th>
+													<td>100,000,000원</td>			
+												</tr>
+											</tbody>
+										</table>
+                                    </div>
+									<!--// 20220610 수정: 항목 -->
+								</li>
+								<li><!-- 20220617 수정: 철회권 및 항변권 추가 -->
+									<div class="chk-link">
+										<div class="chk">
+											<div class="se-chkbx ty-box">
+												<input type="checkbox" name="ex00" id="chk16">
+												<label for="chk16">철회권 및 항변권</label>
+											</div>
+										</div>
+										<div class="link">
+											<button type="button" class="se-btn btn-text-arrow">
+												필수확인
+											</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="chk-link">
+										<div class="chk">
+											<div class="se-chkbx ty-box">
+												<input type="checkbox" name="ex00" id="chk15">
+												<label for="chk15">약정확약동의</label>
+											</div>
+										</div>
+										<div class="link">
+											<button type="button" class="se-btn btn-text-arrow">
+												필수확인
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="conts-part">
+						<h6 class="se-title">
+							본인인증
+						</h6>
+
+						<div class="info-bg-box">
+							<div class="text">
+								본인인증 불가 시 모바일 대출 진행이 불가합니다.<br>
+								휴대폰 인증의 경우 본인명의 휴대폰만 가능합니다.
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">				
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- 활성화 시 disabled 제거 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+</body>
+</html>

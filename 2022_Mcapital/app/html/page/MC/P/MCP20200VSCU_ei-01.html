@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>자동차 - 신차</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+    <!-- 메인용 CSS -->
+    <link rel="stylesheet" href="../../../../resource/css/ui_main.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout main">
+
+	<!-- header -->
+	<div id="header" class="header ty-bg bg-01">
+		<div class="header-inner">
+			<div class="left">
+			</div>
+
+			<!-- <div class="title">
+				타이틀 
+			</div> -->
+			<div class="right">
+				<button type="button" class="se-btn btn-menu alarm new"><!-- 새로운 알림있을 시, new 클래스추가-->
+					<span>알림</span>
+				</button>
+				<button type="button" class="se-btn btn-menu cart new"><!-- 견적있을 시, new 클래스추가-->
+					<span>견적보관함</span>
+				</button>
+				<button type="button" class="se-btn btn-menu-open">
+					<span>전체메뉴열기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+				
+				<div class="intro-page car"><!-- 20220630 수정: 자동차탭클릭시 'car' 클래스 추가 -->
+                    <div class="main-tabset">
+                        <div class="tabbtn">
+                            <button type="button" class="se-btn">홈</button>
+                            <button type="button" class="se-btn on">자동차</button><!-- 활성화시, on 클래스추가 -->
+                        </div>
+                        <div class="tabpanel">
+                            <!-- S: 홈 -->
+                            <div class="panel">
+                                홈
+                            </div>
+                            <!-- E: 홈 -->
+                            <!-- S: 자동차 -->
+                            <div class="panel on"><!-- 활성화시, on 클래스추가 -->
+								<div class="main-intro">
+                                    <div class="inner">
+                                        <div class="main-info">
+                                            <div class="title">
+                                                <button type="button" class="se-btn link">김겨울</button> <span class="sir">님</span><br>
+                                                나만의 차!<br>
+                                                <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                            </div>
+                                            <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                        </div>
+                                        <div class="bg">
+                                            <div class="bg01">
+                                                <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                            </div>
+                                            <div class="bg02">
+                                                <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                            </div>
+                                            <div class="bg03">
+                                                <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                            </div>
+                                            <div class="bg04">
+                                                <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-sec nospace">
+                                    <div class="sub-tabset">
+                                        <div class="tabbtn">
+                                            <button type="button" class="se-btn on">신차</button><!-- 활성화시, on 클래스추가 -->
+                                            <button type="button" class="se-btn">중고차</button>
+                                            <button type="button" class="se-btn">바이크</button>
+                                        </div>
+                                        <div class="tabpanel">
+                                            <div class="panel on"><!-- 활성화시, on 클래스추가 -->
+                                                <!-- 20220513 수정내역 : 기간 삭제, 상세 텍스트 변경, 오타 수정 -->
+                                                <ul class="prod-summary-list">
+                                                    <li>
+                                                        <a href="#none" class="se-btn summary">
+                                                            <div class="title">신차운용리스</div>
+                                                            <div class="txt">신차구매 부담은 줄이고 차량유지는 편리한 금융서비스</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" class="se-btn summary">
+                                                            <div class="title">신차금융리스</div>
+                                                            <div class="txt">신차구매 부담을 줄이고 저렴한 비용으로<br> 자동차를 사용할 수 있는 금융서비스</div><!-- 20220527 수정: 줄바꿈 추가 -->
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" class="se-btn summary">
+                                                            <div class="title">신차할부</div>
+                                                            <div class="txt">신차구매 부담을 줄이고 저렴한 비용으로<br> 자동차를 사용할 수 있는 할부금융서비스</div><!-- 20220527 수정: 줄바꿈 추가 -->
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" class="se-btn summary">
+                                                            <div class="title">신차장기렌터카</div>
+                                                            <div class="txt">신차구매 부담은 줄이고<br> 차량 유지 ‧ 관리는 편리한 차량임대서비스</div><!-- 20220527 수정: 줄바꿈 추가 -->
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- //20220513 수정내역 : 기간 삭제, 상세 텍스트 변경, 오타 수정 -->
+                                            </div>
+                                            <div class="panel">
+
+                                            </div>
+                                            <div class="panel">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- E: 자동차 -->
+                        </div>
+                    </div>
+					
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+<!-- 메인용 JS -->
+<script src="../../../../resource/js/ui_main.js"></script>
+
+</body>
+</html>

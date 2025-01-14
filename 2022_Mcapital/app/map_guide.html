@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ko" style="overflow-y: hidden;">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="z_eilab/favicon.ico">
+	<title>컴포넌트가이드</title>
+
+	<!-- zEiLAB - libray -->
+	<script src="z_eilab/lib/jquery-1.12.4.min.js"></script>
+	<script src="z_eilab/lib/jquery-ui-1.11.4.js"></script>
+
+	<!-- zEiLAB - mockup -->
+	<link rel="stylesheet" type="text/css" href="z_eilab/template/mockup/mockup.css">
+	<script src="z_eilab/template/mockup/mockup.js"></script>
+	
+	<!-- zEiLAB - 프로젝트커스텀 -->
+	<script src="z_eilab/pagecalc.js"></script>
+</head>
+<body>
+
+<!-- S : layout -->
+<div id="layout" class="layout">
+
+	<!-- S : header -->
+	<div id="header" class="header">
+
+
+		<div class="info_area">
+			<div class="info_wrap">
+				<div class="info_project">
+					<div class="logo"><img src="z_eilab/project_logo.png" alt=""></div>
+					<div class="title">컴포넌트가이드</div>
+					<!-- <div class="subtitle">환경</div> -->
+					<div class="eilab"><img src="z_eilab/template/mockup/image/eilab.png" alt=""></div>
+				</div>
+				<div class="version_wrap"><dl><dt>Publishing Resource : </dt><dd>version <span class="ver"></span> | <span class="date"></span></dd></dl></div>
+			</div>
+
+			<div class="navi_area fold view">
+				<button type="button" class="btn navi_ctrl" title="헤더 메뉴 요약"></button>
+				<div class="naviarea_inner">
+					<div class="btn_wrap">
+						<div class="inner">
+							<button type="button" class="btn" onClick="location.href='map.html'">카테고리</button>
+							<button type="button" class="btn btn_guide bg_guide" data-pageNum="totalPage" onClick="location.href='map_guide.html'">컴포넌트가이드</button>
+						</div>
+					</div>
+
+					<div class="navi_wrap"></div>
+				</div>
+			</div>
+
+
+			<div id="remote" class="remote_wrap">
+				<div class="btn_remote_wrap">
+					<button type="button" class="btn refresh" title="화면목록 새로고침"></button>
+					<div class="btn_wrap_iactrl">
+						<button type="button" class="btn btn_ia_ctrl ia_close" title="화면목록 접기"></button>
+						<button type="button" class="btn btn_ia_ctrl ia_open" title="화면목록 펼치기"></button>
+					</div>
+					<button type="button" class="btn more_info active" title="화면 기타 정보 보기"></button>
+					<!-- <button type="button" class="btn check_modify" title="수정이력 정보 보기"></button> -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- E : header -->
+
+	<!-- S : container -->
+	<div id="container" class="container">
+
+		<!-- S : IA -->
+		<div class="ia">
+
+			<!-- ◆복사용세트 -->
+			<!--
+			<div class="depth category">
+				<div class="title bg_main">뎁스명</div>
+				<div class="conts">
+
+					<div class="depth">
+						<div class="title bg_main">뎁스명 <span class="dir">html/dir/dir</span></div>
+						<div class="conts">
+
+							<div class="depth">
+								<div class="title">뎁스명</div>
+								<div class="conts">
+									
+									<div class="depth split">
+										<div class="title">뎁스명</div>
+										<div class="conts">
+											
+											<div class="page">
+												<div class="row row_filename"><div class="left"><a class="info title">화면명</a><span class="info date">릴리즈날짜</span></div>
+												<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">파일명.html</span></span></div>
+											</div>
+		
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			-->
+
+
+			<div class="depth category guide">
+				<div class="title bg_guide">컴포넌트 기본<span class="dir">html/_guide/component/component/</span></div>
+				<div class="conts">
+
+					<div class="depth">
+						<div class="title">element</div>
+						<div class="conts">
+
+							<div class="depth split">
+								<div class="title">basic</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">typography</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e10</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">button</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e11</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">icon/badge</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e12</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="depth split">
+								<div class="title">form</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">text field</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e20</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">date/file</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e21</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">radio/checkbox/switch</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e22</span><span class="extention">.html</span></span></div>
+									</div>									
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">select/textarea</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e23</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>	
+							
+							<div class="depth split">
+								<div class="title">module</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">tab</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e30</span><span class="extention">.html</span></span></div>
+									</div>	
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">dropdown</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e31</span><span class="extention">.html</span></span></div>
+									</div>		
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">tooltip</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e32</span><span class="extention">.html</span></span></div>
+									</div>		
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">range</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e33</span><span class="extention">.html</span></span></div>
+									</div>							
+								</div>
+							</div>
+
+							
+						</div>
+					</div>
+
+					<div class="depth">
+						<div class="title">package</div>
+						<div class="conts">
+							<div class="depth split">
+								<div class="title">list</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">list</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p10</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="depth split">
+								<div class="title">grid</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">grid cell</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p20</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">table</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p21</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">board</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p22</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">pagination</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p23</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>						
+
+							<div class="depth split">
+								<div class="title">combination</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">button set</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p40</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">form set</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p41</span><span class="extention">.html</span></span></div>
+									</div>									
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">tab set</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p42</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="depth split">
+								<div class="title">module</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">accordion</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p30</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>	
+					
+					<div class="depth">
+						<div class="title">modal</div>
+						<div class="conts">
+							<div class="depth split">
+								<div class="title">modal</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">alert</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_m_alert</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">popup</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_m_popup</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">slide popup</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_m_slide</span><span class="extention">.html</span></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">slide popup(타이틀없는경우)</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_m_slide_ei-01</span><span class="extention">.html</span></span><span class="right"></span></div>
+									</div>
+									<div class="page">
+										<div class="row row_filename"><span class="left"><a class="info title">fullpopup</a></span><span class="right"><span class="info date">default</span></span></div>
+										<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_m_fullpopup</span><span class="extention">.html</span></span></div>
+									</div>
+								</div>
+							</div>							
+
+						</div>
+					</div>	
+
+					
+
+				</div>
+			</div>			
+
+			<div class="depth category guide">
+				<div class="title bg_guide">컨텐츠 유형<span class="dir">html/_guide/contents/contents/</span></div>
+				<div class="conts">
+
+					<div class="page">
+						<div class="row row_filename"><span class="left"><a class="info title">레이아웃 관련</a></span><span class="right"><span class="info date">default</span></span></div>
+						<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">contents_sample_10.html</span></span></div>
+					</div>
+
+					<div class="page">
+						<div class="row row_filename"><span class="left"><a class="info title">컨텐츠 유형</a></span><span class="right"><span class="info date">default</span></span></div>
+						<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">contents_sample_11.html</span></span></div>
+					</div>
+
+					<div class="page">
+						<div class="row row_filename"><span class="left"><a class="info title">팝업 내부 컨텐츠 유형</a></span><span class="right"><span class="info date">default</span></span></div>
+						<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">contents_sample_12.html</span></span></div>
+					</div>
+
+					<div class="page">
+						<div class="row row_filename"><span class="left"><a class="info title">인포박스 유형</a></span><span class="right"><span class="info date">default</span></span></div>
+						<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">contents_sample_13.html</span></span></div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+		<!-- E : IA -->
+
+	</div>
+	<!-- E : container -->
+</div>
+<!-- E : layout -->
+
+
+
+</body>
+</html>
+

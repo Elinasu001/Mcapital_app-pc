@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>전체메뉴</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+    <button type="button" class="btn-menu-open">전체메뉴열기</button>
+
+</div>
+<!-- //layout -->
+
+
+<!-- S : 전체메뉴 -->
+<div class="layout-allmenu">
+    <div class="allmenu-layer">
+        <div class="allmenu-head">
+            <div class="head-inner">
+                <div class="left"></div>
+                <div class="right">
+                    <button type="button" class="se-btn btn-menu alarm new"><!-- 새로운 알림있을 시, new 클래스추가-->
+                        <span class="se-ico ico-menu-alarm">알림</span>
+                    </button>
+                    <button type="button" class="se-btn btn-menu cart new"><!-- 견적있을 시, new 클래스추가-->
+                        <span class="se-ico ico-menu-cart">견적보관함</span>
+                    </button> 
+                    <button type="button" class="se-btn btn-menu close">
+                        <span class="se-ico ico-menu-close">닫기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="allmenu-container">
+            <div class="container-inner">
+                <div class="user-jumbotron">
+                    <div class="col">
+                        <h3 class="se-title">
+                            <a href="#none" class="btn-txt-link">김겨울</a><span class="job">관리자님</span>
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <button type="button" class="se-btn btn-menu-login">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="main-menu">
+                    <li>
+                        <a href="#none" class="menu">
+                            <span class="se-ico ico-menu faq"></span>
+                            <div class="txt">고객상담</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" class="menu">
+                            <span class="se-ico ico-menu cert"></span>
+                            <div class="txt">인증센터</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" class="menu">
+                            <span class="se-ico ico-menu notice"></span>
+                            <div class="txt">공지사항</div>
+                        </a>
+                    </li>
+                </ul>
+    
+                <div class="gnb-menu">
+                    <ul class="gnb-list depth1">
+                        <!-- 20220513 수정내역 : 순서 변경, 자동차금융 상품 목록 수정 -->
+                        <li>
+                            <a href="#none" class="menu">
+                                <span>금융계산기</span>
+                                <span class="se-ico arrow-right"></span>
+                            </a>
+                        </li>
+                        <li><div class="menu"><span>금융상담</span></div>
+                            <ul class="depth2">
+                                <li><a href="#none" class="menu">신차운용리스</a></li>
+                                <li><a href="#none" class="menu">신차금융리스</a></li>
+                                <li><a href="#none" class="menu">신차할부</a></li>
+                                <li><a href="#none" class="menu">신차장기렌터카</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <li><a href="#none" class="menu">중고할부</a></li>
+                                <li><a href="#none" class="menu">중고오토론</a></li>
+                                <li><a href="#none" class="menu">인증중고할부</a></li>
+                                <li><a href="#none" class="menu">인증중고론</a></li>
+                                <li><a href="#none" class="menu">인증중고운용리스</a></li>
+                                <li><a href="#none" class="menu">인증중고금융리스</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <li><a href="#none" class="menu">바이크운용리스</a></li>
+                                <li><a href="#none" class="menu">바이크금융리스</a></li>
+                                <li><a href="#none" class="menu">바이크할부</a></li>
+                            </ul>
+                        </li>
+                        <li><div class="menu"><span>업무관리</span></div>
+                            <ul class="depth2">
+                                <li><a href="#none" class="menu">업무진행현황</a></li>
+                                <li><a href="#none" class="menu">통합현황  </a></li>
+                            </ul>
+                        </li>
+                        <li><div class="menu"><span>영업관리</span></div>
+                            <ul class="depth2">
+                                <li><a href="#none" class="menu">고객관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu"><span>설정</span></div>
+                            <ul class="depth2">
+                                <li><a href="#none" class="menu">로그인 설정</a></li>
+                                <li><a href="#none" class="menu">간편비밀번호 재설정</a></li>
+                                <li><a href="#none" class="menu">알림설정</a></li>
+                                <li><a href="#none" class="menu">권한정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">
+                                <span>회원정보</span>
+                                <span class="se-ico arrow-right"></span>
+                            </a>
+                        </li>
+                        <!-- //20220513 수정내역 : 순서 변경, 자동차금융 상품 목록 수정 -->
+                    </ul>
+                </div>
+                <div class="corp-info">
+                    <button type="button" class="se-btn btn-version">버전 1.0.4</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- E : 전체메뉴 -->
+
+
+
+</body>
+</html> 

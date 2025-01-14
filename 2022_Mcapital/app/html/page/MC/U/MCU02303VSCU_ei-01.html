@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>회원가입</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				회원가입
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<div class="contents-inner">
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">
+						회원가입 약관동의
+					</h2>
+					<div class="text">
+						앱가입을 위한 약관동의를 해주세요.
+					</div>
+				</div>
+
+				<div class="section">
+
+					<div class="terms-pack all on"><!-- 전체동의시 all 클래스 추가, 약관 열기 on 클래스 추가 -->
+
+						<!-- 전체 약관 동의 -->
+						<div class="terms-head">
+							<div class="checkbox-box">
+								<div class="se-chkbx">
+									<input type="checkbox" name="all01" id="all01" checked="">
+									<label for="all01">
+										약관 전체 동의
+									</label>
+								</div>
+								<div class="fold-btn">
+									<button type="button" class="se-btn">
+										<span>약관 접기</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- //전체 약관 동의 -->
+					
+						<!-- 약관 묶음 -->
+						<div class="terms-body">
+					
+							<ul class="terms-depth dep01">
+								<!-- 약관 -->
+								<li>
+									<div class="row">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex1-1" id="chk1-1">
+											<label for="chk1-1">
+												서비스 이용약관
+											</label>
+										</div>
+										<div class="detail-btn">
+											<button type="button" class="se-btn">
+												<span>약관 상세 보기</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<!-- //약관 -->
+					
+								<!-- 약관 -->
+								<li class="on"><!-- 열림, on  클래스추가 -->
+									<div class="row">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex1-2" id="chk1-2">
+											<label for="chk1-2">
+												개인신용정보 필수적 동의서
+											</label>
+										</div>
+										<div class="fold-btn">
+											<button type="button" class="se-btn">
+												<span>약관 상세 보기</span>
+											</button>
+										</div>
+									</div>
+									<ul class="terms-depth dep02">
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-11" id="chk2-11">
+													<label for="chk2-11">
+														개인(신용)정보의 수집 &middot; 이용에 관한 사항
+														<span class="sub-text">고유식별정보의 수집 &middot; 이용동의</span>
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-12" id="chk2-12">
+													<label for="chk2-12">
+														개인(신용)정보의 조회에 관한 사항
+														<span class="sub-text">고유식별정보의 조회 동의</span>
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-13" id="chk2-13">
+													<label for="chk2-13">
+														개인(신용)정보의 제공에 관한 사항
+														<span class="sub-text">고유식별정보의 제공 동의</span>
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-14" id="chk2-14">
+													<label for="chk2-14">
+														제3자 개인신용정보제공 동의여부
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<!-- //약관 -->
+								
+								<!-- 약관 -->
+								<li class="on"><!-- 열림, on  클래스추가 -->
+									<div class="row">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex1-3" id="chk1-3">
+											<label for="chk1-3">
+												개인신용정보 선택적 동의서
+											</label>
+										</div>
+										<div class="fold-btn">
+											<button type="button" class="se-btn">
+												<span>약관 상세 보기</span>
+											</button>
+										</div>
+									</div>
+									<ul class="terms-depth dep02">
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-31" id="chk2-31">
+													<label for="chk2-31">
+														금융상품 안내 및 이용 권유를 위한 선택적 수집 &middot; 이용
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-33" id="chk2-33">
+													<label for="chk2-33">
+														금융상품 이외의 부수서비스 안내 등을 위한 선택적 수집 &middot; 이용
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex2-32" id="chk2-32">
+													<label for="chk2-32">
+														전자적 전송매체를 통한 광고성 정보 수신 동의
+													</label>
+												</div>
+											</div>
+											<ul class="terms-depth dep03">
+												<li>
+													<div class="sp-iptlist">
+														<div class="se-chkbx ty-box">
+															<input type="checkbox" name="ex3-1" id="chk3-1">
+															<label for="chk3-1">
+																전화
+															</label>
+														</div>
+														<div class="se-chkbx ty-box">
+															<input type="checkbox" name="ex3-2" id="chk3-2">
+															<label for="chk3-2">
+																문자메시지
+															</label>
+														</div>
+														<div class="se-chkbx ty-box">
+															<input type="checkbox" name="ex3-3" id="chk3-3">
+															<label for="chk3-3">
+																서면
+															</label>
+														</div>
+														<div class="se-chkbx ty-box ">
+															<input type="checkbox" name="ex3-4" id="chk3-4">
+															<label for="chk3-4">
+																이메일
+															</label>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="info-bg-box space-m">
+												<div class="row">
+													<ul class="sp-list">
+														<li>
+															고객님께서 동의하시면 해당 개인정보를 이용하여 고객님께 당사가 제공하는 서비스나 제휴혜택 등을 안내드리기 위하여  체크하신 전자적 전송매체를 통해 연락드릴 수 있습니다.
+														</li>
+													</ul>
+												</div>
+												<div class="row">
+													<ul class="sp-bullet-list ty-circle">
+														<li>
+															금융상품과 부수서비스 및 이용권유에 동의하셨더라도    신용정보의 이용 및 보호에 관한 법률에 따라 이용권유 목적의   연락에 대한 중단을 언제라도 여신회사에 요청할 수 있습니다.   (대표전화 1588-9688 / 홈페이지 www.capital-m.co.kr) 
+														</li>
+														<li>
+															신용도 등의 평가목적 외 개인신용정보 제공동의의 경우 당사   홈페이지 고객센터(대표번호)를 통해 언제든지 철회 가능합니다.
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<!-- //약관 -->
+							</ul>
+						</div>
+					</div>
+					<div class="btn-pack space-l ">
+						<button type="button" class="se-btn btn-solid-point">요약동의서 다운로드</button>
+					</div>
+					<div class="se-chkbx ty-row">
+                        <input type="checkbox" name="ex00" id="chk2">
+                        <label for="chk2">
+							서비스 이용에 대한 요약동의서를 정상 다운로드 받았음을 확인합니다.
+                        </label>
+                    </div>
+				</div>
+
+			</div>
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- disabled 제거 시 버튼 활성화 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

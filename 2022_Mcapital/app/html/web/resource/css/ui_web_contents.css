@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* v2.9 | 2022-07-05 */
+/*---------------------------------------------
+	대분류
+---------------------------------------------*/
+/*
+	중분류
+*/
+/* 소분류 */
+
+
+/*---------------------------------------------
+	공동인증서
+---------------------------------------------*/
+.certi-guide-wrap .top-msg { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 48px; border-radius: 40px; text-align: center; font-size: 15px; font-weight: bold; color: #fff; background-color: #274C9F; }
+.certi-guide-wrap .ico-certi-arrow { font-size: 0; width: 18px; height: 18px; margin: 0 10px; background-image: url('../image/icon_arrow_right.png'); background-repeat: no-repeat; background-size: 18px; background-position: center; }
+
+.certi-guide-wrap .certi-guide { display: -webkit-box; display: -ms-flexbox; display: flex; display: flex; margin-top: 30px; }
+.certi-guide-wrap .guide { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 0 15px; }
+.certi-guide-wrap .guide-list { margin-top: 18px; }
+.certi-guide-wrap .guide-list > li { position: relative; padding-left: 30px; line-height: 22px; font-size: 13px; font-weight: bold; }
+.certi-guide-wrap .guide-list > li + li { margin-top: 22px; }
+.certi-guide-wrap .guide-list > li .ico-step { display: inline-block; position: absolute; left: 0; top: 0; width: 22px; height: 22px; line-height: 22px; border-radius: 9px; text-align: center; font-size: 13px; font-weight: 900; color: #707070; background-color: #F4F4F5; }
+
+/*---------------------------------------------
+	앱접근권한
+---------------------------------------------*/
+.list-with-icon { margin-top: 20px; }
+.list-with-icon > li { display: flex; align-items: center; }
+.list-with-icon > li + li { margin-top: 30px; }
+.list-with-icon > li .icon { width: 48px; height: 48px; }
+.list-with-icon > li .icon img { width: 100%; height: 100%; }
+.list-with-icon > li dl { margin-left: 12px; }
+.list-with-icon > li dl > dt { font-size: 14px; font-weight: bold; }
+.list-with-icon > li dl > dd { margin-top: 3px; font-size: 12px; color: #707070; }
+
+.access-notice { margin-top: 30px; padding: 30px 15px 0 15px; border-top: 1px solid #e9ebee; box-sizing: border-box; }
+.access-notice .sp-bullet-list { margin-top: 5px; }

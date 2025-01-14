@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+	
+	<title>실적조회</title>
+	
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				실적조회 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				<div class="section">
+					<!-- 실적조회 -->
+					<div class="perform-view-pack">
+						<!-- head -->
+						<!-- 년도 변경 시 해당하는 년도의 실적으로 갱신 -->
+						<div class="inquiry-head">
+							<div class="month-btn-wrap">
+								<button type="button" class="se-btn btn-prev">
+									<span class="se-ico ico-month-arrow prev">이전</span>
+								</button>
+								<span class="title">2021년 12월</span>
+								<button type="button" class="se-btn btn-next">
+									<span class="se-ico ico-month-arrow next">다음</span>
+								</button>
+							</div>
+							<ul class="count-box">
+								<li>
+									<div class="title">
+										<span class="se-ico ico-perform-ing"></span>진행
+									</div>
+									<div class="count">
+										<span class="val">2</span><span class="unit">건</span>
+									</div>
+								</li>
+								<li>
+									<div class="title">
+										<span class="se-ico ico-perform-done"></span>완료
+									</div>
+									<div class="count">
+										<span class="val">12</span><span class="unit">건</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- // head -->
+
+						<!-- body -->
+						<div class="inquiry-body">
+							<div class="sp-tabset">
+								<ul class="se-tabbtn ty-main">
+									<li>
+										<button type="button" class="se-btn">진행</button>
+									</li>
+									
+									<!-- on -->
+									<li class="on">
+										<button type="button" class="se-btn">완료</button>
+									</li>
+								</ul>
+								<ul class="p-tab-panel">
+									
+									<!-- 진행 -->
+									<li>
+										CONTS 1
+									</li>
+
+									<!-- 완료 -->
+									<!-- on -->
+									<li class="on">
+										<ul class="state-list-conts">
+											<li><!-- 월 -->
+												<div class="storage-pack ty-float"><!-- 20220415 수정내역: 클래스추가 -->
+													<div class="head">
+														<div class="col">
+															<div class="title">홍길동 딜러</div>
+														</div>
+														<div class="col-right">
+															<div class="sub-text">약정일 <span>2021.12.22</span></div>
+														</div>
+													</div>
+			
+													<div class="body">
+														<!-- 20220415 수정내역: 마크업수정-->
+														<div class="info">
+															<!-- 신차 색상 클래스 : clr-03 -->
+															<span class="se-badge ty-normal clr-03">신차운용리스</span>
+
+															<div class="name">김**</div>
+															<div class="title">현대 그랜저</div>
+															<div class="text">더 뉴 그랜저 IG</div>
+														</div>
+														<!--// 20220415 수정내역: 마크업수정-->
+			
+														<div class="amount-pack">
+															<div class="title">AG</div>
+															<div class="value">
+																<span class="rate">
+																	<span class="val">8.3</span><span class="unit">%</span>
+																</span>
+																<span class="amount">
+																	<span class="val">530,000</span><span class="unit">원</span>
+																</span>
+															</div>
+														</div>
+														<div class="amount-pack">
+															<div class="title">CM</div>
+															<div class="value">
+																<span class="rate">
+																	<span class="val">5.6</span><span class="unit">%</span>
+																</span>
+																<span class="amount">
+																	<span class="val">280,000</span><span class="unit">원</span>
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="storage-pack ty-float"><!-- 20220415 수정내역: 클래스추가 -->
+													<div class="head">
+														<div class="col">
+															<div class="title">김가을 AG</div>
+														</div>
+														<div class="col-right">
+															<div class="sub-text">약정일 <span>2021.12.22</span></div>
+														</div>
+													</div>
+			
+													<div class="body">
+														<!-- 20220415 수정내역: 마크업수정-->
+														<div class="info">
+															<!-- 중고차 색상 클래스 : clr-01 -->
+															<span class="se-badge ty-normal clr-01">중고운용리스</span>
+
+															<div class="name">김**</div>
+															<div class="title">현대 그랜저</div>
+															<div class="text">더 뉴 그랜저 IG</div>
+														</div>
+														<!--// 20220415 수정내역: 마크업수정-->
+			
+														<div class="amount-pack">
+															<div class="title">AG</div>
+															<div class="value">
+																<span class="rate">
+																	<span class="val">8.3</span><span class="unit">%</span>
+																</span>
+																<span class="amount">
+																	<span class="val">530,000</span><span class="unit">원</span>
+																</span>
+															</div>
+														</div>
+														<div class="amount-pack">
+															<div class="title">CM</div>
+															<div class="value">
+																<span class="rate">
+																	<span class="val">5.6</span><span class="unit">%</span>
+																</span>
+																<span class="amount">
+																	<span class="val">280,000</span><span class="unit">원</span>
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<!-- CM 계정일 경우 - 금액 미제공 -->
+											<li>
+												<div class="storage-pack ty-float"><!-- 20220415 수정내역: 클래스추가 -->
+													<div class="head">
+														<div class="col">
+															<div class="title">홍길동 딜러</div>
+														</div>
+														<div class="col-right">
+															<div class="sub-text">약정일 <span>2021.12.22</span></div>
+														</div>
+													</div>
+			
+													<div class="body">
+														<!-- 20220415 수정내역: 마크업수정-->
+														<div class="info">
+															<!-- 바이크 색상 클래스 : clr-00 -->
+															<span class="se-badge ty-normal clr-00">바이크운용리스</span>
+
+															<div class="name">김**</div>
+															<div class="title">현대 그랜저</div>
+															<div class="text">더 뉴 그랜저 IG</div>
+														</div>
+														<!--// 20220415 수정내역: 마크업수정-->
+													</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- // body -->
+					</div>
+					<!-- // 실적조회 -->
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+            <!-- contents-bottom : 하단 영역 -->
+            <!-- <div class="contents-bottom">
+                <div class="bottom-btn-area">
+                    <div class="btn-wrap">
+                        <button type="button" class="se-btn btn-main">button</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- //contents-bottom -->
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

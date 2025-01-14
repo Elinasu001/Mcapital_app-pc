@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>자동차인수증 및 제출동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout"></div>
+<!-- E : layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+
+	<div class="popup-layer">
+
+        <div class="popup-header">
+			<!-- <button type="button" class="se-btn popup-back"><span class="se-ico ico-pop-back">뒤로가기</span></button>    -->
+			<div class="popup-title">자동차인수증 및 제출동의</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section">
+                    <div class="conts-part space-s">
+                        <h6 class="se-title">인수자정보</h6>
+                        <div class="sp-tbl ty-box-info">
+                            <table>
+                                <caption>인수자정보</caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">이름</th>
+                                        <td>김겨울</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">생년월일</th>
+                                        <td>1999.01.01</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">전화번호</th>
+                                        <td>010-0000-0000</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="conts-part">
+                        <h6 class="se-title">인수차량정보</h6>
+                        <div class="sp-tbl ty-box-info">
+                            <table>
+                                <caption>인수차량정보</caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">차량번호</th>
+                                        <td>123가 1234</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연식</th>
+                                        <td>2010년식</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">차종</th>
+                                        <td>쏘나타</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">차명</th>
+                                        <td>TG쏘나타</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="conts-part">
+                        <h6 class="se-title">중고차구입가격 및 인수연월일</h6>
+                        <div class="sp-tbl ty-box-info">
+                            <table>
+                                <caption>중고차구입가격 및 인수연월일</caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">구입가격</th>
+                                        <td>100,000,000원</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">인수연월일</th>
+                                        <td>2022.01.01</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="sp-bullet-list ty-circle">
+                            <li>
+                                구입가격=실구입가격, 인수연월일=약정일
+                            </li>
+                        </ul>
+
+                        <div class="se-chkbx ty-row">
+                            <input type="checkbox" name="ex00" id="chk1">
+                            <label for="chk1">
+                                ‘중고차 인수증’은 차량 인도와 동시에 제출하는 것으로 차량 인수가 되지 않은 경우 제출하지 마십시오.
+                            </label>
+                        </div>
+                        <div class="se-chkbx ty-row">
+                            <input type="checkbox" name="ex00" id="chk2">
+                            <label for="chk2">
+                                약정 이후에도 차량의 하자, 문제 등으로 차량인수가 불가한 경우, 또는 차량을 정상적으로 인수받지 못한 경우 해당 내용을 당사로 알려주시면 대출을 중단시킬 수 있으며, 고객님의 피해를 사전에 방지할 수 있습니다.(고객센터:1588-9688) 
+                            </label>
+                        </div>
+                        <div class="se-chkbx ty-row with-title">
+                            <input type="checkbox" name="ex00" id="chk3">
+                            <label for="chk3">
+                                <span class="title">중고차 인수증 제출 동의</span>
+                                본인은(<span>판매자명</span>)로부터 중고 자동차 매매계약에 따라 상기 차량을 이상없이 인수하였으며, 중고 자동차 대출 표준약관 제4조에 따라 중고 자동차 구입자금 대출을 위해 엠캐피탈 주식회사에 동 인수증을 제출하는 것에 동의합니다.
+                            </label>
+                        </div>
+
+                        <div class="info-bg-box">
+                            <ul class="sp-bullet-list ty-ref">
+                                <li>
+                                    상기 차량인수증 정보를 정확히 확인하시고, ‘중고차 인수증’ 을 제출해 주시길 바랍니다.<br>
+                                    대출금 입금계좌는 딜러사의 계좌입니다.(할부금융)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>			 	      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>						
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<button type="button" class="se-btn btn-main">동의</button>
+				</div>
+			</div>			
+		</div>
+    </div>
+
+
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+
+</html>

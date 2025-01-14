@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>고객관리</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				고객관리 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">		
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+				<div class="section-jumbotron">
+					<h3 class="se-title">고객명을 입력해주세요.</h3>
+				</div>
+				
+				<div class="section space-s">
+					<div class="search-wrap">
+						<div class="search-conts">
+							<div class="sp-formset">
+								<div class="se-textfld" data-fld-clear="on"><!-- 20220531 data-fld-clear="on" 속성 추가 -->
+									<input type="text" placeholder="고객명 입력" value="김겨울" title="고객명 입력" >	
+									<span class="e-back">
+										<button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+									</span>
+								</div>
+							</div>
+							<!-- 20220415 수정내역: 마크업수정 -->
+							<div class="filter-pack">
+								<button type="button" class="se-btn btn-plain size-xs">
+									<span class="se-ico ico-filter">필터</span>
+									검색조건
+								</button>
+
+								<!-- 필터결과 노출 -->
+								<span class="filter-val">전체</span>
+								<span class="filter-val">2021.12.20~2021.12.26</span>
+							</div>
+							<!--// 20220415 수정내역: 마크업수정 -->
+						</div>
+
+						<div class="search-result-conts">
+							<!-- 검색 후 - 결과있음 -->
+							<div class="conts">
+								<div class="keyword-pack">
+									<h5 class="se-title">검색결과 <span class="count">12</span></h5>
+								</div>
+								<ul class="list">
+									<li>
+										<a href="#none" class="se-btn">
+											<span class="row">
+												<span class="col">
+													<span class="name">
+														김겨울
+													</span>
+													<span class="detail">
+														<span>1990.01.01</span>
+														·
+														<span>010-1234-5678</span>
+													</span>
+												</span>
+												<span class="col-right">
+													<span class="se-badge ty-state clr-01">진행</span>
+												</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#none" class="se-btn">
+											<span class="row">
+												<span class="col">
+													<span class="name">
+														김겨울
+													</span>
+													<span class="detail">
+														<span>1990.01.01</span>
+														·
+														<span>010-1234-5678</span>
+													</span>
+												</span>
+												<span class="col-right">
+													<span class="se-badge ty-state clr-02">완료</span>
+												</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#none" class="se-btn">
+											<span class="row">
+												<span class="col">
+													<span class="name">
+														김겨울
+													</span>
+													<span class="detail">
+														<span>1990.01.01</span>
+														·
+														<span>010-1234-5678</span>
+													</span>
+												</span>
+												<span class="col-right">
+													<span class="se-badge ty-state clr-01">진행</span>
+													<span class="se-badge ty-state clr-02">완료</span>
+												</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- 검색 후 - 결과없음 -->
+							<!-- <div class="conts">
+								<div class="noresult">
+									<div class="row">
+										<span class="se-ico ico-search-noresult"></span>
+									</div>
+									<p class="text">검색결과가 없습니다.</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

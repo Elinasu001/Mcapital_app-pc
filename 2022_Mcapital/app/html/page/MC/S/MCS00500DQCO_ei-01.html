@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>앱 접근권한</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<!-- <div class="header-inner">
+			<div class="left">
+				
+			</div>
+			<div class="title">
+				회원가입
+			</div>
+			<div class="right">
+				버튼자리
+			</div>
+		</div> -->
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<div class="contents-inner">
+
+				<div class="section-wrap">
+					<div class="section-jumbotron">
+						<h2 class="se-title">앱 접근 권한 설정 안내</h2>
+						<p class="text">
+							보다 편리한 서비스 이용을 위해 <br>
+							아래 <span class="clr-02">접근권한의 허용</span>이 필요합니다.
+						</p>
+					</div>
+	
+					<div class="section">
+						<div class="app-access-wrap">
+							<div class="access-conts">
+								<div class="title">
+									<span class="badge clr-01">필수 접근권한</span>
+								</div>
+								<ul class="list">
+									<!-- 20220520 수정내역 : 목록 수정 -->
+									<li>
+										<span class="se-ico ico-access device"></span>
+										<div class="cnt">
+											<div class="tit">기기정보</div>
+											<p class="txt">
+												단말기 구별 및 식별<br>
+												[단말기 권한 > 전화, 연락처 권한 등으로 표기]
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="se-ico ico-access file"></span>
+										<div class="cnt">
+											<div class="tit">저장공간</div>
+											<p class="txt">
+												이미지 데이터, 약관 등의 파일 저장
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="se-ico ico-access phone"></span>
+										<div class="cnt">
+											<div class="tit">전화</div>
+											<p class="txt">
+												회원가입 시 계정상태 등의 확인과 고객센터 전화 연결 등
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="se-ico ico-access camera"></span>
+										<div class="cnt">
+											<div class="tit">카메라</div>
+											<p class="txt">
+												서류 제출 시 사진 촬영 기능
+											</p>
+										</div>
+									</li>
+									<!-- //20220520 수정내역 : 목록 수정 -->
+								</ul>
+							</div>
+
+							<div class="access-conts">
+								<div class="title">
+									<span class="badge clr-02">선택 접근권한</span>
+								</div>
+								<ul class="list">
+									<!-- 20220520 수정내역 : 목록 수정 -->
+									<li>
+										<span class="se-ico ico-access picture opt"></span>
+										<div class="cnt">
+											<div class="tit">사진/미디어/파일</div>
+											<p class="txt">
+												서류 업로드 및 약관 조회
+											</p>
+										</div>
+									</li>
+									<li>
+										<span class="se-ico ico-access bio opt"></span>
+										<div class="cnt">
+											<div class="tit">바이오 정보</div>
+											<p class="txt">
+												바이오(생체정보)인증 로그인 이용
+											</p>
+										</div>
+									</li>	
+									<li>
+										<span class="se-ico ico-access alert"></span>
+										<div class="cnt">
+											<div class="tit">PUSH 알림</div>
+											<p class="txt">
+												신규 알림 및 공지사항 알림
+											</p>
+										</div>
+									</li>
+									<!-- //20220520 수정내역 : 목록 수정 -->	
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- 20220520 수정내역 : 텍스트 영역 추가 -->
+					<div class="section-full">
+						<div class="access-notice">
+							<div class="notice-sub">
+								<b>접근권한 변경안내</b>
+								<div class="text">
+									휴대전화 설정의 어플리케이션 관리 및 어플리케이션의 권한 설정에서 변경 가능합니다.
+								</div>
+							</div>
+							<div class="notice-main">
+								필수 권한을 허용해 주셔야 해당 앱을 이용하실 수 있습니다.<br>
+								필수항목 접근 권한 사용에 동의하시나요?
+							</div>
+						</div>
+					</div>
+					<!-- //20220520 수정내역 : 텍스트 영역 추가 -->
+				</div>
+
+			</div>
+
+			<!-- contents-bottom : 하단영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- 20220520 버튼 텍스트 변경 -->
+						<button type="button" class="se-btn btn-main-light size-s">거부(앱종료)</button>
+						<button type="button" class="se-btn btn-main">동의</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom : 하단영역 -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

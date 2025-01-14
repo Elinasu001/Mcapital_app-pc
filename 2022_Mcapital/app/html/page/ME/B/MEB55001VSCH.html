@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>상품선택</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">상품선택</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+				<div class="section">
+					
+					<div class="sp-formset nospace">
+						<h6 class="p-title">제휴사</h6><!-- 20220527 수정: 타이틀 -->
+						<button class="se-btn btn-link-box">
+							<span class="title">제휴사 선택</span><!-- 20220525 텍스트 수정 -->
+							<!-- 입력 후 -->
+							<!-- <span class="value">M캐피탈</span> -->
+						</button>
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">상품구분</h6>
+
+						<div class="sp-formgrid">
+							<div class="p-col">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">상품구분</div>
+									<select title="상품구분">
+										<option value="0" selected>전체 (N)</option>
+										<option value="1">신차 (N)</option>
+										<option value="2">중고차 (N)</option>
+										<option value="3">바이크 (N)</option>
+									</select>
+								</div>
+							</div>	
+							<div class="p-col">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">상품구분</div>
+									<!-- 상품구분 - 신차 -->
+									<select title="상품구분">
+										<option value="0" selected>전체 (N)</option>
+										<option value="1">신차운용리스 (N)</option>
+										<option value="2">신차금융리스 (N)</option>
+										<option value="3">신차할부 (N)</option>
+										<option value="4">신차장기렌터카 (N)</option>
+									</select>
+
+									<!-- 상품구분 - 중고차 일 경우 노출 -->
+									<!-- <select title="상품구분">
+										<option value="0" selected>전체 (N)</option>
+										<option value="1">중고할부 (N)</option>
+										<option value="2">중고오토론 (N)</option>
+										<option value="3">중고운용리스 (N)</option>
+										<option value="4">중고금융리스 (N)</option>
+									</select> -->
+
+									<!-- 상품구분 - 바이크 일 경우 노출 -->
+									<!-- <select title="상품구분">
+										<option value="0" selected>전체 (N)</option>
+										<option value="1">바이크운용리스 (N)</option>
+										<option value="2">바이크금융리스 (N)</option>
+										<option value="3">바이크할부 (N)</option>
+									</select> -->
+								</div>
+							</div>
+						</div>						
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">진행단계</h6>
+						
+						<div class="se-select" data-stove="select" data-uicase="slide">
+							<div class="e-hidden-title">진행단계</div>
+							<select title="진행단계">
+								<option value="0" selected>전체 (N)</option>
+								<option value="1">견적조회요청 (N)</option>
+								<option value="2">견적조회결과 (N)</option>
+								<option value="3">서류제출 (N)</option>
+								<option value="4">약정진행요청 (N)</option>
+								<option value="5">심사 중 (N)</option>
+								<option value="6">심사완료 (N)</option><!-- 20220325 텍스트 수정 -->
+								<option value="7">약정정보입력 (N)</option>
+								<option value="8">약정완료 (N)</option>
+								<option value="9">실행완료 (N)</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">기간</h6>
+
+						<div class="sp-formgrid ty-date">
+							<div class="p-col">
+								<!-- 20220520 수정내역: 날짜선택 마크업 수정 -->
+								<div class="se-date">
+									<input type="date" required title="최소기간" id="temp1" onchange="$(this).addClass('has-val')" onblur="if( $(this).val() == '') $(this).removeClass('has-val')">
+									<label for="temp1">최소 기간</label>
+								</div>
+							</div>	
+							<div class="p-sign va-hypen"></div>
+							<div class="p-col">
+								<!-- 20220520 수정내역: 날짜선택 마크업 수정 -->
+								<div class="se-date">
+									<input type="date" required title="최소기간" id="temp2" onchange="$(this).addClass('has-val')" onblur="if( $(this).val() == '') $(this).removeClass('has-val')">
+									<label for="temp2">최대 기간</label>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">						
+					<button type="button" class="se-btn btn-main">조회</button>
+				</div>		
+			</div>			
+		</div>
+		
+    </div>
+</div>
+<!-- //slide popup -->
+
+</body>
+</html>

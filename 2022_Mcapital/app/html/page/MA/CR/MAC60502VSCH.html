@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>검색조건</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">검색조건</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+                <div class="section-wrap">
+					<div class="section">
+
+						<div class="sp-formset nospace">
+							<div class="p-title-pack">
+								<h6 class="se-title">연료</h6>
+							</div>
+	
+							<div class="se-formtab ty-fix">
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd100" checked>
+									<label for="rd100">전체</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd101">
+									<label for="rd101">휘발유</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd102">
+									<label for="rd102">경유</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd103">
+									<label for="rd103">LPG</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd104">
+									<label for="rd104">하이브리드</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd105">
+									<label for="rd105">전기</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">가격대</h6>
+							</div>
+	
+							<div class="range-pack">
+								<!-- value -->
+								<div class="value clr-02">
+									<span class="range-val" id="lower1"></span>
+									<span class="sign">~</span>
+									<span class="range-val" id="upper1"></span>
+									만원 이상
+								</div>
+								<!-- range // 하단에 range 스크립트 있음 -->
+								<div id="range1" class="se-range"></div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<!-- 버튼 비활성화 시 disabled 추가 -->
+					<button type="button" class="se-btn btn-main">확인</button>
+				</div>		
+			</div>			
+		</div>
+
+    </div>
+</div>
+<!-- //slide popup -->
+
+<script>
+	// range js
+	var doubleSlider1 = document.querySelector('#range1');
+	noUiSlider.create(doubleSlider1, {
+		behaviour: 'tap-drag',
+		start: [0, 10000],
+		step: 1000,
+		connect: true,
+		range: {
+			'min': [0],
+			'max': [10000]
+		},
+	});
+
+	doubleSlider1.noUiSlider.on('update', function (values) {
+		document.getElementById('lower1').innerHTML = numberWithCommas(Math.floor(values[0]));
+		document.getElementById('upper1').innerHTML = numberWithCommas(Math.floor(values[1]));
+	});
+</script>
+
+</body>
+</html>

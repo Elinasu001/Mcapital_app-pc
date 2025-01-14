@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*
+	라이브러리
+*/
+
+// color
+$c01 : #4366c4;
+$c02 : #1b6dfa;
+
+
+
+// 아이콘 텍스트 날리기
+@mixin hidden {
+	overflow: hidden;
+	display: inline-block;
+	position: relative;	
+	border: 0;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+// 인풋 숨기기
+@mixin inputHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    margin-top: -1px;
+    padding: 0;
+    line-height: 0;
+    border: 0;
+    font-size: 0;
+    outline: none;
+    background: none;
+    appearance: none;
+}
+
+
+// ellipsis
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

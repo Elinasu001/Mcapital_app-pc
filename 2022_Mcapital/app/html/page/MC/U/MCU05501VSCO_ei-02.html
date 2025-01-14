@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>주소검색</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<div class="popup-title">주소검색</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section">
+
+					<div class="sp-tabset">
+						<ul class="se-tabbtn ty-main">
+							<!-- on -->
+							<li class="on">
+								<button type="button" class="se-btn">도로명</button>
+							</li>
+							<li>
+								<button type="button" class="se-btn">지번명</button>
+							</li>
+						</ul>
+
+						<ul class="p-tab-panel">
+							<!-- on -->
+							<li class="on">
+								<div class="search-address-wrap">
+									<div class="search-address-conts">
+	
+										<div class="sp-formset">
+											<div class="sp-formgrid">
+												<div class="p-col-8">
+													<div class="se-select" data-stove="select" data-uicase="slide">
+														<div class="e-hidden-title">시/도 선택</div>
+														<select required="" title="시/도 선택">
+															<option value="" hidden="">시/도 선택</option>
+															<option value="0" selected>서울특별시</option>
+														</select>	
+													</div>
+												</div>	
+												<div class="p-col-8">
+													<div class="se-select" data-stove="select" data-uicase="slide">
+														<div class="e-hidden-title">시/군/구 선택</div>
+														<select required="" title="시/군/구 선택">
+															<option value="" hidden="">시/군/구 선택</option>
+															<option value="0" selected>강남구</option>
+														</select>	
+													</div>
+												</div>
+											</div>
+										</div>
+	
+										<div class="sp-formset">	
+											<div class="se-textfld" data-fld-clear="on">	
+												<input type="text" placeholder="도로명/건물명 입력" value="도산대로 8" title="도로명/건물명 입력">	
+												<span class="e-back">
+													<button type="button" class="se-btn btn-solid-point size-xs">검색</button><!--  수정내역 : 클래스수정(.btn-solid -> .btn-solid-point ) -->
+												</span>
+											</div>	
+										</div>
+									</div>
+
+									<div class="search-result-conts">
+
+										<!-- 검색 후 - 결과 있음 -->
+										<div class="conts">
+											<h5 class="se-title">검색결과 <span class="num">3</span></h5>
+											<ul class="list">
+												<li>
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<span class="se-badge ty-normal clr-01">도로명</span>
+															<span class="text">서울특별시 강남구 도산대로 306</span>
+														</span>
+														<span class="row">
+															<span class="se-badge ty-normal clr-02">지번</span>
+															<span class="text gry-01">서울시 강남구 논현동 91-3</span>
+														</span>
+														<span class="row">
+															<span class="se-badge ty-normal clr-02">우편번호</span>
+															<span class="text gry-01">06054</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<span class="se-badge ty-normal clr-01">도로명</span>
+															<span class="text">서울특별시 강남구 도산대로 306</span>
+														</span>
+														<span class="row">
+															<span class="se-badge ty-normal clr-02">지번</span>
+															<span class="text gry-01">서울시 강남구 논현동 91-3</span>
+														</span>
+														<span class="row">
+															<span class="se-badge ty-normal clr-02">우편번호</span>
+															<span class="text gry-01">06054</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<span class="se-badge ty-normal clr-01">도로명</span>
+															<span class="text">서울특별시 강남구 도산대로 306</span>
+														</span>
+														<span class="row">
+															<span class="se-badge ty-normal clr-02">지번</span>
+															<span class="text gry-01">서울시 강남구 논현동 91-3</span>
+														</span>
+														<span class="row">
+															<span class="se-badge ty-normal clr-02">우편번호</span>
+															<span class="text gry-01">06054</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+			
+										<!-- 검색 후 - 결과 없음 -->
+										<div class="conts">
+											<div class="noresult">
+												<span class="se-ico ico-caution-gray"></span>
+												<h4 class="se-title">조회된 내역이 없습니다</h4>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</li>
+							<li>CONTS2</li>
+						</ul>
+					</div>
+					
+				</div> 				      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+    </div>
+
+
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

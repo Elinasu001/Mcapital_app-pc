@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>공동인증서 관리</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				공동인증서 관리
+			</div>
+			<!-- <div class="right">
+				
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+                <div class="section">
+                    <div class="cert-conts-pack ty-edit">
+                        <ul class="cert-list">
+                            <li>
+                                <div class="btn-cert-info ty-edit">
+                                    <span class="se-ico ico-cert-confirm"></span>
+                                    <span class="info">
+                                        <span class="row">
+                                            <span class="name">홍길동</span>
+                                        </span>
+                                        <span class="row">
+                                            <span class="text">Yessign</span>
+                                            <span class="text side">개인</span>
+                                        </span>
+                                        <span class="row">
+                                            <span class="text">
+                                                만료일 <span class="date">2022.12.30</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="btn-wrap">
+                                        <button type="button" class="se-btn btn-solid-line">비밀번호 변경</button>
+                                        <button type="button" class="se-btn btn-solid-line">삭제</button>
+                                    </div>
+                                <div>
+
+                            </li>
+                            <li>
+                                <div class="btn-cert-info ty-edit">
+                                    <span class="se-ico ico-cert-caution"></span>
+                                    <span class="info">
+                                        <span class="row">
+                                            <span class="name">홍길동</span>
+                                            <span class="status caution">만료</span>
+                                        </span>
+                                        <span class="row">
+                                            <span class="text">Yessign</span>
+                                            <span class="text side">개인</span>
+                                        </span>
+                                        <span class="row">
+                                            <span class="text">
+                                                만료일 <span class="date">2021.12.30</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="btn-wrap">
+                                        <button type="button" class="se-btn btn-solid-line">삭제</button>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- S : 공동인증서없는 경우, 노출-->
+                    <!-- <div class="noresult space-m">
+                        <span class="se-ico process-type sys-error"></span>
+                        <h3 class="se-title">저장된 인증서가 없습니다.</h3>
+                    </div> -->
+                    <!-- E : 공동인증서없는 경우, 노출-->
+                </div>
+			</div>
+			<!-- //contents-inner -->
+
+            <!-- contents-bottom : 하단 영역 -->
+            <!-- S : 공동인증서없는 경우, 노출-->
+			<!-- <div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<button type="button" class="se-btn btn-main">가져오기</button>
+					</div>
+				</div>
+			</div> -->
+            <!-- E : 공동인증서없는 경우, 노출-->
+			<!-- //contents-bottom -->
+
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

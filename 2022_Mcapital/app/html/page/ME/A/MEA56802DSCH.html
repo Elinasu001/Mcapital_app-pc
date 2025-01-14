@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>업무진행현황상세</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+        <div class="popup-header">			  
+			<div class="popup-title">업무진행현황상세</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-jumbotron">
+						<div class="jumbotron-badge">
+							<span class="se-badge ty-normal clr-01">약정완료</span>
+						</div>
+						<h3 class="se-title">
+							<span>김겨울</span> 고객님의<br>
+							약정정보 입력이 완료되었습니다.
+						</h3>
+					</div>
+					<div class="section nospace">
+						<div class="conts-part space-m">
+							<div class="newrent-jumbotron">
+								<div class="main-info">
+									<div class="col">
+										<div class="title">
+											그랜저 IG
+										</div>
+										<div class="text">
+											111허 5186
+										</div>
+										<div class="term">
+											<span>2021.12.04</span>
+											<span class="dash">~</span>
+											<span>2022.01.12</span>
+										</div>
+									</div>
+									<div class="col-right">
+										<div class="img-pack">
+											<img src="../../../../resource/image/contents/img_newrent.png" alt="상품별이미지">
+										</div>
+									</div>
+								</div>
+                                <div class="sub-info">
+                                    <div class="progress-bar clr-02">
+                                        <div class="bar" style="width: 30%"></div>
+                                    </div>
+                                    <div class="text"><span class="fw-900"><span>4</span>회차</span> 납부예정</div>
+                                </div>
+							</div>
+
+						</div>
+					</div>
+
+					<hr class="section-linebar">
+					
+					<div class="section-full">
+						<div class="sp-tabset">
+							<ul class="se-tabbtn ty-line" data-fixed="on"><!-- 20220520 수정내역: 탭고정기능 추가 -->
+								<li>
+									<button type="button" class="se-btn">약정정보</button>
+								</li>
+								<li>
+									<button type="button" class="se-btn">자동차보험</button>
+								</li>
+								<li class="on"><!-- on -->
+									<button type="button" class="se-btn">정비/사고</button>
+								</li>
+								<li>
+									<button type="button" class="se-btn">반납/매입</button><!-- 20220525 텍스트 수정 -->
+								</li>
+							</ul>
+							<ul class="p-tab-panel">
+                                <li>CONTS1</li>
+								<li>CONTS2</li>
+								<!-- S : 정비/사고 -->
+								<li class="on"><!-- on -->
+                                    <div class="tab-section">
+                                        <!-- 두번째 탭 -->
+                                        <div class="sp-tabset">
+                                            <ul class="se-tabbtn ty-main">
+                                                <li>
+                                                    <button type="button" class="se-btn">가입상품</button>
+                                                </li>
+                                                <li class="on"><!-- on -->
+                                                    <button type="button" class="se-btn">범칙금내역</button>
+                                                </li>	
+                                            </ul>
+                                            <ul class="p-tab-panel">
+                                                <li>conts1</li>
+                                                <!-- on -->
+                                                <li class="on">
+                                                    <div class="conts-part">
+                                                        <ul class="penalty-list">
+                                                            <li>
+                                                                <div class="col">
+                                                                    <div class="date">2022.02.02 15:37</div>
+                                                                    <div class="title">통행료(하이패스)</div>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="amount">
+                                                                        <span class="val">32,000</span>
+                                                                        <span class="unit">원</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="col">
+                                                                    <div class="date">2022.02.02 15:37</div>
+                                                                    <div class="title">통행료(하이패스)</div>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="amount">
+                                                                        <span class="val">32,000</span>
+                                                                        <span class="unit">원</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="col">
+                                                                    <div class="date">2022.02.02 15:37</div>
+                                                                    <div class="title">통행료(하이패스) 통행료  통행료 통행료 통행료 통행료 통행료</div>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="amount">
+                                                                        <span class="val">32,000</span>
+                                                                        <span class="unit">원</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="col">
+                                                                    <div class="date">2022.02.02 15:37</div>
+                                                                    <div class="title">통행료(하이패스)</div>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="amount">
+                                                                        <span class="val">32,000</span>
+                                                                        <span class="unit">원</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="col">
+                                                                    <div class="date">2022.02.02 15:37</div>
+                                                                    <div class="title">통행료(하이패스)</div>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="amount">
+                                                                        <span class="val">32,000</span>
+                                                                        <span class="unit">원</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="col">
+                                                                    <div class="date">2022.02.02 15:37</div>
+                                                                    <div class="title">통행료(하이패스)</div>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="amount">
+                                                                        <span class="val">32,000</span>
+                                                                        <span class="unit">원</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //두번째 탭 -->
+    
+                                    </div>
+								</li>
+								<!-- E : 정비/사고 -->
+								<li>CONTS4</li>
+							</ul>
+						</div>
+					</div>				
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+<script>
+	// 20220520 수정내역: 풀팝업 - 탭고정기능 추가
+	tabFix.fullPopInit();
+</script>
+
+</body>
+</html>

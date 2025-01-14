@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>반환자동차 평가 및 가치감가비용</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+
+	<div class="popup-layer">
+
+        <div class="popup-header">			
+			<div class="popup-title">반환자동차 평가 및 가치감가비용</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-jumbotron">						
+						<h3 class="se-title">
+							감가금액 = 반환시점의 자동차의 기대가치(혹은 중고차시세) X 감가율의 합<br>
+                            감가비 산정기준은 홈페이지 등에 예시
+						</h3>
+					</div>
+
+					<hr class="linebar">
+
+					<div class="section">
+						<div class="conts-part space-m">
+							<div class="terms-conts-pack">
+								<div class="conts">
+									<div class="title">반환자동차의 평가 및 감가비용</div>
+									<div class="text">
+										고객님이 리스계약기간내 중도해지 또는 만료 시 자동차를 반환하는 경우 반환 자동차의 상태∙성능을 평가하여 가치 감가사유가 있을 때에는 고객에게 설명하고 동의를 받은 후 그 금액을 청구하기로 합니다. 고객이 제1항의 평가결과에 이의가 있을 경우에는 금융회사와 고객의 상호협의하여 정한 별도의 평가기관에 의한 평가결과를 참고할 수 있습니다.(금융회사는 사전에 감가율에 대하여 홈페이지 등에 예시할 수 있으며 근거 및 설명자료를 제시합니다.)
+									</div>
+                                </div>
+                                <div class="conts">
+									<div class="title">반환물건의 평가 및 가치감가 비용</div>
+									<div class="text">
+										고객이 물건을 반환하는 경우 반환차량의 상태, 성능을 평가하여 사고 등으로 가치감가사유가 있을 때에는 고객에게  설명하고 동의를 받은 후 그 금액을 청구하기로 합니다.
+									</div>
+									<ul class="sp-bullet-list ty-circle">
+                                        <li>
+                                            감가금액 = 반환시점의 물건 기대가치* X 감가율 **의 합
+											<ul class="sp-bullet-list ty-star">
+												<li>
+													자동차의 경우 평가는 시가표준액 차량종류별 기준가격표를 기준으로 합니다.
+												</li>
+												<li class="two">
+													가치감가율 : 물건의 감가율은 금융회사 홈페이지나 약정서 등을 참고하여 주시기 바랍니다.
+												</li>
+											</ul>
+                                        </li>
+                                        <li>
+                                            예시) 반환자동차의 가치평가가 15백만원, 차량 부위별 감가가 4%인 경우 반환자동차의 평가 15,000,000원X감가율 4% = 600,000원
+                                        </li>
+                                        <li>
+                                            감가금액 : 반환 시점의 자동차의 기대가치(혹은 중고차시세)X감가율의 합
+                                        </li>
+                                        <li>
+                                            가치감가 적응표(잔가기준)
+											<div class="sp-tbl ty-view">
+												<table>
+													<caption>가치감가 적응표(잔가기준)</caption>
+													<colgroup>
+														<col style="width: 28%">
+														<col style="width: 24%;">
+														<col style="width: 24%;">
+														<col style="width: 24%;">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col" rowspan="2">항목</th>
+															<th scope="col" colspan="3">개월별 감가율</th>
+														</tr>
+														<tr>
+															<th scope="col">23개월 이하</th>
+															<th scope="col">24~47개월</th>
+															<th scope="col">48개월 이상</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>				
+															<th scope="row">후드, 트렁크</th>
+															<td>4.0%</td>
+															<td>6.0%</td>
+															<td>7.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">프론트패널</th>
+															<td>4.0%</td>
+															<td>6.0%</td>
+															<td>7.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">리어패널</th>
+															<td>5.0%</td>
+															<td>7.0%</td>
+															<td>8.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">앞 휀더</th>
+															<td>3.0%</td>
+															<td>4.0%</td>
+															<td>5.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">루프 패널</th>
+															<td>7.0%</td>
+															<td>9.0%</td>
+															<td>10.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">트렁크 플로어 패널</th>
+															<td>6.0%</td>
+															<td>8.0%</td>
+															<td>9.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">쿼터 패널</th>
+															<td>5.0%</td>
+															<td>7.0%</td>
+															<td>8.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">인사이드 패널</th>
+															<td>3.5%</td>
+															<td>5.0%</td>
+															<td>6.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">앞문, 뒷문</th>
+															<td>3.0%</td>
+															<td>4.0%</td>
+															<td>5.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">A/B/C 필러</th>
+															<td>3.5%</td>
+															<td>5.0%</td>
+															<td>6.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">앞/뒤 휠하우스</th>
+															<td>7.0%</td>
+															<td>9.0%</td>
+															<td>10.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">사이드 씰</th>
+															<td>3.5%</td>
+															<td>5.0%</td>
+															<td>6.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">데쉬판넬</th>
+															<td>3.5%</td>
+															<td>5.0%</td>
+															<td>6.0%</td>
+														</tr>
+														<tr>				
+															<th scope="row">도장</th>
+															<td>실비정산</td>
+															<td>실비정산</td>
+															<td>실비정산</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+                                        </li>
+                                    </ul>
+                                </div>
+							</div>
+							
+						</div>
+						<div class="conts-part">
+                            <p class="text">
+                                상기 내용을 확인 하였습니다.
+                            </p>
+                        </div>
+					</div>
+				</div>		 	      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>						
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">			
+				<div class="btn-wrap">	
+					<button type="button" class="se-btn btn-main">
+						확인
+					</button>					
+				</div>
+			</div>			
+		</div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

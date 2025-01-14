@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>은행명</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+</div>
+<!-- E : layout -->
+
+<!-- slide popup -->
+<!-- 팝업 open시에 슬라이드 애니메이션 클래스(.slide-up) 추가 -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">은행명 선택</div>
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents tab">
+				<ul class="se-tabbtn ty-main">  
+					<li class="on" data-tab="tab-cont01"><button type="button" class="se-btn">은행</button></li>
+					<li data-tab="tab-cont02"><button type="button" class="se-btn">증권사</button></li>
+				</ul>
+                <div id="tab-cont01" class="section">
+                    <ul class="bank-slt-list">
+                        <li>
+                            <button type="button" class="se-btn bank bank-004">
+                                <span class="name">국민은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-003">
+                                <span class="name">기업은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-011">
+                                <span class="name">농협은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-088">
+                                <span class="name">신한은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-020">
+                                <span class="name">우리은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-081">
+                                <span class="name">하나은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-027">
+                                <span class="name">한국씨티은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-023">
+                                <span class="name">sc제일은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-039">
+                                <span class="name">경남은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-034">
+                                <span class="name">광주은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-031">
+                                <span class="name">DGB대구은행</span>
+                            </button>
+                        </li> <!--// 20220520 수정내역: 항목순서변경  -->
+						<li>
+                            <button type="button" class="se-btn bank bank-055">
+                                <span class="name">도이치은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-032">
+                                <span class="name">부산은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-061">
+                                <span class="name">비엔피파리바은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-064">
+                                <span class="name">산림조합</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-002">
+                                <span class="name">산업은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-045">
+                                <span class="name">새마을금고</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-008">
+                                <span class="name">수출입은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-007">
+                                <span class="name">수협</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-048">
+                                <span class="name">신협</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-071">
+                                <span class="name">우체국</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-050">
+                                <span class="name">저축은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-037">
+                                <span class="name">전북은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-035">
+                                <span class="name">제주은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-067">
+                                <span class="name">중국건설은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-062">
+                                <span class="name">중국공상은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-063">
+                                <span class="name">중국은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-012">
+                                <span class="name">지역농축협</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-090">
+                                <span class="name">카카오뱅크</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-089">
+                                <span class="name">케이뱅크</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-092">
+                                <span class="name">토스뱅크</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-060">
+                                <span class="name">BOA(뱅크오브아메리카)</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-054">
+                                <span class="name">HSBC은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-057">
+                                <span class="name">JP모간체이스은행</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-041">
+                                <span class="name">우리카드</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div><!--//tab-cont01 section-->
+
+				<div id="tab-cont02" class="section dp-none">
+					 <ul class="bank-slt-list">
+                        <li>
+                            <button type="button" class="se-btn bank bank-261">
+                                <span class="name">교보증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-227">
+                                <span class="name">다올투자증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-267">
+                                <span class="name">대신증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-287">
+                                <span class="name">메리츠증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-238">
+                                <span class="name">미래에셋증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-290">
+                                <span class="name">부국증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-240">
+                                <span class="name">삼성증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-221">
+                                <span class="name">상상인증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-291">
+                                <span class="name">신영증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-278">
+                                <span class="name">신한투자증권</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank bank-209">
+                                <span class="name">유안타증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-280">
+                                <span class="name">유진투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-265">
+                                <span class="name">이베스트투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-288">
+                                <span class="name">카카오페이증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-292">
+                                <span class="name">케이프투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-264">
+                                <span class="name">키움증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-271">
+                                <span class="name">토스증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-270">
+                                <span class="name">하나증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-262">
+                                <span class="name">하이투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-243">
+                                <span class="name">한국투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-294">
+                                <span class="name">한국포스증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-269">
+                                <span class="name">한화투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-263">
+                                <span class="name">현대차증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-224">
+                                <span class="name">BNK증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-225">
+                                <span class="name">IBK투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-279">
+                                <span class="name">DB금융투자</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-218">
+                                <span class="name">KB증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-247">
+                                <span class="name">NH투자증권</span>
+                            </button>
+                        </li>
+						<li>
+                            <button type="button" class="se-btn bank bank-266">
+                                <span class="name">SK증권</span>
+                            </button>
+                        </li>
+                    </ul>
+				</div><!--//tab-cont02 section-->
+            </div>			
+        </div><!--//popup-container-->       
+    </div>
+</div>
+<!-- //slide popup -->
+
+<script>
+//퍼블 확인용 - tab
+$(".se-tabbtn > li").click(function(){
+	var tabCont = $(this).attr("data-tab");
+	$(this).siblings().removeClass("on");
+	$(this).addClass("on");
+	$(this).closest("ul").siblings().addClass("dp-none");
+	$("#" + tabCont).removeClass("dp-none");
+});
+</script>
+</body>
+</html>

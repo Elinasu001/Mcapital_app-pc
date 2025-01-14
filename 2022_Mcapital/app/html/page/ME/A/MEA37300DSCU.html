@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>고객상담</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				고객상담 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+                <div class="section">
+                    <div class="sp-formset">
+                        <h6 class="p-title nospace">이름</h6>
+                        <div class="se-textfld" data-fld-clear="on">	
+                            <input type="text" placeholder="이름 입력" value="" title="이름 입력">	
+                        </div>
+                        <!-- 에러시, 노출 -->
+                        <!-- <p class="p-error-msg">잘못된 정보입니다. 확인 후 다시 입력해주세요.</p> -->
+                    </div>
+                    <div class="sp-formset">
+                        <h6 class="p-title">E-mail</h6>
+                        <div class="se-textfld" data-fld-clear="on">	
+                            <input type="email" placeholder="E-mail 입력" value="" title="E-mail 입력">	
+                        </div>
+                        <!-- 에러시, 노출 -->
+                        <!-- <p class="p-error-msg">잘못된 정보입니다. 확인 후 다시 입력해주세요. </p> -->
+                        <p class="p-info-msg">답변 받기 원하는 E-mail을 적어주세요.
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="section-linebar">
+                
+                <div class="section">
+                    <div class="sp-formset">
+                        <h6 class="p-title">제목</h6>
+                        <div class="se-textfld" data-fld-clear="on">	
+                            <input type="text" placeholder="50자 미만 입력" value="" title="제목 입력">	
+                        </div>
+                    </div>
+                    <div class="sp-formset">
+                        <h6 class="p-title">문의내용</h6>
+                        <div class="se-textarea">
+                            <textarea placeholder="2000자 이내 입력"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<button type="button" class="se-btn btn-main" disabled>문의</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

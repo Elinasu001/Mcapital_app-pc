@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>Text Field 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../../z_eilab/template/guide/guide.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; Text Field &gt;</h1>
+
+<!-- <div class="example_box">
+	<div class="ex_title">title h2~h6</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_wrap">
+			<div class="source_code">
+소스
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div> -->
+
+
+<div class="example_box">
+	<div class="ex_title">text field</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.se-textfld</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="text" placeholder="placeholder" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">value</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" placeholder="placeholder" value="value" title=""/>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">readonly</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" placeholder="placeholder" value="readonlyreadonlyreadonly" readonly="readonly" title=""/>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">disabled</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" placeholder="placeholder" value="disabled111" disabled="disabled" title=""/>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">에러</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" class="has-error" placeholder="placeholder" value="error" title=""/>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_title">other type</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">url</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="url" placeholder="type url" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">password</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="password" placeholder="type password" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">search</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="search" placeholder="type search" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">email</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="email" placeholder="type email" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">number</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="number" placeholder="type number" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">tel</span><span class="class_name"></span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="tel" placeholder="type tel" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">text align</span><span class="class_name">.tac</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld tac">	
+	<input type="text" placeholder="placeholder" value="align center" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">text align</span><span class="class_name">.tar</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld tar">	
+	<input type="text" placeholder="placeholder" value="align center" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+</div>
+
+<div class="example_box">
+	<div class="ex_title">input + text & etc</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.se-textfld > (.e-front + .e-back) </span></div>
+		<div class="etc_info_wrap">금액입력/숫자 등 오른쪽 정렬이 필요한 경우 -> data-fld-align="right" 추가</div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="text" placeholder="placeholder" value="" />	
+	<span class="e-back">
+		<button type="button" class="se-btn btn-solid-point size-xs">확인</button>
+	</span>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">default</span><span class="class_name"></span></div> -->
+		<!-- <div class="etc_info_wrap">금액입력/숫자 등 오른쪽 정렬이 필요한 경우 -> data-fld-align="right" 추가</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">	
+	<input type="text" placeholder="placeholder" value="" />
+	<span class="e-back">
+		<span class="time">2:59</span>
+		<button type="button" class="se-btn btn-solid-point size-xs">확인</button>
+	</span>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">default</span><span class="class_name"></span></div> -->
+		<!-- <div class="etc_info_wrap">금액입력/숫자 등 오른쪽 정렬이 필요한 경우 -> data-fld-align="right" 추가</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld" data-fld-align="right">	
+	<input type="text" placeholder="placeholder" value="" />
+	<span class="e-back">
+		<span class="unit">개월</span>
+	</span>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">default</span><span class="class_name"></span></div> -->
+		<!-- <div class="etc_info_wrap">금액입력/숫자 등 오른쪽 정렬이 필요한 경우 -> data-fld-align="right" 추가</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld" data-fld-align="right">
+	<span class="e-front">
+		<span class="unit">약</span>
+	</span>
+	<input type="text" placeholder="placeholder" title=""/>
+	<span class="e-back">
+		<span class="unit">원</span>
+	</span>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>	
+</div>
+
+<div class="example_box">
+	<div class="ex_title">input + input clear</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">input-clear</span><span class="class_name">.se-textfld</span></div>
+		<!-- <div class="etc_info_wrap">**has-value 관련 js 필요</div> -->
+
+
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld" data-fld-clear="on">		
+	<input type="text" placeholder="placeholder" value="" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">input-clear</span><span class="class_name">.se-textfld</span></div> -->
+		<!-- <div class="etc_info_wrap">**has-value 관련 js 필요</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld" data-fld-clear="on">		
+	<input type="text" placeholder="placeholder" value="value" title=""/>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<!-- <div class="ex_info_wrap"><span class="name">input-clear</span><span class="class_name">.se-textfld</span></div> -->
+		<!-- <div class="etc_info_wrap">**has-value 관련 js 필요</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld" data-fld-clear="on">		
+	<input type="text" placeholder="placeholder" value="" title=""/>
+	<span class="e-back">
+		<span class="time">2:59</span>
+		<button type="button" class="se-btn btn-solid-point size-xs">확인</button>
+	</span>	
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">input - password masking</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.se-textfld.input-pw > .e-masking</span></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld ty-pw">	
+	<input type="text" placeholder="" value="" maxlength="1"/>	
+	<div class="e-masking">
+		<span class="sign"></span>
+		<span class="sign"></span>
+		<span class="sign"></span>
+		<span class="sign"></span>
+		<span class="sign"></span>
+		<span class="sign"></span>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<!-- E : layout -->
+
+<!-- zEiLAB - Guide(가이드에만 선언) -->
+<script src="../../../../z_eilab/template/guide/guide.js"></script>
+
+
+</body>
+</html>

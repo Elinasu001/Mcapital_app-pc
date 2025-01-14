@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>M Capital</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">중도반납신청</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+                <div class="section">
+
+                    <div class="sp-formset nospace"><!-- 20220525 수정내역: 클래스추가('nospace') -->
+                        <h6 class="se-title">중도반납일시</h6><!-- 20220525 수정내역: 타이틀 수정 -->
+
+                        <!-- 20220525 수정내역: 중도반납일시 수정 -->
+                        <div class="sp-formgrid ty-fix2"><!-- 20220531 수정: 클래스 추가('ty-fix2')-->
+                            <div class="p-col">
+                                <div class="se-date">
+                                    <input type="date" required title="날짜선택" id="temp2" onchange="$(this).addClass('has-val')" onblur="if( $(this).val() == '') $(this).removeClass('has-val')">
+                                    <label for="temp2">YYYY.MM.DD</label><!-- 20220531 수정: 가이드문구 -->
+                                </div>
+                            </div>
+                            <div class="p-col">
+                                <!-- 20220520 수정내역: 시간선택 마크업 수정 -->
+                                <div class="se-date">
+                                    <input type="time" required title="시간선택" id="temp3" onchange="$(this).addClass('has-val')" onblur="if( $(this).val() == '') $(this).removeClass('has-val')">
+                                    <label for="temp3">HH.MM</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 20220525 수정내역: 중도반납일시 수정 -->
+                    </div>
+
+                    <div class="sp-formset"><!-- 20220520 수정내역: 클래스삭제('nospace') -->
+                        <h6 class="se-title">반납장소</h6>
+
+                        <button type="button" class="se-btn btn-link-box"><!-- 20220525 수정내역: 가이드문구 수정 -->
+                            <span class="title">
+                                주소선택
+                            </span>
+
+                            <!-- 값입력시 노출 -->
+                            <!-- <span class="value">주소</span> -->
+                        </button>
+                    </div>
+
+                    <div class="sp-formset">
+                        <h6 class="se-title">담당자</h6>
+
+                        <div class="se-textfld" data-fld-clear="on">	
+                            <input type="text" placeholder="담당자명 입력" value="" title="담당자 입력">	
+                        </div>
+                        <p class="p-info-msg">반납 시 차량 상태 확인 담당자를 입력하시면 됩니다.</p>
+                    </div>
+
+                    <div class="sp-formset">
+                        <h6 class="se-title">전화번호</h6>
+
+                        <div class="se-textfld" data-fld-clear="on">	
+                            <input type="tel" placeholder="전화번호 입력" value="" title="전화번호 입력">	
+                        </div>
+                    </div>
+
+                    <div class="sp-formset">
+                        <h6 class="se-title">운행거리</h6>
+
+                        <div class="se-textfld" data-fld-clear="on" data-fld-align="right"><!-- 20220520 수정내역: data attr 추가 -->
+                            <input type="number" placeholder="운행거리 입력" value="" title="운행거리 입력">
+                            <span class="e-back">
+                                <span class="unit">km
+                                </span>
+                            </span>	
+                        </div>
+                    </div>
+
+                    <div class="se-chkbx ty-row"><!-- 20220520 수정내역: 체크박스 문구 추가 -->
+                        <input type="checkbox" name="ex00" id="chk2">
+                        <label for="chk2">상기 내용에 동의하며 <span>2021년 1월 7일</span>자로 차량 중도반납을 신청합니다.
+                        </label>
+                    </div>
+				</div>
+
+           
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+        <div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<!-- 버튼 활성화 시 disabled 삭제 -->
+					<button type="button" class="se-btn btn-main" disabled>다음</button>
+				</div>		
+			</div>			
+		</div>
+    </div>
+</div>
+<!-- //slide popup -->
+
+
+</body>
+</html>

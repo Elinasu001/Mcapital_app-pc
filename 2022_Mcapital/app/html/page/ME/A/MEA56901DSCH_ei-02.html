@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>업무진행현황상세</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+        <div class="popup-header">			  
+			<div class="popup-title">업무진행현황상세</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-jumbotron">
+						<div class="jumbotron-badge">
+							<span class="se-badge ty-normal clr-01">약정완료</span>
+						</div>
+						<h3 class="se-title">
+							<span>김겨울</span> 고객님의<br>
+							약정정보 입력이 완료되었습니다.
+						</h3>						
+					</div>
+					<div class="section nospace">
+						<div class="conts-part space-m">
+							<div class="newrent-jumbotron">
+								<div class="main-info">
+									<div class="col">
+										<div class="title">
+											그랜저 IG
+										</div>
+										<div class="text">
+											111허 5186
+										</div>
+										<div class="term">
+											<span>2021.12.04</span>
+											<span class="dash">~</span>
+											<span>2022.01.12</span>
+										</div>
+									</div>
+									<div class="col-right">
+										<div class="img-pack">
+											<img src="../../../../resource/image/contents/img_newrent.png" alt="상품별이미지">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<hr class="section-linebar">
+					
+					<div class="section-full">
+						<div class="sp-tabset">
+							<ul class="se-tabbtn ty-line" data-fixed="on"><!-- 20220520 수정내역: 탭고정기능 추가 -->
+								<li>
+									<button type="button" class="se-btn">약정정보</button>
+								</li>
+								<li>
+									<button type="button" class="se-btn">자동차보험</button>
+								</li>
+								<li>
+									<button type="button" class="se-btn">정비/사고</button>
+								</li>
+								<li class="on"><!-- on -->
+									<button type="button" class="se-btn">반납/매입</button><!-- 20220525 텍스트 수정 -->
+								</li>
+							</ul>
+							<ul class="p-tab-panel">
+                                <li>CONTS1</li>
+								<li>CONTS2</li>
+								<li>CONTS3</li>
+								<!-- S : 반납 -->
+								<li class="on"><!-- on -->
+                                    <div class="tab-section">
+                                        <div class="title-part">
+                                            <div class="title">만기매입(양수)신청 정보가 도착했습니다.</div><!-- 20220408 텍스트 수정 -->
+                                            <!-- 승인/거절 시 메시지 -->
+                                            <!-- <div class="title">만기매입(양수)신청 거절이 완료했습니다. <span class="result-date">(2022.00.00)</span></div> -->
+                                        </div>
+                                        
+                                        <div class="conts-part">
+                                            <h6 class="se-title">만기매입(양수)정보</h6>
+                                            
+                                            <div class="sp-tbl ty-box">
+                                                <table>
+                                                    <caption>만기매입(양수)정보</caption>
+                                                    <colgroup>
+                                                        <col style="width: 40%;">
+                                                        <col style="width: 60%;">		
+                                                    </colgroup>		
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">신청일</th>
+                                                            <td>2022.01.07</td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">신청서 수취주소</th>
+                                                            <td>
+                                                                서울시 강남구 역삼동 111-1
+                                                            </td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">등본상 주소</th>
+                                                            <td>
+                                                                서울시 강남구 역삼동 111-1
+                                                            </td>			
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="conts-part">
+                                            <h6 class="se-title">기본정보</h6>
+                                            <div class="sp-tbl ty-box-line">
+                                                <table>
+                                                    <caption>기본정보</caption>
+                                                    <colgroup>
+                                                        <!-- 20220615 수정:  col넓이-->
+                                                        <col style="width: 40%;">
+                                                        <col style="width: 60%;">		
+                                                    </colgroup>		
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">차량번호</th>
+                                                            <td>111허 1111</td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">차종</th>
+                                                            <td>그랜저 IG</td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">고객명</th>
+                                                            <td>김겨울</td>			
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="conts-part">
+                                            <h6 class="se-title">계약사항</h6>
+
+                                            <div class="sp-tbl ty-box-line">
+                                                <table>
+                                                    <caption>계약사항</caption>
+                                                    <colgroup>
+                                                        <col style="width: 40%;">
+                                                        <col style="width: 60%;">		
+                                                    </colgroup>		
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">렌탈실행일</th>
+                                                            <td>2018.12.28</td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">렌탈만기일</th>
+                                                            <td>2023.03.28</td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">등록명의</th>
+                                                            <td>당사</td>			
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="section-linebar">
+
+                                    <div class="section">
+                                        <div class="conts-part">
+                                            <h6 class="se-title">만기정산내역</h6>
+
+                                            <div class="sp-tbl ty-box has-tfoot">
+                                                <table>
+                                                    <caption>만기정산내역</caption>
+                                                    <colgroup>
+                                                        <col style="width: 50%;">
+                                                        <col style="width: 50%;">		
+                                                    </colgroup>		
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">보증금<span class="circle-num">1</span></th>
+                                                            <td>16,676,000 원</td>			
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">잔존가치<span class="circle-num">2</span></th>
+                                                            <td>24,180,200 원</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">범칙금예치금<span class="circle-num">3</span></th>
+                                                            <td>300,000 원</td>			
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>합계 <span class="circle-num">3</span>+<span class="circle-num">2</span>-<span class="circle-num">1</span></th>
+                                                            <td class="fw-bold">7,804,200 원</td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                            <ul class="sp-bullet-list ty-circle">
+                                                <li>만기일 내에 미입금시 본계약에서 정한 연체이자율로 반영되오니 유의바랍니다.</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 만기매입 거절 후 -->
+                                        <!-- <div class="conts-part deep">
+                                            <h5 class="se-title fw-normal">2022.01.07 만기매입 거절완료 했습니다.
+                                            </h5>
+                                        </div> -->
+
+                                        <!-- 만기매입 승인 후 -->
+                                        <!-- <div class="conts-part deep">
+                                            <h5 class="se-title fw-normal">2022.01.07 만기매입 승인완료 했습니다.
+                                            </h5>
+                                        </div> -->
+                                    </div>
+								</li>
+								<!-- E : 반납 -->
+							</ul>
+						</div>
+					</div>				
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">	
+                <div class="btn-wrap">	
+					<button type="button" class="se-btn btn-main-light size-s">거절</button>
+					<button type="button" class="se-btn btn-main">승인</button>
+				</div>			
+			</div>			
+		</div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+<script>
+	// 20220520 수정내역: 풀팝업 - 탭고정기능 추가
+	tabFix.fullPopInit();
+</script>
+
+</body>
+</html>

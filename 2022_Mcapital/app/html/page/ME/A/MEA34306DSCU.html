@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>M Capital</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">중도반납정보</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+                <div class="section">
+                    <div class="conts-part">
+                        <h6 class="se-title">중도반납정보</h6>
+
+                        <div class="sp-tbl ty-box">
+                            <table>
+                                <caption>중도반납정보</caption>
+                                <colgroup>
+                                    <!-- 20220615 수정:  col넓이-->
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">신청일</th>
+                                        <td>2022.01.07</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">반납장소</th>
+                                        <td>
+                                            서울시 강남구 역삼동 111-1<br>
+                                            진달래아파트 상가 앞
+                                        </td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">반납일시</th>
+                                        <td>2022.01.17, 14:30</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">담당자명</th>
+                                        <td>김가을</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">전화번호</th>
+                                        <td>010-1234-5678</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">운행거리</th>
+                                        <td>25,125 km</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                            
+                    </div>
+
+                    <div class="conts-part">
+                        <h6 class="se-title">기본정보</h6>
+                        <div class="sp-tbl ty-box-line">
+                            <table>
+                                <caption>기본정보</caption>
+                                <colgroup>
+                                    <!-- 20220615 수정:  col넓이-->
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">차량번호</th>
+                                        <td>111허 1111</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">차종</th>
+                                        <td>그랜저 IG</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">고객명</th>
+                                        <td>김겨울</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="conts-part">
+                        <h6 class="se-title">계약사항</h6>
+                        <div class="sp-tbl ty-box-line">
+                            <table>
+                                <caption>계약사항</caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">		
+                                </colgroup>		
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">계약일</th>
+                                        <td>2018.12.28</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">종료일</th>
+                                        <td>2023.03.28</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">대여기간</th>
+                                        <td>51 개월</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">월 렌탈료(공급가)</th>
+                                        <td>493,200 원</td>			
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">만기인수가(공급가)</th>
+                                        <td>13,679,136 원</td>			
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+				</div>
+
+                <div class="section">
+
+                    <div class="conts-part">
+                        <div class="info-bg-box">
+                            <div class="row">
+                                <div class="sub-title">확인해주세요!</div>
+                                <ul class="sp-bullet-list ty-circle">
+                                    <li>
+                                        중도반납에 따른 납부금액은 잔여대여료 × 중도해지위약율입니다. (약관 14조 참조)
+                                    </li>
+                                    <li>
+                                        위약금은 계산서가 발행되지 않습니다.
+                                    </li>
+                                    <li>
+                                        납부금액이 (-)인 경우에는 중도반납 후 환불됩니다.
+                                    </li>
+                                    <li>
+                                        반납시점까지 발생된 차량의 범칙금 및 과태료(속도위반/주정차 등), 미납 통행료는 예치금에서 차감 후 잔액은 명의 이전일로부터 3개월 후 환불됩니다. (초과시 추가징구)
+                                    </li>
+                                    <li>
+                                        차량의 반납일정은 반납 담당자가 별도로 연락드립니다.
+                                    </li>
+                                    <li>
+                                        차량 파손 및 손망실 (보조열쇠, 장착품, 도색/래핑 포함)은 수리 및 원상복구 하시어 반납하셔야 합니다. 미조치시 1건 당 30만원의 자차면책금이 청구됩니다. (면책금은 세금계산서가 발행되지 않습니다.)
+                                    </li>
+                                    <li>
+                                        약정주행거리 초과 시 초과 수수료가 청구됩니다. (km당 300원)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="se-chkbx ty-row">
+                        <input type="checkbox" name="ex00" id="chk1" checked="" disabled>
+                        <label for="chk1"><!-- 20220520 수정내역: 문구수정-->
+                            중도반납 처리 완료한 후에는 번복하실 수 없습니다. 상기 내용에 동의하며 2021년 1월 7일자로 중도반납을 신청합니다.
+                        </label>
+                    </div>
+                </div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+        <div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<!-- 버튼 비활성화 시 disabled 추가 -->
+					<button type="button" class="se-btn btn-main">확인</button>
+				</div>		
+			</div>			
+		</div>
+    </div>
+</div>
+<!-- //slide popup -->
+
+
+</body>
+</html>

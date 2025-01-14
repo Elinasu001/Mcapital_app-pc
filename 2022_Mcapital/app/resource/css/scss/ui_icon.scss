@@ -1,0 +1,441 @@
+@charset "utf-8";
+@import "_library.scss";
+/* v4.1 | 2022-07-28 */
+/*
+	아이콘 모음
+	- 부모 클래스 상속시키지 말 것
+	- 부모 클래스 상속이 필요한 경우엔 여기에 작성하지 않으며 별도 콘텐츠에 포함
+	- 아이콘 이미지 경로는 반드시 icon 폴더에 있어야 함
+*/ 
+/*---------------------------------------------
+	아이콘 사이즈 정의 : 정사이즈만 정의
+---------------------------------------------*/
+.se-ico {
+	&.s18 {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+
+/*---------------------------------------------
+	화살표 아이콘
+---------------------------------------------*/
+.se-ico {
+	&.arrow-right {
+		@include grayArrow18('right');
+	}
+	&.arrow-left {
+		@include grayArrow18('left');
+	}
+	&.arrow-up {
+		@include grayArrow18('up');
+	}
+	&.arrow-down {
+		@include grayArrow18('down');
+	}
+}
+
+ 
+/*---------------------------------------------
+	기타 아이콘
+---------------------------------------------*/
+.se-ico {
+	// 가입 유형 선택 아이콘
+	&.login-select-type {
+		width: 36px;
+		height: 36px;
+		margin-right: 10px;		
+
+		&.person {
+			background-image: url('#{$iconPath}/icon_color_person.png');
+		}
+		&.people {
+			background-image: url('#{$iconPath}/icon_color_people.png');
+		}
+		&.building {
+			background-image: url('#{$iconPath}/icon_color_building.png');
+		}
+	}
+
+	// 프로세스 팩 아이콘
+	&.process-type {
+		width: 84px;
+		height: 84px;		
+
+		&.sys-error {
+			background-image: url('#{$iconPath}/icon_system_error.png');
+		}
+
+		&.sys-caution {
+			background-image: url('#{$iconPath}/icon_system_caution.png');
+		}
+
+		&.not-found {
+			background-image: url('#{$iconPath}/icon_not_found.png');
+		}
+
+		&.wifi-caution {
+			background-image: url('#{$iconPath}/icon_wifi_caution.png');
+		}
+
+		&.wait {
+			width: 56px;
+			height: 56px;
+			background-image: url('#{$iconPath}/icon_wait.png');
+		}
+
+		&.ico-positive {
+			width: 56px;
+			height: 56px;
+			background-image: url('#{$iconPath}/icon_done.png');
+		}
+
+		&.ico-caution {
+			width: 56px;
+			height: 56px;
+			background-image: url('#{$iconPath}/icon_caution.png');
+		}
+
+		&.ico-positive {
+			width: 56px;
+			height: 56px;
+			
+		}
+	}
+	
+	// 결과 조회 아이콘
+	&.result-type {
+		width: 56px;
+		height: 56px;		
+		background-color: transparent;
+
+		&.info {
+			background-image: url('#{$iconPath}/icon_info.png');
+		}
+		&.wait {
+			background-image: url('#{$iconPath}/icon_wait_gray.png');
+		}
+		&.docs-plus {
+			background-image: url('#{$iconPath}/icon_docs_plus.png');
+		}
+		&.confirm {
+			background-image: url('#{$iconPath}/icon_confirm.png');
+		}
+	}
+
+	// 플러스 아이콘(큰사이즈)
+	&.ico-plus {
+		width: 28px;
+		height: 28px;
+		background-image: url('#{$iconPath}/icon_plus.png');
+	}
+
+	// 알림 아이콘
+	&.notify-type {
+		width: 24px;
+		height: 24px;
+
+		&.caution {
+			background-image: url('#{$iconPath}/icon_notify_caution.png');
+		}
+		&.speaker {
+			background-image: url('#{$iconPath}/icon_notify_speaker.png');
+		}
+	}
+}
+
+.se-ico.ico-car01 {
+	width: 48px;
+	height: 48px;
+	background-image: url('#{$iconPath}/icon_car_blue.png');
+}
+
+.se-ico.ico-car02 {
+	width: 48px;
+	height: 48px;
+	background-image: url('#{$iconPath}/icon_car_green.png');
+}
+
+.se-ico.ico-info-arrow {
+	width: 42px;
+	height: 42px;
+	background-image: url('#{$iconPath}/icon_info_arrow_right.png');
+	background-size: 18px;
+	background-position: left 4px center;
+}
+
+.se-ico.ico-accordion {
+	@include grayArrow18('down');
+	width: 42px;
+	height: 42px;
+	background-position: left 4px center;
+}
+
+.se-ico.ico-val-arrow {
+	width: 18px;
+	height: 18px;
+	background-image: url('#{$iconPath}/icon_arrow_blue.png');
+}
+
+.se-ico.ico-filter {
+	width: 18px;
+	height: 18px;
+	margin-right: 3px;
+	background-image: url('#{$iconPath}/icon_filter.png');	
+	vertical-align: top;
+}
+
+.se-ico.ico-search-noresult {
+	width: 56px;
+	height: 56px;
+	background-image: url('#{$iconPath}/icon_caution_gray.png');	
+}
+
+.se-ico.ico-docu-caution {
+	width: 84px;
+	height: 84px;
+	background-image: url('#{$iconPath}/icon_docu_caution.png');
+}
+
+.se-ico.ico-cert-confirm {
+	width: 48px;
+	height: 48px;
+	background-image: url('#{$iconPath}/icon_cert_confirm.png');
+}
+
+.se-ico.ico-cert-caution {
+	width: 48px;
+	height: 48px;
+	background-image: url('#{$iconPath}/icon_cert_caution.png');
+}
+
+.se-ico.ico-cs {
+	width: 24px;
+	height: 24px;
+	background-image: url('#{$iconPath}/icon_cs.png');
+	background-size: 24px;
+}
+
+.se-ico.ico-caution-gray {
+	width: 56px;
+	height: 56px;
+	background-image: url('#{$iconPath}/icon_caution_gray.png');
+}
+
+.se-ico.ico-perform-done {
+	width: 18px;
+	height: 18px;
+	background-image: url('#{$iconPath}/icon_perform_done.png');
+}
+.se-ico.ico-perform-ing {
+	width: 18px;
+	height: 18px;
+	background-image: url('#{$iconPath}/icon_perform_ing.png');
+}
+
+.se-ico.ico-my-edit {
+    width: 18px;
+    height: 18px;
+    background-image: url('#{$iconPath}/icon_my_edit.png');
+    background-size: 18px;
+}
+
+.se-ico.ico-my-money {
+    width: 36px;
+    height: 36px;
+    background-image: url('#{$iconPath}/icon_my_money.png');
+}
+
+.se-ico.ico-month-arrow {
+    width: 18px;
+    height: 18px;
+    &.prev {
+        background-image: url('#{$iconPath}/icon_month_arrow_left.png');
+    }
+    &.next {
+        background-image: url('#{$iconPath}/icon_month_arrow_right.png');
+    }
+}
+
+.se-ico.ico-nopay-caution {
+    width: 18px;
+    height: 18px;
+    background-image: url('#{$iconPath}/icon_nopay_caution.png');
+}
+
+.se-ico.ico-success {
+    width: 24px;
+    height: 24px;
+    background-image: url('#{$iconPath}/icon_success.png');
+}
+
+/* 상품상세 */
+.se-ico.ico-prod {
+	width: 36px;
+	height: 36px;
+
+	&.profile {
+		background-image: url('#{$iconPath}/icon_rd_profile.png');
+	}
+
+	&.car {
+		background-image: url('#{$iconPath}/icon_rd_car.png');
+	}
+
+	&.calendar {
+		background-image: url('#{$iconPath}/icon_rd_calendar.png');
+	}
+
+	&.location {
+		background-image: url('#{$iconPath}/icon_rd_location.png');
+	}
+
+	&.wallet {
+		background-image: url('#{$iconPath}/icon_rd_wallet.png');
+	}
+
+	&.belongings {
+		background-image: url('#{$iconPath}/icon_rd_belongings.png');
+	}
+
+	&.bike {
+		background-image: url('#{$iconPath}/icon_rd_bike.png');
+	}
+}
+
+.se-ico.ico-car03 {
+	width: 48px;
+	height: 48px;
+	background-image: url('#{$iconPath}/icon_bike_blue.png');
+}
+.se-ico.ico-car04 {
+	width: 48px;
+	height: 48px;
+	background-image: url('#{$iconPath}/icon_bike_green.png');
+}
+
+/* 앱접근권한 */
+.se-ico.ico-access {
+	width: 48px;
+	height: 48px;
+
+	&.phone {
+		background-image: url('#{$iconPath}/icon_phone.png');
+	}
+	&.camera {
+		background-image: url('#{$iconPath}/icon_camera.png');
+	}
+	&.file {
+		background-image: url('#{$iconPath}/icon_file.png');
+	}
+	&.alert {
+		background-image: url('#{$iconPath}/icon_alarm.png');
+	}
+	&.device {
+		background-image: url('#{$iconPath}/icon_device.png');
+	}
+
+	// 선택사항
+	&.alert.opt {
+		background-image: url('#{$iconPath}/icon_alarm_opt.png');
+	}
+	&.phone.opt {
+		background-image: url('#{$iconPath}/icon_phone_opt.png');
+	}
+	&.camera.opt {
+		background-image: url('#{$iconPath}/icon_camera_opt.png');
+	}
+	&.picture.opt {
+		background-image: url('#{$iconPath}/icon_picture_opt.png');
+	}
+	&.bio.opt {
+		background-image: url('#{$iconPath}/icon_bio_opt.png');
+	}
+}
+
+/* 고객센터 */
+.se-ico.ico-customer {
+	width: 48px;
+	height: 48px;
+
+	&.faq {
+		background-image: url('#{$iconPath}/icon_customer_faq.png');
+	}
+	&.counsel {
+		background-image: url('#{$iconPath}/icon_customer_counsel.png');
+	}
+}
+
+.se-ico.ico-menu {
+	width: 36px;
+	height: 36px;
+
+	&.faq {
+		background-image: url('#{$iconPath}/icon_menu_faq.png');
+	}
+	&.customer {
+		background-image: url('#{$iconPath}/icon_color_person.png');
+	}
+	&.cert {
+		background-image: url('#{$iconPath}/icon_menu_cert.png');
+	}
+	&.notice {
+		background-image: url('#{$iconPath}/icon_menu_notice.png');
+	}
+	&.notice02 {
+		background-image: url('#{$iconPath}/icon_menu_notice02.png');
+	}
+	&.event {
+		background-image: url('#{$iconPath}/icon_menu_event.png');
+	}
+	&.result {
+		background-image: url('#{$iconPath}/icon_menu_graph.png');
+	}
+	&.calc {
+		background-image: url('#{$iconPath}/icon_menu_calc.png');
+	}
+	&.auto {
+		background-image: url('#{$iconPath}/icon_menu_auto.png');
+	}
+}
+
+.se-ico.ico-new {
+    width: 18px;
+    height: 18px;
+    background-image: url('#{$iconPath}/icon_new.png');
+}
+
+
+.se-ico.ico-close {
+	width: 24px;
+	height: 24px;
+	background-image: url('#{$iconPath}/icon_close.png');
+
+	&.gray {
+		background-image: url('#{$iconPath}/icon_close_gray.png');
+	}
+}
+
+
+/*---------------------------------------------
+	약관 - 보안등급
+---------------------------------------------*/
+.se-ico.ico-terms-grade {
+	width: 40px;
+	height: 15px;
+
+	&.grade2 {
+		background-image: url('#{$contentsPath}/terms/grade2.png');
+	}
+}
+
+
+
+
+
+
+
+
+
+

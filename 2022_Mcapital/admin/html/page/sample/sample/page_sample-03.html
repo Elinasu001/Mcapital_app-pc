@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>M Capital 관리자 | 레이아웃</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- container -->
+	<div id="container" class="container">
+		<!-- sidenav-area  -->
+		<div class="sidenav-area" style="background-color: beige; display: flex; justify-content: center; align-items: center;">
+			sidenav-area 영역
+		</div>
+		<!--// sidenav-area -->
+
+		<!-- contents-area -->
+		<div class="contents-area">
+
+
+			<!-- contents : 콘텐츠 영역 -->
+			<div class="contents">
+				<div class="conts-head">
+					<div class="breadcrumb-sec">
+						<div class="se-breadcrumbs">
+							<a href="#">depth 1</a>
+							<a href="#">depth 2</a>
+							<a href="#">depth 3</a>
+						</div>
+					</div>	
+					<div class="title-sec">
+						<h2 class="se-title">타이틀</h2>
+					</div>
+				</div>
+				<div class="conts-body">
+					<!-- section-wrap: section-jumbotron, section 묶는 단위 -->
+					<div class="section-wrap">
+						<!-- section-jumbotron: 서브타이틀, 텍스트 묶는 단위-->
+						<div class="section-jumbotron">
+							<h3 class="se-title">서브타이틀</h3>
+						</div>
+						<!--// section-jumbotron -->
+						<!-- section: 콘텐츠 묶는 단위 -->
+						<div class="section">
+							
+							<div class="sp-tbl ty-mix with-inquiry">
+								<table>
+									<caption>테이블 캡션</caption>
+									<colgroup>
+										<col style="width: 15%;">
+										<col style="width: 35%;">
+										<col style="width: 15%;">
+										<col style="width: 35%;">
+									</colgroup>
+									<tbody>
+										<tr>
+                                            <th scope="row">title</th>
+											<td>
+                                                <ul class="sp-input-row" data-dateRange="el">
+                                                    <li>
+                                                        <div class="se-datepicker from ei-w160">
+                                                            <input type="text" title="시작날짜" placeholder="" />
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        ~
+                                                    </li>
+                                                    <li>
+                                                        <div class="se-datepicker to ei-w160">
+                                                            <input type="text" title="종료날짜" placeholder="" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <th scope="row">title</th>
+                                            <td>
+                                                <div class="se-textfld">
+                                                    <input type="text" title="" placeholder="placeholder" />
+                                                </div>
+                                            </td>
+										</tr>
+									</tbody>
+								</table>
+                                <div class="area-btn-inquiry">
+                                    <button type="button" class="se-btn inquiry">조회</button>
+                                </div>
+							</div>
+
+                            <div class="sp-tbl ty-list ei-mt50">
+                                <table>
+									<caption>테이블 캡션</caption>
+									<colgroup>
+										<col style="width: 10%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 40%;">
+										<col style="width: 10%;">
+									</colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox10" name="checkbox" value="" title="">
+                                                    <label for="checkbox10"></label>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                title
+                                            </th>
+                                            <th>
+                                                title
+                                            </th>
+                                            <th>
+                                                title
+                                            </th>
+                                            <th>
+                                                title
+                                            </th>
+                                        </tr>
+                                    </thead>
+									<tbody>
+										<tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox1" name="checkbox" value="" title="">
+                                                    <label for="checkbox1"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox2" name="checkbox" value="" title="">
+                                                    <label for="checkbox2"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox3" name="checkbox" value="" title="">
+                                                    <label for="checkbox3"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox4" name="checkbox" value="" title="">
+                                                    <label for="checkbox4"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text<br>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox5" name="checkbox" value="" title="">
+                                                    <label for="checkbox5"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox6" name="checkbox" value="" title="">
+                                                    <label for="checkbox6"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox7" name="checkbox" value="" title="">
+                                                    <label for="checkbox7"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox8" name="checkbox" value="" title="">
+                                                    <label for="checkbox8"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox9" name="checkbox" value="" title="">
+                                                    <label for="checkbox9"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="se-check">
+                                                    <input type="checkbox" id="checkbox10" name="checkbox" value="" title="">
+                                                    <label for="checkbox10"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                text text
+                                            </td>
+                                            <td>
+                                                <div class="se-textfld ei-w-p100">
+                                                    <input type="text" title="" placeholder="placeholder">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="se-select ei-w-p100" data-stove="select">
+                                                    <select class="" title="select title">
+                                                        <option value="" disabled="" selected="" hidden="">선택하세요</option>
+                                                        <option value="0">option 00</option>
+                                                        <option value="1" disabled="">option 01</option>
+                                                        <option value="2">option 02</option>
+                                                        <option value="3" hidden="">option 03</option>
+                                                        <option value="4">option 04</option>
+                                                        <option value="5">option 05</option>
+                                                        <option value="6">option 06</option>
+                                                    </select>
+                                                    <div class="e-select-dim"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+									</tbody>
+								</table>
+                            </div>
+                            <div class="se-pagination ei-mt30">
+                                <!-- 
+                                    first, prev, next, last 버튼 비활성화 시
+                                    disabled 클래스 추가 
+                                    (pages 안에 있는 a에는 적용되지 않음)
+                                 -->
+                                <ul class="prev-wrap">
+                                    <li><a href="#" class="se-btn first disabled"></a></li>
+                                    <li><a href="#" class="se-btn prev"></a></li>
+                                </ul>
+                                <ul class="pages">
+                                    <!-- 현재 페이지 시 li에 on 클래스 추가 -->
+                                    <li class="on"><a href="#" class="se-btn">1</a></li>
+                                    <li><a href="#" class="se-btn">2</a></li>
+                                    <li><a href="#" class="se-btn">3</a></li>
+                                    <li><a href="#" class="se-btn">4</a></li>
+                                </ul>
+                                <ul class="next-wrap">
+                                    <li><a href="#" class="se-btn next"></a></li>
+                                    <li><a href="#" class="se-btn last"></a></li>
+                                </ul>
+                            </div>
+
+						</div>
+						<!--// section -->
+					</div>
+					<!--// section-wrap -->
+				</div>
+			</div>
+			<!-- //contents -->
+
+
+
+		</div>
+		<!--// contents-area -->
+		
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer" class="footer" style="background-color: lightblue; display: flex; justify-content: center; align-items: center;">
+		footer 영역
+	</div>
+	<!--// footer -->
+
+</div>
+<!-- //layout -->
+
+
+
+</body>
+
+
+</html>

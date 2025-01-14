@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>컴포넌트 묶음</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../../z_eilab/template/guide/guide.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; 컴포넌트 묶음 &gt;</h1>
+
+<!-- <div class="example_box">
+	<div class="ex_title">title h2~h6</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_wrap">
+			<div class="source_code">
+소스
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div> -->
+
+<div class="example_box">
+	<div class="ex_title">input 묶음</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.sp-input-row</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<ul class="sp-input-row">
+	<li>
+		<div class="se-textfld">
+			<input type="text" title="" placeholder="placeholder" value="" />
+		</div>
+	</li>
+	<li>
+		@
+	</li>
+	<li>
+		<div class="se-select" data-stove="select">
+			<select class="" title="select title">
+				<option value="" disabled selected hidden>선택하세요</option>
+				<option value="0">option 00</option>
+				<option value="1" disabled>option 01</option>
+				<option value="2">option 02</option>
+				<option value="3" hidden>option 03</option>
+			</select>
+			<div class="e-select-dim"></div>
+		</div>
+	</li>
+	<li>
+		<button type="button" class="se-btn ty-01 small">btn</button>
+	</li>
+</ul>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.sp-btn-row</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-btn-row">
+	<button type="button" class="se-btn ty-01">btn</button>
+	<button type="button" class="se-btn ty-02">btn</button>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">버튼 배치 양쪽으로</span><span class="class_name">.sp-btn-row</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-btn-row">
+	<div class="p-left">
+		<button type="button" class="se-btn ty-03 small">btn</button>
+	</div>
+	<div class="p-right">
+		<button type="button" class="se-btn ty-01 small">btn</button>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.sp-inquiry-row</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-inquiry-row">
+	<div class="area">
+		<dl>
+			<dt>title</dt>
+			<dd>
+				<ul class="sp-input-row">
+					<li>
+						<div class="se-textfld ei-w170">
+							<input type="text" title="" placeholder="placeholder" value="" />
+						</div>
+					</li>
+					<li>
+						@
+					</li>
+					<li>
+						<div class="se-select ei-w170" data-stove="select">
+							<select class="" title="select title">
+								<option value="" disabled selected hidden>선택하세요</option>
+								<option value="0">option 00</option>
+								<option value="1" disabled>option 01</option>
+								<option value="2">option 02</option>
+								<option value="3" hidden>option 03</option>
+							</select>
+							<div class="e-select-dim"></div>
+						</div>
+					</li>
+					<li>
+						<button type="button" class="se-btn ty-01 small">btn</button>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt>title title title</dt>
+			<dd>
+				<ul class="sp-input-row">
+					<li>
+						<div class="se-textfld ei-w170">
+							<input type="text" title="" placeholder="placeholder" value="" />
+						</div>
+					</li>
+					<li>
+						<div class="se-select ei-w170" data-stove="select">
+							<select class="" title="select title">
+								<option value="" disabled selected hidden>선택하세요</option>
+								<option value="0">option 00</option>
+								<option value="1" disabled>option 01</option>
+								<option value="2">option 02</option>
+								<option value="3" hidden>option 03</option>
+							</select>
+							<div class="e-select-dim"></div>
+						</div>
+					</li>
+					<li>
+						<button type="button" class="se-btn ty-01 small">btn</button>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<div class="area-btn-inquiry">
+		<button type="button" class="se-btn inquiry">조회</button>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<!-- E : layout -->
+
+<!-- zEiLAB - Guide(가이드에만 선언) -->
+<script src="../../../../z_eilab/template/guide/guide.js"></script>
+
+</body>
+</html>

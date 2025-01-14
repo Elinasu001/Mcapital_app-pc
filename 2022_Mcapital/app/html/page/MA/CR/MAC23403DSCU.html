@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>차량검색</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				차량검색 
+			</div>
+			<!-- 20220401 수정내역 : 헤더 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220401 수정내역 : 헤더 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				
+				<div class="section-jumbotron">
+					<h3 class="se-title">차량을 검색해주세요.</h3>
+				</div> 
+
+				<div class="section space-s">
+					<div class="sp-tabset">
+						<ul class="se-tabbtn ty-main">						
+							<li>
+								<button type="button" class="se-btn">차종 검색</button>
+							</li>
+							<!-- on -->
+							<li class="on">
+								<button type="button" class="se-btn">차량가 입력</button>
+							</li>
+						</ul>
+
+						<ul class="p-tab-panel">
+							
+							<li>
+								CONTS1
+							</li>
+
+							<!-- on -->
+							<li class="on">
+								<div class="search-car-wrap">
+									<div class="search-car-conts">
+										<div class="sp-formset">
+											<div class="se-textfld" data-fld-align="right">	
+												<input type="tel" placeholder="차량가 직접 입력" value="" title="차량가 직접 입력" >	
+												<span class="e-back">
+													<span class="unit">원</span>
+													<button type="button" class="se-btn btn-solid-point size-xs">확인</button>
+												</span>
+											</div>
+										</div>								
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

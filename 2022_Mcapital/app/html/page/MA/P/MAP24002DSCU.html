@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>신차할부</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				신차할부 
+			</div>
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				<div class="section-jumbotron">
+					<h3 class="se-title">
+						상품조건을 입력해주세요.
+					</h3>
+				</div>
+
+				<div class="section">
+
+					<!-- 차량정보 -->
+					<div class="conts-part"> 
+						<h6 class="se-title">차량정보</h6>
+
+						<div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="name">현대 더 뉴 그랜저</div>			
+									<div class="amount">
+										<span class="num">41,980,000</span>
+										<span class="unit">원</span>
+									</div>
+								</div>
+								<div class="col-right">
+									<div class="car">
+										<img src="../../../../resource/image/contents/car/car01.png" alt="자동차모델 이미지">
+									</div>
+									<button type="button" class="se-btn">
+										<span class="se-ico ico-info-arrow">이동하기</span>
+									</button>
+								</div>
+							</div>								
+						</div>
+					</div>						
+				</div>		
+				
+				<div class="section">
+					<div class="conts-part">
+						
+						<!-- 유형 -->
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">유형</h6>
+							</div>
+
+							<div class="se-formtab ty-fix">
+								<div class="se-radio">
+									<input type="radio" name="ex0" id="rd0" checked>
+									<label for="rd0">개인</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex0" id="rd1">
+									<label for="rd1">개인사업자</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex0" id="rd2">
+									<label for="rd2">법인</label>
+								</div>
+							</div>
+						</div> 
+
+						<!-- 이용기간 -->
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">이용기간</h6>
+							</div>
+
+							<div class="se-formtab ty-fix4"><!-- 20220401 클래스 추가 : ty-fix4 -->
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd10">
+									<label for="rd10">24개월</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd11">
+									<label for="rd11">36개월</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd12">
+									<label for="rd12">48개월</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd13">
+									<label for="rd13">60개월</label>
+								</div>
+							</div>
+						</div> 
+						 
+						<hr class="section-linebar"><!-- 20220610 수정: 구분선 추가 -->
+						
+						<!-- 선수금 -->
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<div class="col">
+									<h6 class="se-title">
+										선수금
+										<span class="se-tooltip">
+											<button type="button" class="se-btn">
+												<span class="se-ico ico-tooltip">툴팁</span>
+											</button>
+											<span class="se-tooltip-box">
+												<span class="tooltip-inner">
+													<button type="button" class="se-btn btn-tooltip-close">
+														<span class="se-ico ico-tooltip-close">툴팁 닫기</span>
+													</button>
+													<span class="conts">
+														<!-- 20220610 수정: 도움말 내용 추가 -->
+														<span class="text">
+															선수금은 차량가의 일부를 미리 납부하는 것으로, 계약 종료 시 반환되지 않으며, 선수금이 클수록 월 납입금이 저렴합니다.
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</h6>						
+								</div>
+							</div>
+							<div class="sp-formgrid ty-btnform">
+								<div class="p-col">
+									<button type="button" class="se-btn btn-solid size-xs">10%</button>
+									<button type="button" class="se-btn btn-solid size-xs">20%</button>
+									<button type="button" class="se-btn btn-solid size-xs">30%</button>
+									<button type="button" class="se-btn btn-solid size-xs">40%</button>
+								</div>	
+								<div class="p-col">
+									<div class="se-textfld" data-fld-align="right">
+										<input type="number" placeholder="" title="직접입력">
+										<span class="e-back">
+											<span class="unit">%</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="se-textfld tar">
+								<!-- 20220513 수정내역: 비율선택시 마크업추가 -->
+								<span class="e-front">
+									<!-- 비율 선택 시 show -->
+									<!-- <span class="value">선수금율 <span class="val"></span>%</span> --><!-- 20220727 텍스트 수정 -->
+								</span>
+								<input type="tel" placeholder="선수금 입력" title="선수금 입력">
+								<span class="e-back">
+									<span class="unit">원</span>
+								</span>
+							</div>
+
+							<!-- 최대 금액 초과 시 문구 노출 -->
+							<!-- <span class="p-error-msg">선수금은 차량가 대비 50%를 초과할 수 없습니다.</span> -->
+						</div>
+
+						<!-- 할부원금 -->
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<div class="col">
+									<h6 class="se-title">
+										할부원금
+									</h6>					
+								</div>
+							</div>
+							<div class="se-textfld" data-fld-align="right">
+								<input type="tel" value="70,000,000" placeholder="할부원금 입력" title="할부원금" disabled>
+								<span class="e-back">
+									<span class="unit">원</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- 버튼 활성화 시 disabled 삭제 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+<script>
+	// fnInit(); // input size init
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+	
+	<title>추가운전자 등록</title>
+	
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<div class="popup-title">추가운전자 등록</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section">
+						<div class="sp-formset">
+							<h6 class="se-title">이름</h6>
+
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="이름 입력" value="" title="이름" >	
+							</div>
+						</div>
+						
+						<div class="sp-formset">
+							<h6 class="se-title">계약자와의 관계</h6>
+
+							<div class="se-formtab">
+								<div class="se-radio tac">
+									<input type="radio" name="ex2" id="rd20">
+									<label for="rd20">직계가족<br>(형제자매 제외)</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex2" id="rd21">
+									<label for="rd21">기타</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="se-title">생년월일</h6>
+
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="number" placeholder="생년월일 입력" value="" title="생년월일" >	
+							</div>
+						</div>
+
+
+						<div class="sp-formset">
+							<h6 class="se-title">보유면허</h6><!-- 20220525 수정내역: 타이틀 수정 -->
+
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">보유면허</div>
+								<select required="" title="">
+									<option value="" hidden="">보유면허 선택</option>
+									<option value="0">1종 소형</option>
+									<option value="1">1종 보통</option>
+									<option value="2">1종 대형</option>
+									<option value="3">1종 특수(소형 견인차)</option>
+									<option value="4">1종 특수(대형 견인차)</option>
+									<option value="5">1종 특사(구난차)</option>
+									<option value="6">2종 원동기</option>
+									<option value="7">2종 소형</option>
+									<option value="8">2종 보통</option>							
+								</select>		
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="se-title">면허번호</h6>
+
+							<div class="sp-formgrid">
+								<div class="p-col-6">
+									<div class="se-select" data-stove="select" data-uicase="slide">
+										<div class="e-hidden-title">발행기관</div>
+										<select class="" required="" title="발행기관">
+											<!-- 20220610 수정내역 : 항목 순서 변경 -->
+											<option value="" hidden="">발행기관</option>
+											<option value="1">11</option>
+											<option value="2">12</option>
+											<option value="3">13</option>
+											<option value="4">14</option>
+											<option value="5">15</option>
+											<option value="6">16</option>
+											<option value="7">17</option>
+											<option value="8">18</option>
+											<option value="9">19</option>
+											<option value="10">20</option>
+											<option value="11">21</option>
+											<option value="12">22</option>
+											<option value="13">23</option>
+											<option value="14">24</option>
+											<option value="15">25</option>
+											<option value="16">26</option>
+											<option value="17">28</option>
+											<option value="18">서울</option>
+											<option value="19">부산</option>
+											<option value="20">경기</option>
+											<option value="21">강원</option>
+											<option value="22">충북</option>
+											<option value="23">충남</option>
+											<option value="24">전북</option>
+											<option value="25">전남</option>
+											<option value="26">경북</option>
+											<option value="27">경남</option>
+											<option value="28">제주</option>
+											<option value="29">대구</option>
+											<option value="30">인천</option>
+											<option value="31">광주</option>
+											<option value="32">대전</option>
+											<option value="33">울산</option>
+											<option value="34">경기북부</option><!-- 20220629 수정: 옵션값(없음->경기북부) -->
+											<!-- //20220610 수정내역 : 항목 순서 변경 -->
+										</select>
+									</div>
+								</div>							
+								<div class="p-col-10">
+									<div class="se-textfld">	
+										<input type="number" value="" placeholder="면허번호 입력" title="면허번호 입력">	
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="se-title">발급일자</h6><!-- 20220525 수정내역: 클래스 수정 -->
+
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="발급일자 입력 예) 20020101" value="" title="발급일자">	
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="se-title">휴대폰번호</h6><!-- 20220525 수정내역: 클래스 수정 -->
+							
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="tel" placeholder="휴대폰번호 입력 ('-'를 제외)" value="" title="발급일자">	
+							</div>
+						</div>
+					</div>
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">				
+				<div class="btn-wrap">
+					<button type="button" class="se-btn btn-main-light size-s">취소</button>
+					<!-- 버튼 활성화 시 disabled 제거 -->
+					<button type="button" class="se-btn btn-main" disabled>확인</button>
+				</div>				
+			</div>			
+		</div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+
+</body>
+</html>

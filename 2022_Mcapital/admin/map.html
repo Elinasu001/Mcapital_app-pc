@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ko" style="overflow-y: hidden;">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="z_eilab/favicon.ico">
+	<title>퍼블리싱가이드</title>
+
+	<!-- zEiLAB - library -->
+	<script src="z_eilab/lib/jquery-1.12.4.min.js"></script>
+	<script src="z_eilab/lib/jquery-ui-1.11.4.js"></script>
+
+	<!-- zEiLAB - mockup -->
+	<link rel="stylesheet" type="text/css" href="z_eilab/template/mockup/mockup.css">
+	<script src="z_eilab/template/mockup/mockup.js"></script>
+	
+	<!-- zEiLAB - 프로젝트커스텀 -->
+	<script src="z_eilab/pagecalc.js"></script>
+
+	<style>
+		.import { background-color: aqua !important; font-weight: bold !important; }
+	</style>
+</head>
+<body>
+
+<!-- 개발팀 전달사항 -->
+
+<!-- S : layout -->
+<div id="layout" class="layout">
+
+	<!-- S : header -->
+	<div id="header" class="header">
+
+
+		<div class="info_area">
+			<div class="info_wrap">
+				<div class="info_project">
+					<div class="logo"><img src="z_eilab/project_logo.png" alt=""></div>
+					<div class="title">M capital - admin</div>
+					<div class="subtitle">pc</div>
+					<div class="eilab" onClick="location.href='map_temp.html'"><img src="z_eilab/template/mockup/image/eilab.png" alt=""></div>
+				</div>
+				<div class="version_wrap"><dl><dt>Publishing Resource : </dt><dd>version <span class="ver"></span> | <span class="date"></span></dd></dl></div>
+			</div>
+
+			<div class="navi_area fold view">
+				<button type="button" class="btn navi_ctrl" title="헤더 메뉴 요약"></button>
+				<div class="naviarea_inner">
+					<div class="btn_wrap">
+						<div class="inner">
+							<button type="button" class="btn bg_main" data-pageNum="totalPage" onClick="location.href='map.html'">전체</button>
+						</div>
+					</div>
+
+					<div class="navi_wrap"></div>
+				</div>
+			</div>
+
+
+			<div id="remote" class="remote_wrap">
+				<div class="select_date release">
+					<select>
+						<option selected disabled hidden>배포날짜 선택</option>
+						<option value="alldateview">전체보기</option>
+					</select>
+				</div>
+				<div class="select_date current">
+					<select>
+						<option selected disabled hidden>최근수정일 선택</option>
+						<option value="alldateview">전체보기</option>
+					</select>
+				</div>
+				<div class="select_date realdate">
+					<select>
+						<option selected disabled hidden>작업일 선택</option>
+						<option value="alldateview">전체보기</option>
+					</select>
+				</div>
+				<div class="btn_remote_wrap">
+					<button type="button" class="btn refresh" title="화면목록 새로고침"></button>
+					<!-- <div class="btn_wrap_iactrl">
+						<button type="button" class="btn btn_ia_ctrl ia_close" title="화면목록 접기"></button>
+						<button type="button" class="btn btn_ia_ctrl ia_open" title="화면목록 펼치기"></button>
+					</div>
+					<button type="button" class="btn more_info active" title="화면 기타 정보 보기"></button> -->
+					<!-- <button type="button" class="btn check_modify" title="수정이력 정보 보기"></button> -->
+				</div>
+
+				<div class="check-storyboard" style="display: none;">
+					<button type="button" class="opener">작업한 스토리보드 버전</button>
+					<div class="wrap">
+						<div class="pop">
+							<button type="button" class="close">닫기</button>
+							<table>
+								<colgroup>
+									<col style="width: 20%" />
+									<col sytle="width: 80%" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>공통</th>
+										<td>(이아이랩)M캐피탈_모바일앱 구축_스토리보드_공통_v0.2_220127</td>
+									</tr>
+									<tr>
+										<th>공통화면</th>
+										<td>(이아이랩)M캐피탈_모바일앱 구축_스토리보드_공통화면_v0.22_220209</td>
+									</tr>
+									<!-- <tr>
+										<th>회원가입 및 로그인</th>
+										<td>(이아이랩)M캐피탈_모바일앱 구축_스토리보드_회원가입 및 로그인_v0.82_220209</td>
+									</tr> -->
+									<tr>
+										<th>신차</th>
+										<td>(이아이랩)(통합)M캐피탈_모바일앱 구축_스토리보드_신차_v0.98_220325</td>
+									</tr>
+									<tr>
+										<th>고객</th>
+										<td>(이아이랩)(통합)M캐피탈_모바일앱 구축_스토리보드_고객_v0.97_220228</td>
+									</tr>
+									<tr>
+										<th>중고차</th>
+										<td>(이아이랩)(통합)M캐피탈_모바일앱 구축_스토리보드_중고차_v0.98_220325</td>
+									</tr>
+									<tr>
+										<th>채널</th>
+										<td>(이아이랩)(통합)M캐피탈_모바일앱 구축_스토리보드_채널_v0.99a_220325</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<!-- <div class="ia_ver">
+					엠캐피탈_모바일APP_IA_220318_v0.73
+				</div> -->
+
+			</div>
+		</div>
+
+	</div>
+	<!-- E : header -->
+
+	<!-- S : container -->
+	<div id="container" class="container">
+
+		<div class="pub-notice" style="display: none;"> 
+			<h1><span class="blue"></span> 퍼블리싱 전달사항</h1>
+			<ul>
+				<li>고객 메인의 맞춤상품수정은 콘텐츠 내용 미확정으로 마크업이 변경될 수 있음</li>
+			</ul>
+		</div>
+
+		<!-- S : IA -->
+		<div class="ia">
+			
+			<!-- 컴포넌트 -->
+			<div class="depth category clone-target">
+				<div class="title bg_guide">컴포넌트<span class="dir">html/_guide/component/component/</span></div>
+				<div class="conts">
+					<div class="depth split">
+						<div class="title">컴포넌트</div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">text</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e10</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">button</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e11</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">select, input - text, textarea</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e12</span><span class="info extention">.html</span></span><span class="right"></span></div>
+								<ul class="row row_modify">
+									<li>* 2022-04-29 | 인풋 메시지 추가</li>
+								</ul>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">input - checkbox, radio</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e13</span><span class="info extention">.html</span></span><span class="right"></span></div>
+								<ul class="row row_modify">
+									<li>* 2022-04-29 | toggle 마크업 변경</li>
+								</ul>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">table, pagination</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e14</span><span class="info extention">.html</span></span><span class="right"></span></div>
+								<ul class="row row_modify">
+									<li>* 2022-04-29 | 테이블 상세 케이스 추가, 정렬 클래스 추가</li>
+								</ul>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">반응형 table</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e15</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">tab</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_e16</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="depth split">
+						<div class="title">묶음</div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">묶음 단위</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_p10</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="depth split">
+						<div class="title">helper</div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">helper</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_helper</span><span class="info extention">.html</span></span><span class="right"></span></div>
+								<ul class="row row_modify">
+									<li>* 2022-04-29 | 정렬 클래스 추가</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // 컴포넌트 -->
+
+
+			<!-- 템플릿 -->
+			<div class="depth category clone-target">
+				<div class="title bg_common">템플릿</div>
+				<div class="conts">
+					<div class="depth split">
+						<div class="title">레이아웃<span class="dir">html/_template/layout/layout/</span></div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">공통레이아웃</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">layout_common</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><span class="page_type case">케이스01</span><a class="info title">레이아웃</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">layout_case-01</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="depth split" _style="display: none;">
+						<div class="title">팝업<span class="dir">html/_guide/component/component/</span></div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">기본팝업</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_popup01</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">타이틀없는 경우</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_popup02</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">사이즈 지정</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_popup03</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">중첩팝업예시</a></span><span class="right"><span class="info date">default</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">component_popup04</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // 레이아웃 -->
+
+			<!-- 화면 -->
+			<div class="depth category">
+				<div class="title bg_main">화면</div>
+				<div class="conts">
+
+					<div class="depth split">
+						<div class="title">로그인<span class="dir">html/page/login/login/</span></div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">로그인</a></span><span class="right"><span class="info date">2022-04-22</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">login</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="depth split">
+						<div class="title">ETC<span class="dir">html/page/etc/etc/</span></div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">404에러</a></span><span class="right"><span class="info date">2022-04-22</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">error_404</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">로딩</a></span><span class="right"><span class="info date">2022-04-22</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">loading</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="depth split">
+						<div class="title">샘플<span class="dir">html/page/sample/sample/</span></div>
+						<div class="conts">
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">메뉴관리</a></span><span class="right"><span class="info date">2022-04-29</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">page_sample-01</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">샘플 화면</a></span><span class="right"><span class="info date">2022-04-29</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">page_sample-02</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">샘플 화면</a></span><span class="right"><span class="info date">2022-04-29</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">page_sample-03</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">샘플 화면</a></span><span class="right"><span class="info date">2022-04-29</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">page_sample-04</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">샘플 화면</a></span><span class="right"><span class="info date">2022-04-29</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">page_sample-05</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+							<div class="page">
+								<div class="row row_filename"><span class="left"><a class="info title">샘플 화면</a></span><span class="right"><span class="info date">2022-04-29</span></span></div>
+								<div class="row row_path"><span class="left"><span class="info path"></span><span class="info file">page_sample-06</span><span class="info extention">.html</span></span><span class="right"></span></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- //화면 -->
+
+		</div>
+		<!-- E : IA -->
+
+	</div>
+	<!-- E : container -->
+</div>
+<!-- E : layout -->
+
+
+
+</body>
+</html>
+

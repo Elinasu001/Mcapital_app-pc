@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+	
+	<title>실적조회</title>
+	
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				실적조회 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				<div class="section">
+					<!-- 실적조회 -->
+					<div class="perform-view-pack">
+						<!-- head -->
+						<div class="inquiry-head">
+							<div class="month-btn-wrap">
+								<button type="button" class="se-btn btn-prev">
+									<span class="se-ico ico-month-arrow prev">이전</span>
+								</button>
+								<span class="title">2022년 2월</span>
+								<button type="button" class="se-btn btn-next" disabled>
+									<span class="se-ico ico-month-arrow next">다음</span>
+								</button>
+							</div>
+							<ul class="count-box">
+								<li>
+									<div class="title">
+										<span class="se-ico ico-perform-ing"></span>진행
+									</div>
+									<div class="count">
+										<span class="val">0</span><span class="unit">건</span>
+									</div>
+								</li>
+								<li>
+									<div class="title">
+										<span class="se-ico ico-perform-done"></span>완료
+									</div>
+									<div class="count">
+										<span class="val">0</span><span class="unit">건</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- // head -->
+
+						<!-- body -->
+						<div class="inquiry-body">
+							<div class="sp-tabset">
+								<ul class="se-tabbtn ty-main">
+									<li>
+										<button type="button" class="se-btn">진행</button>
+									</li>
+									<!-- on -->
+									<li class="on">
+										<button type="button" class="se-btn">완료</button>
+									</li>
+								</ul>
+								<ul class="p-tab-panel">
+
+									<!-- 진행 -->
+									<li>
+										CONTS 1
+									</li>
+									
+									<!-- 완료 -->
+									<!-- on -->
+									<li class="on">
+										<!-- 결과 없음 -->
+										<div class="no-result">
+											<div class="row"><span class="se-ico ico-search-noresult"></span></div>
+											<p class="text">조회된 내역이 없습니다.</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- // body -->
+					</div>
+					<!-- // 실적조회 -->
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+            <!-- contents-bottom : 하단 영역 -->
+            <!-- <div class="contents-bottom">
+                <div class="bottom-btn-area">
+                    <div class="btn-wrap">
+                        <button type="button" class="se-btn btn-main">button</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- //contents-bottom -->
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

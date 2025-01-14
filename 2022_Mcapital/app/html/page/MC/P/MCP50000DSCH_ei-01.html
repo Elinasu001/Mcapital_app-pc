@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>홈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+    <!-- 메인용 css -->
+    <link rel="stylesheet" href="../../../../resource/css/ui_main.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout main">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+			</div>
+			<!-- <div class="title">
+				타이틀 
+			</div> -->
+			<div class="right">
+				<button type="button" class="se-btn btn-menu alarm new"><!-- 새로운 알림있을 시, new 클래스추가-->
+					<span>알림</span>
+				</button>
+				<button type="button" class="se-btn btn-menu cart new"><!-- 견적있을 시, new 클래스추가-->
+					<span>견적보관함</span>
+				</button>
+				<button type="button" class="se-btn btn-menu-open">
+					<span>전체메뉴열기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+				<div class="main-page">
+					<div class="main-jumbotron">
+						<div class="title">
+							<a href="#none" class="fw-900 name">김여름</a><span>관리자님</span>
+						</div>
+                        <div class="btn-wrap">
+                            <a href="#none" class="se-btn btn-alarm-ticker">
+                                <div class="text">
+                                    <span class="fw-900">김겨울 고객님</span>의 월리스료 확인요청이 있습니다.
+                                </div>
+                            </a>
+                        </div>
+					</div>
+                    <div class="main-sec">
+                        <div class="main-title">
+                            <span class="title">나의 월간실적</span>
+                        </div>
+                        <div class="main-cont">
+                            <div class="main-board-chart">
+                                <div class="board-head">
+                                    <button type="button" class="se-btn btn-prev" disabled>
+                                        <span class="se-ico ico-month-arrow prev">이전</span>
+                                    </button>
+                                    <span class="title">2021년 12월</span>
+                                    <button type="button" class="se-btn btn-next">
+                                        <span class="se-ico ico-month-arrow next">다음</span>
+                                    </button>
+                                </div>
+                                <div class="board-body">
+                                    <div class="se-chart">
+                                        <div class="center"></div>
+                                        <svg width="132" height="132" viewBox="0 0 132 132">
+                                            <g stroke-width="66" fill="transparent">
+                                                <!--
+                                                    data-percent="n"
+                                                    - n: 각 파이차트의 퍼센트 값
+                                                -->
+                                                <circle class="circle clr-02" cx="66" cy="66" r="33" data-percent="60"></circle>
+                                                <circle class="circle clr-03" cx="66" cy="66" r="33" data-percent="40" ></circle>
+                                            </g>
+                                        </svg>
+                                    </div>
+            
+                                    <div class="se-chart-legend">
+                                        <ul>
+                                            <li>
+                                                <a href="#none" class="se-btn">
+                                                    <div class="title clr-02">진행</div>
+                                                    <div class="value">
+                                                        <span class="val">42</span>
+                                                        <span class="unit">건</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#none" class="se-btn">
+                                                    <div class="title clr-03">완료</div>
+                                                    <div class="value">
+                                                        <span class="val">42</span>
+                                                        <span class="unit">건</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button" class="se-btn btn-solid-point">고객상담</button>
+                            </div>
+                            <ul class="quick-btn-wrap">
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <span class="se-ico ico-menu customer"></span>
+                                        <div class="txt">고객관리</div>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <span class="se-ico ico-menu result"></span>
+                                        <div class="txt">실적조회</div>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <span class="se-ico ico-menu calc"></span>
+                                        <div class="txt">금융계산기</div>
+                                    </a>
+                                </li> 
+                                <li><!-- 2022622 수정내역: 오토플러스 제거, 공지사항 추가, 아이콘 클래스 변경 -->
+                                    <a href="#none" class="se-btn">
+                                        <span class="se-ico ico-menu notice02"></span>
+                                        <div class="txt">공지사항</div>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-sec">
+                        <div class="main-title">
+                            <span class="title">제휴사 검색</span>
+                        </div>
+                        <div class="main-cont">
+                            <div class="se-textfld" data-fld-clear="on">	
+                                <input type="text" placeholder="제휴사명 입력" value="" title="제휴사명">	
+                                <span class="e-back">
+                                    <button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+					<div class="main-sec">
+                        <div class="main-title">
+                            <span class="title">업무진행현황</span>
+                            <button type="button" class="se-btn btn-tdate-reload"><span class="se-ico ico-tdate-reload">리로드</span></button><!-- 20220721 수정: 리로드버튼추가 -->
+                        </div>
+						<div class="main-cont">
+                            <!-- 20220525 수정: 업무진행현황 수정 -->
+                            <div class="main-tdate-list">
+                                <ul class="tdate-list">
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">신용정보조회동의 요청</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">신용정보조회동의 완료</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">견적조회요청</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">견적조회결과</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">약정진행요청</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">심사 중</span>
+                                            <span class="se-badge ty-normal clr-02">205</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">심사완료</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">약정정보입력</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">약정완료</span>
+                                            <span class="se-badge ty-normal clr-02">25</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">실행완료</span>
+                                            <span class="se-badge ty-normal clr-02">5</span>	
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="se-btn conts">
+                                            <span class="title">송금신청</span>
+                                            <span class="se-badge ty-normal clr-02">5</span>	
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// 20220525 수정: 업무진행현황 수정 -->
+                        </div>
+					</div>
+					<div class="main-sec">
+                        <div class="main-title">
+                            <span class="title">상품별 진행현황</span>
+                        </div>
+						<div class="main-cont">
+                            <ul class="prod-progress-list">
+                                <!-- 20220506 수정내역: 항목수정 -->
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            신차운용리스
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">0</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            신차금융리스
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">0</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            신차할부
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">110</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            신차장기렌터카
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            중고할부
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            중고오토론
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            인증중고할부
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            인증중고론
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            인증중고운용리스
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            인증중고금융리스
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            바이크할부
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            바이크운용리스
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="title">
+                                            바이크금융리스
+                                        </div>
+                                        <div class="value">
+                                            <span class="val">1</span>
+                                            <span class="unit">건</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!--// 20220506 수정내역: 항목수정 -->
+                            </ul>
+                        </div>
+					</div>
+					<div class="main-sec">
+                        <div class="main-title">
+                            <a href="#none" class="title link">공지사항</a>
+                        </div>
+						<div class="main-cont">
+                            <ul class="notice-list">
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="col">
+                                            <span class="txt">12월 시스템 점검</span>
+                                            <span class="se-ico ico-nopay-caution">중요</span>
+                                        </div>
+                                        <div class="col-right">
+                                            <span class="date">22.12.12</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="col">
+                                            <span class="txt">채널앱 업데이트 (v1.0.4)채널앱 업데이트 (v1.0.4)채널앱 업데이트 (v1.0.4)</span>
+                                            <span class="se-ico ico-new">신규</span>
+                                        </div>
+                                        <div class="col-right">
+                                            <span class="date">22.12.12</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="se-btn">
+                                        <div class="col">
+                                            <span class="txt">11월 시스템 점검</span>
+                                        </div>
+                                        <div class="col-right">
+                                            <span class="date">22.12.12</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+				</div>
+
+					
+
+			</div>
+			<!-- //contents-inner -->
+
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+
+<!-- 메인용 javascript -->
+<script src="../../../../resource/js/ui_main.js"></script>
+<script>
+    /*
+        pieChartFunc( _duration )
+        - _duration: 애니메이션시간(단위: ms)
+    */
+    pieChartFunc( 1000 );
+</script>
+</body>
+</html>

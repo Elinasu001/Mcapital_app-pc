@@ -1,0 +1,279 @@
+@charset "utf-8";
+@import "_library.scss";
+/*
+	variable ($변수이름 : 속성값; ) 
+*/ 
+
+/*---------------------------------------------
+	이미지경로
+---------------------------------------------*/
+$imgurl: unquote("../../image");
+$componentUrl: unquote("../image/component");
+
+/*---------------------------------------------
+	버튼 속성
+---------------------------------------------*/
+$btn-txt-color: #707070;
+$btn-txtFocus-color: #303030;
+$btn-txtActive-color: #c0c0c0;
+$btn-txtDisabled-color: #C8C8C8;
+
+$btn-bg-color: #F4F4F5;
+$btn-bgFocus-color: #E9EBEE;
+$btn-bgActive-color: #c0c1c2;
+$btn-bgHover-color: #c0c1c2;
+$btn-bgDisabled-color: #E9EBEE;
+
+$btn-bd-color: rgba(0,0,0,0);
+$btn-bdFocus-color: #0066ff;
+$btn-bdActive-color: #c0c1c2;
+$btn-bdHover-color: #c0c1c2;
+$btn-bd-Disabled-color: #F4F4F5;
+
+@mixin btnStatus($tag,$attr){
+	@if $attr == 'default' {
+		border-color: $btn-bg-color;
+		background-color: $btn-bg-color;
+		color: $btn-txt-color;
+	}
+	@else if $attr == 'disabled' {
+		border-color: $btn-bd-Disabled-color;
+		background-color: $btn-bgDisabled-color;
+		color: $btn-txtDisabled-color;
+	} 
+}
+
+
+/*---------------------------------------------
+	폼 박스형요소 속성
+---------------------------------------------*/
+$formBox-label-color: #303030;
+$formBox-label-size: 14px;
+
+$formBox-placeholder-color: #c0c0c0;
+$formBox-font-color: #303030;
+$formBox-height: 40px;
+
+$formBox-paddingAll: 10px; 
+$formBox-paddingTop: 10px;
+$formBox-paddingRight: 35px;
+$formBox-paddingBottom: 10px;
+$formBox-paddingLeft: 15px;
+
+$formBox-borderAll: solid 1px; 
+$formBox-borderTop: solid 0px; 
+$formBox-borderRight: solid 0px; 
+$formBox-borderBottom: solid 1px; 
+$formBox-borderLeft: solid 0px; 
+
+$formBox-bd-color: #cdcdcd;
+$formBox-bdReadonly-color: #f0f0f0;
+$formBox-bdDisabled-color: #f5f5f5;
+$formBox-bdError-color: #ff5f40;
+$formBox-bdFocus-color: $c01;
+$formBox-bdHover-color: #cdcdcd;
+
+$formBox-fontDisabled-color: #bcbdc5;
+
+$formBox-bg-color: white;
+$formBox-bgReadonly-color: #f5f5f5;
+$formBox-bgDisabled-color: #f5f5f5;
+$formBox-bgError-color: white;
+$formBox-bgFocus-color: white;
+$formBox-bgHover-color: white;
+
+@mixin formStatus($tag,$attr) {
+	@if $attr == 'readonly' { 
+		background-color: #f0f0f0;
+		border-color: #cdcdcd;
+		&:focus {
+			background-color: #f0f0f0;
+		}	
+	}
+	@else if $attr == 'disabled' { 
+		border-color: $formBox-bdDisabled-color;
+		background-color: $formBox-bgDisabled-color;
+		color: $formBox-fontDisabled-color;
+		@if $tag == 'select' {
+			opacity: 1;
+		}
+	}
+	@else if $attr == 'error' { 
+		border-color: $formBox-bdError-color;
+		background-color: $formBox-bgError-color;
+		opacity: 1;
+	}
+
+	// @if $tag == 'input' {
+	// 	@if $attr == 'readonly' {
+	// 		background-color: #f0f0f0;
+	// 		border-color: #cdcdcd;
+	// 	}
+	// }
+}
+
+@mixin formAction($tag,$event) {	
+	@if $event == 'hover' { 
+		//border-color: $formBox-bdHover-color;
+		//background-color: $formBox-bgHover-color;
+	}
+	@else if $event == 'focus' { 
+		border-color: $formBox-bdFocus-color;
+		background-color: $formBox-bgFocus-color;
+	}
+}
+
+
+
+
+/*---------------------------------------------
+	폼 체크형요소 속성
+---------------------------------------------*/
+$check-label-color: #303030;
+$check-label-size: 14px;
+$check-label-paddingAll : 10px;
+
+$check-bd-color: #cdcdcd;
+$check-bdChecked-color: #0066ff;
+$check-bdReadonly-color: #E9EBEE;
+$check-bdDisabled-color: #DDDDDD;
+$check-bdFocus-color: blue;
+
+$check-bg-color: #ffffff;
+$check-bgChecked-color: $c02;
+$check-bgReadonly-color: #f5f5f5;
+$check-bgDisabled-color: #E9EBEE;
+$check-bgFocus-color: blue;
+
+@mixin checkStatus($tag,$attr) {	
+	@if $attr == 'readonly' { 
+		border-color: $check-bdReadonly-color;
+		background-color: $check-bgReadonly-color;
+		&:focus {
+			border-color: $check-bdFocus-color;
+		}				
+	}
+	@else if $attr == 'disabled' { 
+		border-color: $check-bdDisabled-color;
+		background-color: $check-bgDisabled-color;
+		&:focus {
+			border-color: $check-bdFocus-color;
+		}	
+	}
+}
+
+@mixin checkAction($tag,$event) {	
+	@if $event == 'hover' { 
+		//border-color: $check-bdHover-color;
+		//background-color: $check-bgHover-color;
+	}
+	@else if $event == 'focus' { 
+		border-color: $check-bdFocus-color;
+		//background-color: $check-bgFocus-color;
+	}
+}
+
+
+
+/*---------------------------------------------
+	버튼 속성
+---------------------------------------------*/
+/*
+	reset 
+*/
+//커스텀시 버튼 디폴트값을 지워야 할 때 사용
+$txt-default-size: 14px;
+$txt-default-color: #303030;
+
+@mixin btnReset{
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	background: transparent;
+	border-color: transparent;
+	color: $txt-default-color;
+	font-size: $txt-default-size;
+
+	&[disabled="disabled"],
+	&:disabled,
+	&.disabled,
+	&:disabled[data-status="readonly"],
+	&[disabled="disabled"][data-status="readonly"],
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: transparent;
+		border-color: transparent;
+		color: $txt-default-color;
+	}
+}
+
+
+
+/*
+	Theme
+*/
+/* main */
+$btn-main-txtColor : #fff;
+$btn-main-bgColor: #1B6DFA;
+$btn-main-bdColor: #1B6DFA;
+
+/* sub */
+@mixin btnTheme($tag,$theme){
+	@if $theme == 'main' {
+		border-color: $btn-main-bdColor;
+		background-color: $btn-main-bgColor;
+		color: $btn-main-txtColor;
+	}
+	@else if $theme == 'sub' {
+
+	}
+} 
+
+
+/*---------------------------------------------
+	폼 체크형요소 속성
+---------------------------------------------*/
+$check-label-color: #303030;
+$check-label-size: 14px;
+$check-label-paddingAll : 10px;
+
+$check-bd-color: #d9d9d9;
+$check-bdChecked-color: #0066ff;
+$check-bdReadonly-color: #E9EBEE;
+$check-bdDisabled-color: #DDDDDD;
+$check-bdFocus-color: red;
+
+$check-bg-color: #ffffff;
+$check-bgChecked-color: #0066ff;
+$check-bgReadonly-color: #f5f5f5;
+$check-bgDisabled-color: #E9EBEE;
+$check-bgFocus-color: blue;
+
+@mixin checkStatus($tag,$attr) {	
+	@if $attr == 'readonly' { 
+		border-color: $check-bdReadonly-color;
+		background-color: $check-bgReadonly-color;
+		&:focus {
+			border-color: $check-bdFocus-color;
+		}				
+	}
+	@else if $attr == 'disabled' { 
+		border-color: $check-bdDisabled-color;
+		background-color: $check-bgDisabled-color;
+		&:focus {
+			border-color: $check-bdFocus-color;
+		}	
+	}
+}
+
+@mixin checkAction($tag,$event) {	
+	@if $event == 'hover' { 
+		//border-color: $check-bdHover-color;
+		//background-color: $check-bgHover-color;
+	}
+	@else if $event == 'focus' { 
+		border-color: $check-bdFocus-color;
+		//background-color: $check-bgFocus-color;
+	}
+}

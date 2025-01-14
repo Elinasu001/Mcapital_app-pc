@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>휴대폰인증</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<div class="popup-title">휴대폰 인증</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-jumbotron">
+						<h3 class="se-title">본인명의의 휴대폰 정보를 입력해주세요.</h3><!-- 20220622 수정: 줄바꿈 -->
+					</div>
+					<div class="section">
+						<div class="sp-formset">
+							<h6 class="p-title">이름</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="이름 입력" value="" title="이름 입력">	
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="p-title">주민등록번호</h6>
+							<!-- 20220408 수정내역: 주민번호 뒷 번호 전체받는 경우 추가 -->
+							<!-- 20220629 수정: 주민번호 뒤자리 분리 -->
+							<!-- <div class="sp-formgrid ty-idnum2">
+								<div class="p-col">
+									<div class="se-textfld" data-fld-clear="on">	
+										<input type="number" placeholder="주민등록번호 입력" value="" title="주민번호 앞자리">	
+									</div>
+								</div>
+								<div class="p-sign va-hypen"></div>
+								<div class="p-col">
+									<div class="se-textfld">	
+										<input type="tel" placeholder="" value="" title="주민번호 뒤 1자리" maxlength="1">	
+									</div>
+									<div class="se-textfld">	
+										<input type="tel" placeholder="" value="" title="주민번호 뒤 6자리" maxlength="6">	
+									</div>
+								</div>
+							</div> -->
+							<!--// 20220629 수정: 주민번호 뒤자리 분리 -->
+							<!--// 20220408 수정내역: 주민번호 뒷 번호 전체받는 경우 추가 -->
+							<!-- S : 비밀번호 분실시 사용 -->
+							<div class="sp-formgrid ty-idnum">
+								<div class="p-col">
+									<div class="se-textfld" data-fld-clear="on">	
+										<input type="number" placeholder="주민등록번호 입력" value="" title="주민번호 앞자리"><!-- 20220311 수정내역 : placeholder수정 -->
+									</div>
+								</div>
+								<div class="p-sign va-hypen"></div>
+								<div class="p-col">
+									<div class="se-textfld ty-pw">	
+										<input type="tel" placeholder="" value="" maxlength="1" title="주민번호 뒷자리"><!-- 20220531 타입 변경 -->	
+										<div class="e-masking">
+											<span class="sign"></span>
+											<span class="sign"></span>
+											<span class="sign"></span>
+											<span class="sign"></span>
+											<span class="sign"></span>
+											<span class="sign"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- E : 비밀번호 분실시 사용 -->
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="p-title">통신사</h6>
+
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">통신사 선택</div>
+								<select required="" title="">
+									<option value="" hidden="">통신사 선택</option>
+									<option value="0">SKT</option>
+									<option value="1">KT</option>
+									<option value="2">LG U+</option>
+									<option value="3">SKT 알뜰폰</option>
+									<option value="4">KT 알뜰폰</option>
+									<option value="5">LG U+ 알뜰폰</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="p-title">휴대폰번호</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="tel" placeholder="휴대폰번호 입력" value="" title="휴대폰번호">	
+							</div>
+						</div>
+
+						<hr class="section-linebar"><!-- 20220622 수정: 구분선 추가 -->
+
+						<!-- 
+							전체동의 클릭 시 terms-pack에 all 클래스 추가 
+							약관 전체 열기시 on 클래스 추가 
+						-->
+						<div class="terms-pack all on">
+							<!-- 전체 약관 동의 -->
+							<div class="terms-head">
+								<div class="checkbox-box">
+									<div class="se-chkbx">
+										<input type="checkbox" name="ex00" id="chk2" checked />
+										<label for="chk2">
+											약관 전체 동의
+										</label>
+									</div>
+									<div class="fold-btn">
+										<button type="button" class="se-btn">
+											<span>약관 접기</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- //전체 약관 동의 -->
+
+							<!-- 약관 묶음 -->
+							<div class="terms-body">
+								<!-- 20220622 수정: 약관동의항목 추가(TBD) -->
+								<ul class="terms-depth dep01">
+									<!-- 약관 -->
+									<li>
+										<div class="row">
+											<div class="se-chkbx">
+												<input type="checkbox" name="ex00" id="chk3"/>
+												<label for="chk3">
+													<em>[필수]</em> 개인(신용)정보 수집/이용/제공 동의
+												</label>
+											</div>
+											<div class="detail-btn">
+												<button type="button" class="se-btn">
+													<span>약관 상세 보기</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<!-- //약관 -->
+									<!-- 약관 -->
+									<li>
+										<div class="row">
+											<div class="se-chkbx">
+												<input type="checkbox" name="ex00" id="chk4"/>
+												<label for="chk4">
+													<em>[필수]</em> 본인 확인서비스 이용약관
+												</label>
+											</div>
+											<div class="detail-btn">
+												<button type="button" class="se-btn">
+													<span>약관 상세 보기</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<!-- //약관 -->
+									<!-- 약관 -->
+									<li>
+										<div class="row">
+											<div class="se-chkbx">
+												<input type="checkbox" name="ex00" id="chk4"/>
+												<label for="chk4">
+													<em>[필수]</em> 고유식별정보 처리 동의
+												</label>
+											</div>
+											<div class="detail-btn">
+												<button type="button" class="se-btn">
+													<span>약관 상세 보기</span>
+												</button>
+											</div>
+										</div>
+									</li>
+									<!-- //약관 -->
+										<!-- 약관 -->
+										<li>
+											<div class="row">
+												<div class="se-chkbx">
+													<input type="checkbox" name="ex00" id="chk4"/>
+													<label for="chk4">
+														<em>[필수]</em> 통신사 이용약관
+													</label>
+												</div>
+												<div class="detail-btn">
+													<button type="button" class="se-btn">
+														<span>약관 상세 보기</span>
+													</button>
+												</div>
+											</div>
+										</li>
+										<!-- //약관 -->
+
+								</ul>
+								<!--// 20220622 수정: 약관동의항목 추가(TBD) -->
+							</div>
+							<!-- //약관 묶음 -->
+
+						</div>
+
+					</div>
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<!-- 버튼 활성화 시 disabled 삭제 -->
+					<button type="button" class="se-btn btn-main" disabled>인증번호 받기</button>
+				</div>				
+			</div>			
+		</div>
+    </div>
+
+
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

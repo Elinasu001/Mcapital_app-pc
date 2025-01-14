@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>렌터카 사후관리</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				렌터카 사후관리 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">		
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+				<div class="inquiry-result-wrap">
+					<!-- 조회 내역 있음 -->
+					<div class="conts">
+						<div class="section-jumbotron">
+							<h3 class="se-title">약정완료된 상품은 <span class="clr-02"> 총 <span>12</span></span>건입니다.</h3>
+						</div>
+						
+						<div class="section space-s">
+							<div class="search-conts">
+								<div class="sp-formset">
+									<div class="se-textfld" data-fld-clear="on"><!-- 20220531 data-fld-clear="on" 속성 추가 -->
+										<input type="text" placeholder="차량번호 입력" value="" title="차량번호 입력" >	
+										<span class="e-back">
+											<button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+										</span>
+									</div>
+								</div>									
+							</div>							
+						</div>
+
+						<hr class="section-linebar">
+
+						<div class="section-full">
+							<div class="sp-tabset">
+								<ul class="se-tabbtn ty-line" data-fixed="on"><!-- 20220520 수정내역: 탭고정기능 추가 -->
+									<!-- on -->
+									<li class="on">
+										<button type="button" class="se-btn">전체</button>
+									</li>
+									<li>
+										<button type="button" class="se-btn">자동차보험</button>
+									</li>
+									<li>
+										<button type="button" class="se-btn">중도반납</button>
+									</li>
+									<li>
+										<button type="button" class="se-btn">만기매입</button>
+									</li>
+									<li>
+										<button type="button" class="se-btn">만기반납</button>
+									</li>								
+								</ul>
+
+								<ul class="p-tab-panel">
+									<!-- on -->
+									<li class="on">
+										<div class="search-result-conts space-x">
+
+											<!-- 검색 후 - 결과있음 -->
+											<div class="conts">
+												<div class="keyword-pack">
+													<h5 class="se-title">총 <span class="count">12</span>건</h5><!-- 20220525 텍스트 수정 -->
+												</div>
+
+												<ul class="list">
+													<li>
+														<a href="#none" class="se-btn">
+															<span class="row">
+																<span class="col">
+																	<span class="category">
+																		자동차보험
+																	</span>
+																	<span class="name">
+																		김겨울
+																	</span>
+																	<span class="detail">
+																		<span>현대 그랜저</span>
+																		·
+																		<span>12허 1234</span>
+																	</span>
+																</span>
+																<span class="col-right">
+																	<span class="date">2022.01.17 15:20</span>
+																</span>
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="#none" class="se-btn">
+															<span class="row">
+																<span class="col">
+																	<span class="category">
+																		중도반납
+																	</span>
+																	<span class="name">
+																		김겨울
+																	</span>
+																	<span class="detail">
+																		<span>현대 그랜저</span>
+																		·
+																		<span>12허 1234</span>
+																	</span>
+																</span>
+																<span class="col-right">
+																	<span class="date">2022.01.17 15:20</span>
+																</span>
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="#none" class="se-btn">
+															<span class="row">
+																<span class="col">
+																	<span class="category">
+																		만기매입
+																	</span>
+																	<span class="name">
+																		김겨울
+																	</span>
+																	<span class="detail">
+																		<span>현대 그랜저</span>
+																		·
+																		<span>12허 1234</span>
+																	</span>
+																</span>
+																<span class="col-right">
+																	<span class="date">2022.01.17 15:20</span>
+																</span>
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="#none" class="se-btn">
+															<span class="row">
+																<span class="col">
+																	<span class="category">
+																		만기반납
+																	</span>
+																	<span class="name">
+																		김겨울
+																	</span>
+																	<span class="detail">
+																		<span>현대 그랜저</span>
+																		·
+																		<span>12허 1234</span>
+																	</span>
+																</span>
+																<span class="col-right">
+																	<span class="date">2022.01.17 15:20</span>
+																</span>
+															</span>
+														</a>
+													</li>
+												</ul>
+											</div>										
+										</div>
+									</li>
+									<li>CONTS2</li>
+									<li>CONTS3</li>
+									<li>CONTS4</li>
+									<li>CONTS5</li>
+								</ul>
+							</div>
+						</div>
+		
+					</div>
+					
+					<!-- 조회 내역 없음 -->
+					<!-- <div class="conts">
+						<div class="section">
+							<div class="noresult">
+								<div class="row">
+									<span class="se-ico ico-search-noresult"></span>
+								</div>
+								<p class="text">검색결과가 없습니다.</p>
+							</div>
+						</div>
+					</div> -->
+				</div>				
+			</div>
+			<!-- //contents-inner -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>고객정보</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<div class="popup-title">고객정보</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section space-s">	
+						<div class="conts-part">
+							<h6 class="se-title">기본정보</h6>
+	
+							<div class="sp-tbl ty-box">
+								<table>
+									<caption>기본정보 </caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">이름</th>
+											<td>김겨울</td>			
+										</tr>									
+										<tr>
+											<th scope="row">생년월일</th>
+											<td>1990-01-01</td>			
+										</tr>										
+										<tr>
+											<th scope="row">휴대폰번호</th>
+											<td>010-1234-5678</td>			
+										</tr>
+										<tr>
+											<th scope="row">이메일</th>
+											<td>abc@capital-m.co.kr</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>	
+					<hr class="section-linebar">
+					<div class="section">
+						<ul class="badge-list-conts">
+							<li>
+								<div class="title">
+									<span class="se-badge ty-normal clr-01">진행상품</span>
+								</div>
+								<div class="conts">
+									<ul class="state-list-conts">
+										<li>
+											<div class="storage-pack">
+												<div class="head">
+													<div class="col">
+														<div class="title">신차운용리스</div>
+													</div>
+													<div class="col-right">
+														<div class="sub-text">신청일 <span>2021.12.22</span></div>
+													</div>
+												</div>
+		
+												<div class="body">
+													<button type="button" class="se-btn info">
+														<span class="col">
+															<span class="title">현대 그랜저</span>
+															<span class="text">더 뉴 그랜저 IG</span>
+														</span>									
+														<span class="col-right">
+															<span class="car">
+																<img src="../../../../resource/image/contents/car/car02.png" alt="모델명">
+															</span>
+														</span>
+														<span class="hidden-text">이동하기</span>
+													</button>
+		
+													<div class="amount-pack">
+														<div class="title">차량가</div>
+														<div class="value">
+															<span class="val">41,280,000</span>
+															<span class="unit">원</span>
+														</div>
+													</div>
+		
+													<div class="btn-pack">
+														<button type="button" class="se-btn btn-solid-point">URL 재전송</button><!-- 20220525 수정내역: 버튼명 수정-->
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<div class="title">
+									<span class="se-badge ty-normal clr-02">완료상품</span>
+								</div>
+								<div class="conts">
+									<ul class="state-list-conts">
+										<li>
+											<div class="storage-pack">
+												<div class="head">
+													<div class="col">
+														<div class="title">신차운용리스</div>
+													</div>
+													<div class="col-right">
+														<div class="sub-text">신청일 <span>2021.12.22</span></div>
+													</div>
+												</div>
+		
+												<div class="body">
+													<button type="button" class="se-btn info">
+														<span class="col">
+															<span class="title">현대 그랜저</span>
+															<span class="text">더 뉴 그랜저 IG</span>
+														</span>									
+														<span class="col-right">
+															<span class="car">
+																<img src="../../../../resource/image/contents/car/car02.png" alt="모델명">
+															</span>
+														</span>
+														<span class="hidden-text">이동하기</span>
+													</button>
+		
+													<div class="amount-pack">
+														<div class="title">차량가</div>
+														<div class="value">
+															<span class="val">41,280,000</span>
+															<span class="unit">원</span>
+														</div>
+													</div>
+		
+													<div class="btn-pack">
+														<button type="button" class="se-btn btn-solid-point" disabled>약정진행요청 작성</button>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<!-- 조회 결과 없을 경우 -->
+							<!-- <li>
+								<div class="conts">
+									<div class="noresult">
+										<span class="se-ico ico-search-noresult"></span>
+										<p class="text">진행 및 완료 상품이 없습니다.</p>
+									</div>
+								</div>
+							</li> -->
+						</ul>
+					</div>
+				</div>	
+							        
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>		
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+
+</body>
+</html>

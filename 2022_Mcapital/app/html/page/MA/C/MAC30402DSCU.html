@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>약정신청정보입력</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title"><!-- 20220506 수정내역: 타이틀 수정 -->
+				약정신청정보입력 
+			</div>
+			<!-- 20220506 수정내역 : 헤더 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220506 수정내역 : 헤더 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">계좌정보등록</h2>
+				</div>
+
+				<div class="section">
+					<div class="conts-part">
+						
+						<div class="sp-formset"><!-- 20220513 수정내역: 클래스수정 -->
+							<h6 class="se-title">출금계좌 정보</h6>
+							<!-- 20220513 수정내역: 출금계좌 수정 -->
+							<button type="button" class="se-btn btn-fake-slt"><!-- 값 선택시, selected클래스 추가 -->
+								<span class="placeholder">자동이체계좌 선택</span>
+								<!-- 값 선택시, 노출 -->
+								<!-- <span class="value">국민은행 1002 5**** 654864</span> -->
+							</button>
+						</div>
+						<ul class="sp-bullet-list ty-circle">
+							<li>출금계좌는 본인 계좌와 본인명의의 개인사업자 계좌만 사용할 수 있습니다.</li>
+						</ul>
+
+						<div class="btn-pack space-l">
+							<button type="button" class="se-btn btn-link-box ty-bg">
+								<span class="text">신규계좌 등록이 필요하신가요?</span>
+								<span class="title">
+									신규계좌 등록
+								</span>
+							</button>
+						</div>
+					</div>
+					
+					<hr class="section-linebar"><!-- 20220727 수정: 구분선추가 -->
+
+					<!-- 20220727 수정: 결제일, 최초결제일 추가 -->
+					<div class="conts-part">
+						<div class="sp-formset">
+							<h6 class="se-title">
+								결제일
+							</h6>
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">결제일</div>
+								<select required="" title="">
+									<option value="" hidden="">결제일 선택</option>
+									<option value="0" selected>5일</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="sp-formset">
+							<h6 class="se-title">
+								최초 결제일
+							</h6>
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">최초 결제일</div>
+								<select required="" title="">
+									<option value="" hidden="">최초 결제일 선택</option>
+									<option value="0" selected>2021.12.10</option>
+								</select>
+							</div>
+						</div>
+						<ul class="sp-bullet-list ty-circle">
+							<li>최초 결제일까지 이용일수가 한달 미만인 경우 첫 월 납입금의 이자금액은 줄어듭니다.</li>
+						</ul>
+					</div>
+					<!--// 20220727 수정: 결제일, 최초결제일 추가 -->
+				</div>
+		
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- 비활성화 해제 시 disabled 제거 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+</body>
+</html>

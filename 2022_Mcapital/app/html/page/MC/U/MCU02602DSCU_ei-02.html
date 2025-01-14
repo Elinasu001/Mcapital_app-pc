@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>M Capital</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				회원가입
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<div class="contents-inner">
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">
+						개인사업자
+					</h2>
+					<div class="text">
+						개인사업자의 사업자번호를 입력해주세요.
+					</div>
+				</div>
+
+				<div class="section">
+
+					<div class="sp-formset">
+						<h6 class="p-title">사업자번호</h6>
+						<div class="se-textfld">
+							<!-- 20220217 수정내역 : input type 변경 -->
+							<input type="number" placeholder="사업자번호 입력" value="" title="사업자번호">
+						</div>
+						<p class="p-error-msg"></p>
+					</div>
+
+					<!-- 전체동의 클릭 시 terms-pack에 all 클래스 추가 / on : 약관 아코디언 접힘 -->
+					<div class="terms-pack on all">
+
+						<!-- 전체 약관 동의 -->
+						<div class="terms-head">
+							<div class="checkbox-box">
+								<div class="se-chkbx">
+									<input type="checkbox" name="ex00" id="chk2" checked />
+									<label for="chk2">
+										약관 전체 동의
+									</label>
+								</div>
+								<div class="fold-btn">
+									<button type="button" class="se-btn">
+										<span>약관 접기</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- //전체 약관 동의 -->
+
+						<!-- 약관 묶음 -->
+						<div class="terms-body">
+
+							<ul class="terms-depth dep01">
+								<!-- 약관 -->
+								<li>
+									<div class="row">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex00" id="chk3" checked />
+											<label for="chk3">
+												<em>[필수]</em> 개인정보 이용 및 제공 동의
+											</label>
+										</div>
+										<div class="detail-btn">
+											<button type="button" class="se-btn">
+												<span>약관 상세 보기</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<!-- //약관 -->
+
+								<!-- 약관 -->
+								<li>
+									<div class="row">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex00" id="chk4" checked />
+											<label for="chk4">
+												<em>[필수]</em> 고유식별정보 처리 동의
+											</label>
+										</div>
+										<div class="detail-btn">
+											<button type="button" class="se-btn">
+												<span>약관 상세 보기</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<!-- //약관 -->
+
+								<!-- 약관 -->
+								<li>
+									<div class="row">
+										<div class="se-chkbx">
+											<input type="checkbox" name="ex00" id="chk5" checked />
+											<label for="chk5">
+												<i>[선택]</i> 서비스 이용약관 동의
+											</label>
+										</div>
+										<div class="detail-btn">
+											<button type="button" class="se-btn">
+												<span>약관 상세 보기</span>
+											</button>
+										</div>
+									</div>
+								</li>
+								<!-- //약관 -->
+
+							</ul>
+						</div>
+						<!-- //약관 묶음 -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- disabled 추가 시 버튼 비활성화 -->
+						<button type="button" class="se-btn btn-main">다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

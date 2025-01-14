@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>중고할부</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				중고할부
+			</div>
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				<div class="section-jumbotron">
+					<h3 class="se-title">
+						상품조건을 입력해주세요.
+					</h3>
+				</div>
+
+				<div class="section">
+
+					<!-- 차량정보 -->
+					<div class="conts-part">
+						<h6 class="se-title">차량정보</h6>
+
+						<div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="name">현대 더 뉴 그랜저</div>			
+									<div class="amount">
+										<span class="num">41,980,000</span>
+										<span class="unit">원</span>
+									</div>
+								</div> 									
+							</div>
+							
+							<div class="info-body">
+								<div class="conts">
+
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>차량정보</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">연식</th>
+													<td>2018년식</td>		
+												</tr>
+												<tr>
+													<th scope="row">배기량</th>
+													<td>2,500cc</td>		
+												</tr>
+											</tbody>
+										</table>
+									</div>										
+								</div>
+																	
+							</div>
+						</div>
+					</div>						
+				</div>	
+				
+				<div class="section">
+					<div class="conts-part">							
+						
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">대출신청금액</h6>
+								<div class="col-right">
+									<span class="text">최대 <span class="val">3,135</span>만원</span>
+								</div>
+							</div>	
+
+							<div class="se-textfld" data-fld-align="right">		
+								<input type="tel" placeholder="대출신청금액" value="31,350,000" title="대출신청금액">
+								<span class="e-back">
+									<span class="unit">원</span>
+								</span>
+							</div>
+						</div>
+						
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">유형</h6>					
+							</div>
+
+							<div class="se-formtab">
+								<div class="se-radio">
+									<input type="radio" name="ex0" id="rd0">
+									<label for="rd0">개인</label>
+								</div>									
+								<div class="se-radio">
+									<input type="radio" name="ex0" id="rd2">
+									<label for="rd2">법인</label>
+								</div>
+							</div>
+						</div> 	
+						
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">이용기간</h6>
+							</div>
+
+							<div class="se-formtab ty-fix4"><!-- 20220401 클래스 추가 : ty-fix4 -->
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd10">
+									<label for="rd10">24개월</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd11">
+									<label for="rd11">36개월</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd12">
+									<label for="rd12">48개월</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex1" id="rd13">
+									<label for="rd13">60개월</label>
+								</div>
+							</div>
+						</div> 	
+
+						<div class="sp-formset">
+							<div class="p-title-pack">
+								<h6 class="se-title">상환방식</h6>
+							</div>
+
+							<div class="se-formtab">
+								<div class="se-radio">
+									<input type="radio" name="ex2" id="rd20" checked>
+									<label for="rd20">원리금균등상환</label>
+								</div>
+								
+							</div>
+						</div> 
+						
+					</div>												
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- 버튼 활성화 시 disabled 삭제 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+<script>
+	// fnInit(); // input size init
+</script>
+
+
+</body>
+</html>

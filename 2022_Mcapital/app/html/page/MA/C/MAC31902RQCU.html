@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>본인인증완료</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				약정정보입력 
+			</div>
+			<!-- 20220506 수정내역 : 헤더 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220506 수정내역 : 헤더 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">약정서확인</h2>
+					<p class="text">
+						본인인증이 완료되었습니다.<br><br>
+
+						반드시 약정서 다운로드를 완료하셔야 약정확인을 할 수 있습니다. 약정서 다운로드를 진행해 주세요.
+					</p>
+					<div class="btn-pack space-l">
+						<button type="button" class="se-btn btn-solid-point">약정서 다운로드</button>
+					</div>
+				</div>
+
+				<hr class="section-linebar">
+
+				<div class="section">
+					<p class="text"><!-- 20220610 수정: 오타 -->
+						약정서가 정상적으로 다운로드 되었는지 확인 후 아래의
+						체크하고 약정확인 버튼을 눌러주세요.
+					</p>
+					<div class="chk-link-pack">
+						<ul>
+							<li>
+								<div class="chk-link">
+									<div class="chk">
+										<div class="se-chkbx fw-bold">
+											<input type="checkbox" name="ex00" id="chk12">
+											<label for="chk12">약정서를 정상 다운로드 받았음을 확인합니다.</label>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">				
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">						
+						<button type="button" class="se-btn btn-main" disabled>약정확인</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+</body>
+</html>

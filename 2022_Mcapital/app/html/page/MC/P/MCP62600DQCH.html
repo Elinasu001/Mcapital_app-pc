@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>앱설명</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop ty-guide"><!-- 앱가이드 팝업, 'ty-guide' 클래스 추가 -->
+
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업콘텐츠 -->
+
+                <div class="app-guide-wrap">
+                    <div class="swiper-container app-guide-list ty-ch">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="conts">
+                                    <div class="title">홈</div>
+                                    <div class="text">
+                                        나의 월간 실적과 업무 및 상품별 진행상황을<br>
+                                        확인할 수 있어요.
+                                    </div>
+                                    <div class="img">
+                                        <img src="../../../../resource/image/contents/img_ch_guide01.png" alt="홈">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="conts">
+                                    <div class="title">차량검색</div>
+                                    <div class="text">
+                                        원하는 차량을 다양한 방법으로<br>
+                                        검색하고 조회할 수 있어요.
+                                    </div>
+                                    <div class="img">
+                                        <img src="../../../../resource/image/contents/img_ch_guide02.png" alt="차량검색">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="conts">
+                                    <div class="title">업무진행현황</div>
+                                    <div class="text">
+                                        나만의 업무진행현황을<br>
+                                        편리하게 조회할 수 있어요.
+                                    </div>
+                                    <div class="img">
+                                        <img src="../../../../resource/image/contents/img_ch_guide03.png" alt="업무진행현황">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="conts">
+                                    <div class="title">전체메뉴</div>
+                                    <div class="text">
+                                        M캐피탈의 모든 메뉴를<br>
+                                        쉽고 빠르게 접근할 수 있어요.<br>
+                                        <span class="fs14">M캐피탈의 본사 및 협력사 직원만 이용가능합니다.</span>
+                                    </div>
+                                    <div class="img">
+                                        <img src="../../../../resource/image/contents/img_ch_guide04.png" alt="전체메뉴">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bottom">
+                            <div class="swiper-pagination"></div>
+                            <div class="btn-wrap">
+                                <button type="button" class="se-btn btn-main">시작하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+
+                <!--// 팝업콘텐츠 -->
+
+            </div>
+        </div>		
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+<script>    
+    /* 앱설명 - 스와이퍼 */
+    var appGuideSwiper = new Swiper('.app-guide-list.swiper-container', {
+        watchOverflow: true,
+        pagination : {
+            el: '.app-guide-list .swiper-pagination',
+            type: 'bullets',
+			clickable: true,
+        },
+        on:{
+			slideChange: function(){
+                if ( this.isEnd == true ){
+                    $('.app-guide-list').addClass('last');
+				} else {
+                    $('.app-guide-list').removeClass('last');
+                }
+			},
+		},
+    });
+</script>
+
+</body>
+</html>

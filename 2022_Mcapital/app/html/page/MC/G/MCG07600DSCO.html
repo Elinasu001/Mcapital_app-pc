@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>알림설정</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				알림설정 
+			</div>
+			<!-- <div class="right">
+				
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+                <div class="section">
+
+                    <ul class="setup-switch-list">
+                        <!-- 20220610 수정내역 : 요견 변경으로 인한 내용 수정 -->
+                        <li>
+                           <div class="wrap">
+                                <div class="col">
+                                    <span class="text">
+                                        전체 푸시 알림
+                                    </span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="se-switch">
+                                        <input type="checkbox" name="ex400" id="sw01" checked>
+                                        <label for="sw01"></label>
+                                    </div>
+                                </div>
+                           </div>
+                        </li>
+                        <li>
+                            <div class="wrap">
+                                <div class="col"> 
+                                    <span class="text">
+                                        상품안내 알림
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- 스위치 checked 비활성화 시 해당 checkbox에 각각 disabled 속성 추가 -->
+                            <div class="deeper ty-setting">
+                                <div class="area">
+                                    <div class="se-chkbx ty-box">
+                                        <input type="checkbox" name="ex00" id="chk13" >
+                                        <label for="chk13">전화</label>
+                                    </div>
+                                </div>
+                                <div class="area">
+                                    <div class="se-chkbx ty-box">
+                                        <input type="checkbox" name="ex00" id="chk14" checked="">
+                                        <label for="chk14">문자메시지</label>
+                                    </div>
+                                </div>
+                                <div class="area">
+                                    <div class="se-chkbx ty-box">
+                                        <input type="checkbox" name="ex00" id="chk15" checked="">
+                                        <label for="chk15">서면</label>
+                                    </div>
+                                </div>
+                                <div class="area">
+                                    <div class="se-chkbx ty-box">
+                                        <input type="checkbox" name="ex00" id="chk16" checked="">
+                                        <label for="chk16">이메일</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- //20220610 수정내역 : 요견 변경으로 인한 내용 수정 -->
+                    </ul>
+                </div>
+
+			</div>
+			<!-- //contents-inner -->
+
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

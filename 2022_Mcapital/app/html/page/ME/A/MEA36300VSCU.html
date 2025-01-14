@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>MY페이지</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				타이틀 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+				<div class="section-wrap"><!-- section 상위 단위를 묶고 싶을 때 사용 / 속성 없음 -->
+
+					<!-- 콘텐츠  -->
+					<div class="section">
+						콘텐츠 영역<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						콘텐츠 영역 끝<br>
+					</div>
+					<div class="section">
+						콘텐츠 영역<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						↓<br>
+						콘텐츠 영역 끝<br>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+<!-- layout-slide-my -->
+<div id="tempPopup01" class="layout-slide-my">
+    <div class="popup-layer">
+        <div class="popup-header">
+            <button type="button" class="se-btn popup-toggle log-in"><!-- 20220707 수정: 로그인후 클래스추가('log-in') -->
+				<span class="se-ico ico-pop-toggle">상세보기</span>
+			</button>
+            <div class="popup-title after-show">MY페이지</div>
+        </div>
+
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- S: 팝업 콘텐츠 -->
+                <div class="section">
+                    <!-- 팝업 열기 전 show : .after-hide 추가 -->
+                    <div class="my-preview-wrap after-hide">
+                        <!-- 로그인 전 -->
+                        <!-- <div class="my-preview-box">
+                            <div class="title">
+                                금융진행상황을 확인하시려면<br>
+                                <span class="fw-900 emp">로그인</span>해주세요.
+                            </div>
+                            <div class="conts">
+                                <button type="button" class="se-btn btn-login">로그인</button>
+                            </div>
+                        </div> -->
+                        <!--// 로그인 전 -->
+
+                        <!-- 로그인 후 -->
+                        <div class="my-preview-box">
+                            <div class="title">
+                                <span class="fw-900">2022</span>년 <span class="fw-900">12</span>월 납부예정금액
+                            </div>
+                            <div class="conts">
+                                <div class="amount">
+                                    <span class="val">860,000</span>
+                                    <span class="unit">원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 로그인 후 -->
+                    </div>
+                    <!--// 팝업 열기 전 show -->
+
+                    <!-- 팝업 열기 후 show : .after-show 추가 -->
+                    <div class="my-info-wrap after-show">
+                        <div class="my-info-text">
+                            <div class="text">
+                                안녕하세요, <span>김겨울</span>님
+                                <button type="button" class="se-btn btn-my-edit">
+                                    <span class="se-ico ico-my-edit">회원정보</span>
+                                </button>
+                            </div>
+                            <div class="recent">
+                                최근 접속 <span>21.12.31 11:00:29</span>
+                            </div>
+                        </div>
+
+                        <div class="my-info-conts">
+                            <div class="sp-tabset nospace">
+                                <ul class="se-tabbtn ty-sub">
+                                    <li><button type="button" class="se-btn">MY금융</button></li>
+                                    <li><button type="button" class="se-btn">상품신청현황</button></li>
+                                    <li class="on"><button type="button" class="se-btn">상환스케줄</button></li>
+                                </ul>
+                                <ul class="p-tab-panel">
+                                    <!-- S : MY금융 -->
+                                    <li>
+                                        MY금융
+                                    </li> 
+                                    <!-- E : MY금융 -->
+                                    <!-- S : 상품신청현황 -->
+                                    <li>
+                                        상품신청현황
+                                    </li>
+                                    <!-- E : 상품신청현황 -->
+                                    <!-- S : 상환스케줄 -->
+                                    <li class="on">
+                                        <div class="my-payback-pack">
+                                            <!-- S : 보유상품 없음 -->
+                                            <div class="noresult">
+                                                <span class="se-ico ico-search-noresult"></span>
+                                                <p class="text">보유 상품이 없습니다.</p>
+                                            </div>
+                                            <!-- E : 보유상품 없음 -->
+                                            <ul class="my-payback-main">
+                                                <li>
+                                                    <a href="#none" class="se-btn">
+                                                        <div class="title">
+                                                            보유상품
+                                                        </div>
+                                                        <div class="amount">
+                                                            <span class="val">4</span>
+                                                            <span class="unit">건</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="se-btn">
+                                                        <div class="title">
+                                                            이번달 상환액
+                                                            <span class="date">(2022.12)</span>
+                                                        </div>
+                                                        <div class="amount">
+                                                            <span class="val">10,123,560</span>
+                                                            <span class="unit">원</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="my-payback-detail">
+                                                <div class="detail-head">
+                                                    <!-- 비활성화시 disabled 삭제 -->
+                                                    <button type="button" class="se-btn btn-prev" disabled>
+                                                        <span class="se-ico ico-month-arrow prev">이전</span>
+                                                    </button>
+                                                    <span class="title">2022년 12월</span>
+                                                    <button type="button" class="se-btn btn-next">
+                                                        <span class="se-ico ico-month-arrow next">다음</span>
+                                                    </button>
+                                                </div>
+                                                <div class="detail-body">
+                                                    <div class="conts">
+                                                        <!-- S : 상환내역 없음 -->
+                                                        <div class="noresult">
+                                                            <span class="se-ico ico-search-noresult"></span>
+                                                            <p class="text">이번 달 상환내역이 없습니다.</p>
+                                                        </div>
+                                                        <!-- E : 상환내역 없음 -->
+
+                                                        <!-- S : 현재달 반복부 -->
+                                                        <ul class="list">
+                                                            <!-- S : 날짜 리스트 -->
+                                                            <li>
+                                                                <div class="day">10일</div>
+                                                                <ul class="payback-detail-list">
+                                                                    <li>
+                                                                        <a href="#none" class="se-btn">
+                                                                            <div class="row">
+                                                                                <div class="col">
+                                                                                    <span class="se-ico ico-my-money"></span>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="name">신차운용리스</div>
+                                                                                    <div class="text">
+                                                                                        2회차
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-right">
+                                                                                    <div class="amount">
+                                                                                        <span class="val">4,130,000</span>
+                                                                                        <span class="unit">원</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none" class="se-btn">
+                                                                            <div class="row">
+                                                                                <div class="col">
+                                                                                    <span class="se-ico ico-my-money"></span>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="name">신차운용리스</div>
+                                                                                    <div class="text">
+                                                                                        2회차
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-right">
+                                                                                    <div class="amount">
+                                                                                        <span class="val">4,130,000</span>
+                                                                                        <span class="unit">원</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <!-- E : 날짜 리스트 -->
+
+                                                            <!-- S : 날짜 리스트 -->
+                                                            <li>
+                                                                <div class="day">12일</div>
+                                                                <ul class="payback-detail-list">
+                                                                    <li>
+                                                                        <a href="#none" class="se-btn">
+                                                                            <div class="row">
+                                                                                <div class="col">
+                                                                                    <span class="se-ico ico-my-money"></span>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="name">신차운용리스 신차운용리스 신차운용리스 신차운용리스</div>
+                                                                                    <div class="text">
+                                                                                        2회차
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-right">
+                                                                                    <div class="amount">
+                                                                                        <span class="val">4,130,000</span>
+                                                                                        <span class="unit">원</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none" class="se-btn">
+                                                                            <div class="row">
+                                                                                <div class="col">
+                                                                                    <span class="se-ico ico-my-money"></span>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="name">신차운용리스</div>
+                                                                                    <div class="text">
+                                                                                        2회차
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-right">
+                                                                                    <div class="amount">
+                                                                                        <span class="val">4,130,000</span>
+                                                                                        <span class="unit">원</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <!-- E : 날짜 리스트 -->
+                                                        </ul>
+                                                        <!-- E : 현재달 반복부 -->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- E : 상환스케줄 -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 팝업 열기 후 show -->
+
+
+                </div>
+                <!-- E: 팝업 콘텐츠 -->
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--// layout-slide-my -->
+
+
+
+
+
+<script>
+    /* MY금융상품 - 스와이퍼 */
+    var myLoanSwiper = new Swiper('.finance-loan-list.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        centeredSlides: true,
+        watchOverflow: true,
+        pagination : {
+            el: '.finance-loan-list .swiper-pagination',
+            type: 'bullets',
+			clickable: true,
+        }
+    });
+</script>
+
+<!-- 메인 JS -->
+<script src="../../../../resource/js/ui_main.js"></script>
+
+</body>
+</html>

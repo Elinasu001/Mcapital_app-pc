@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>검색조건</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<!-- 팝업 open시에 슬라이드 애니메이션 클래스(.slide-up) 추가 -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">검색조건</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+                <div class="section">
+					<div class="sp-formset nospace">
+						<h6 class="p-title">연식선택</h6>
+						<div class="sp-formgrid ty-phone">
+							<div class="p-col">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">최소 연식</div>
+									<select class="" required="" title="최소 연식">
+										<option value="" hidden="">최소 연식</option>			
+										<option value="1">2022년</option>
+										<option value="2">2021년</option>
+										<option value="3">2020년</option>
+										<option value="4">2019년</option>
+										<option value="5">2018년</option>
+										<option value="6">2017년</option>
+										<option value="7">2016년</option>
+										<option value="8">2015년</option>
+										<option value="9">2014년</option>
+										<option value="10">2013년</option>
+										<option value="11">2012년</option>
+										<option value="12">2011년</option>
+										<option value="13">2010년</option>
+										<option value="14">2009년</option>
+										<option value="15">2008년</option>
+										<option value="16">2007년</option>
+										<option value="17">2006년</option>
+										<option value="18">2005년</option>
+										<option value="19">2004년</option>
+										<option value="20">2003년</option>
+										<option value="21">2002년</option>
+										<option value="22">2001년</option>
+										<option value="23">2000년</option>
+										<option value="24">1999년</option>
+										<option value="25">1998년</option>
+										<option value="26">1997년</option>
+										<option value="27">1996년</option>
+										<option value="28">1995년</option>
+										<option value="29">1994년</option>
+										<option value="30">1993년</option>
+										<option value="31">1992년</option>
+										<option value="32">1991년</option>
+										<option value="33">1990년</option>			
+									</select>
+								</div>
+							</div>
+							<div class="p-sign va-hypen"></div>						
+							<div class="p-col">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">최대 연식</div>
+									<select class="" required="" title="최대 연식">
+										<option value="" hidden="">최대 연식</option>			
+										<option value="1">2022년</option>
+										<option value="2">2021년</option>
+										<option value="3">2020년</option>
+										<option value="4">2019년</option>
+										<option value="5">2018년</option>
+										<option value="6">2017년</option>
+										<option value="7">2016년</option>
+										<option value="8">2015년</option>
+										<option value="9">2014년</option>
+										<option value="10">2013년</option>
+										<option value="11">2012년</option>
+										<option value="12">2011년</option>
+										<option value="13">2010년</option>
+										<option value="14">2009년</option>
+										<option value="15">2008년</option>
+										<option value="16">2007년</option>
+										<option value="17">2006년</option>
+										<option value="18">2005년</option>
+										<option value="19">2004년</option>
+										<option value="20">2003년</option>
+										<option value="21">2002년</option>
+										<option value="22">2001년</option>
+										<option value="23">2000년</option>
+										<option value="24">1999년</option>
+										<option value="25">1998년</option>
+										<option value="26">1997년</option>
+										<option value="27">1996년</option>
+										<option value="28">1995년</option>
+										<option value="29">1994년</option>
+										<option value="30">1993년</option>
+										<option value="31">1992년</option>
+										<option value="32">1991년</option>
+										<option value="33">1990년</option>	
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">배기량선택</h6>
+						<div class="sp-formgrid ty-phone">
+							<div class="p-col">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">최소 배기량</div>
+									<select class="" required="" title="최소 배기량">
+										<option value="" hidden="">최소 배기량</option>			
+										<option value="1">1,000cc이하</option>
+										<option value="2">1,000cc이상</option>
+										<option value="3">1,500cc이하</option>
+										<option value="4">1,500cc이상</option>
+										<option value="5">2,000cc이하</option>
+										<option value="6">2,000cc이상</option>
+										<option value="7">2,500cc이하</option>
+										<option value="8">2,500cc이상</option>
+										<option value="9">3,000cc이하</option>
+										<option value="10">3,000cc이상</option>
+										<option value="11">3,500cc초과</option>
+									</select>
+								</div>
+							</div>
+							<div class="p-sign va-hypen"></div>						
+							<div class="p-col">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">최대 배기량</div>
+									<select class="" required="" title="최대 배기량">
+										<option value="" hidden="">최대 배기량</option>			
+										<option value="1">1,000cc이하</option>
+										<option value="2">1,000cc이상</option>
+										<option value="3">1,500cc이하</option>
+										<option value="4">1,500cc이상</option>
+										<option value="5">2,000cc이하</option>
+										<option value="6">2,000cc이상</option>
+										<option value="7">2,500cc이하</option>
+										<option value="8">2,500cc이상</option>
+										<option value="9">3,000cc이하</option>
+										<option value="10">3,000cc이상</option>
+										<option value="11">3,500cc초과</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">			
+			<div class="bottom-btn-area">				
+				<div class="btn-wrap">					
+					<button type="button" class="se-btn btn-main">확인</button>
+				</div>
+			</div>
+		</div>		
+    </div>
+</div>
+<!-- //slide popup -->
+
+
+</body>
+</html>

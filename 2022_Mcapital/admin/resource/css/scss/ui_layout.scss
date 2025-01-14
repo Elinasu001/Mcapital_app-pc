@@ -1,0 +1,676 @@
+@charset "utf-8";
+@import "_variable.scss";
+@import "_library.scss";
+/* v0.2 | 2022-04-29 */
+
+
+/*---------------------------------------------
+	layout # 레이아웃
+---------------------------------------------*/
+/*
+	z-index
+*/
+.layout-loading {
+    z-index: 3000;
+}
+.layout-popup {
+    z-index: 1000;
+}
+.sidenav-area {
+    z-index: 700;
+}
+.footer {
+    z-index: 600;
+}
+.conts-head {
+    z-index: 500;
+}
+
+
+/*
+	layout #레이아웃
+*/
+.layout {
+    height: 100%;
+}
+
+/*
+	container #컨테이너
+*/
+.container {
+    min-width: 1280px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+
+/*
+	footer #푸터
+*/
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 1280px;
+    height: 50px;
+    background-color: #353e58;
+
+    .footer-inner {
+        overflow: hidden;
+        height: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .col {
+        float: left;
+    }
+    .col-right {
+        float: right;
+    }
+
+    .copy {
+        margin-top: 15px;
+        font-size: 12px;
+        color: #9398a6;
+    }
+    .footer-logo {
+        margin-top: 17px;
+        width: 102px;
+         
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/*
+	contents #컨텐츠
+*/
+.contents-area {
+    padding-left: 300px;
+    box-sizing: border-box;
+
+    .conts-head {
+        position: fixed;
+        top: 0;
+        left: 300px;
+        width: calc(100% - 300px);
+        min-width: 980px;
+        height: 153px;
+        padding: 26px 70px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        .title-sec {
+            margin-top: 17px;
+            padding-bottom: 40px;
+            box-sizing: border-box;
+        }
+    }
+    .conts-body {
+        height: calc(100% - 153px);
+        padding: 153px 70px 32px;
+        box-sizing: border-box;
+    }
+}
+
+/*
+	section #섹션
+*/
+.section-wrap {
+    + .section-wrap {
+        margin-top: 80px;
+    }
+}
+.section-jumbotron {
+    p.se-text {
+        margin-top: 17px;
+    }
+    + .section {
+        margin-top: 12px;
+    }
+}
+
+
+/*
+	sidenav #사이드네비게이션
+*/
+.sidenav-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: calc(100% - 50px);
+    border-right: 1px solid #edeff3;
+    background-color: #fff;
+
+    .logo-sec {
+        height: 117px;
+        padding: 36px 56px 30px 30px;
+        box-sizing: border-box;
+
+        .logo {
+            width: 214px;
+
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .gnb-sec {
+        height: calc(100% - 261px);
+
+        .gnb {
+            overflow-y: auto;
+            height: 100%;
+        }
+    }
+    .profile-sec {
+        height: 144px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+}
+
+
+/*
+	gnb #지앤비
+*/
+.gnb.depth1 { // 뎁스1
+    .menu {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    > li {
+        > .menu {
+            padding: 16px 70px 15px 41px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #707070;
+            a {
+                display: inline-block;
+                width: 100%;
+            }
+            .se-btn.btn-gnb-open {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+                background-image: url('../image/layout/icon_gnb_open.png');
+                background-repeat: no-repeat;
+                background-size: 11px;
+                background-position: center;
+            }
+        }
+        > ul.depth2 { // 뎁스2
+            display: none;
+            padding: 13px 0;
+            box-sizing: border-box;
+
+            > li {
+                + li {
+                    margin-top: 9px;
+                }
+                > .menu {
+                    padding: 9px 70px 9px 66px;
+                    box-sizing: border-box;
+                    font-size: 15px;
+                    color: #77828f;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        left: 51px;
+                        top: 18px;
+                        width: 4px;
+                        height: 4px;
+                        background-color: #77828f;
+                    }
+                    .se-btn.btn-gnb-open {
+                        position: absolute;
+                        top: 0;
+                        right: 16px;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url('../image/layout/icon_gnb_open2.png');
+                        background-repeat: no-repeat;
+                        background-size: 10px;
+                        background-position: center;
+                        transition: rotate 0.3s;
+                    }
+                }
+
+                > ul.depth3 { // 뎁스3
+                    display: none;
+                    padding: 9px 0;
+                    box-sizing: border-box;
+
+                    > li {
+                        > .menu {
+                            padding: 8px 70px 8px 88px;
+                            box-sizing: border-box;
+                            font-size: 14px;
+                            color: #9aa0ac;
+
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                left: 74px;
+                                top: 18px;
+                                width: 6px;
+                                height: 2px;
+                                background-color: #9aa0ac;
+                            }
+                        }
+                    }
+                    > li.now { // 뎁스3 현재페이지
+                        > .menu {
+                            background-color: #f4f7ff;
+                        }
+                    }
+                }
+            }
+            > li.now { // 뎁스2 현재페이지 
+                > .menu {
+                    background-color: #f4f7ff;
+                }
+            }
+            > li.on { // 뎁스2 열림
+                > .menu {
+                    font-weight: 900;
+
+                    .se-btn.btn-gnb-open {
+                        background-image: url('../image/layout/icon_gnb_close2.png');
+                    }
+                }
+                > ul.depth3 {
+                    display: block;
+                }
+            }
+        }
+    }
+    > li.now { // 뎁스1 현재페이지
+        > .menu {
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 6px;
+                height: 100%;
+                border-radius: 3px;
+                background-color: #407aff;
+            }
+        }
+    }
+    > li.on { // 뎁스1 열림
+        > .menu {
+            font-weight: 900;
+            color: #407aff;
+
+            .se-btn.btn-gnb-open {
+                background-image: url('../image/layout/icon_gnb_close.png');
+            }
+        }
+        > ul.depth2 {
+            display: block;
+        }
+    }
+}
+
+/*
+	profile #프로필
+*/
+.profile {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 84px;
+    padding: 10px 88px 10px 20px;
+    border: 1px solid #f1f2f5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f4f5f6;
+
+    .info {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+        color: #101010;
+
+        .name {
+            margin-right: 4px;
+            font-weight: 900;
+        }
+        .team {
+            font-size: 14px;
+            color: #1a1c3c;
+        }
+    }
+
+    .se-btn.btn-signout {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 49px;
+        height: 44px;
+        border-radius: 2px;
+        background-color: #fff;
+        background-image: url('../image/layout/icon_signout.png');
+        background-repeat: no-repeat;
+        background-size: 17px;
+        background-position: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+}
+
+
+/*---------------------------------------------
+	page-login #로그인페이지
+---------------------------------------------*/
+.page-signin {
+    position: relative;
+    height: 100%;
+    min-width: 1280px;
+    min-height: 625px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    background-image: url('../image/layout/bg_login.png');
+    background-repeat: no-repeat;
+    background-size: 720px;
+    background-position: center top calc(50% - 50px);
+}
+
+.signin-pack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -272px;
+    width: 452px;
+    height: 445px;
+    padding: 56px 56px 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+    .logo-wrap {
+        .logo {
+            width: 214px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .signin-wrap {
+        margin-top: 24px;
+
+        .ipt-box {
+            + .ipt-box {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .btn-wrap {
+        margin-top: 40px;
+    }
+
+    .util-wrap {
+        margin-top: 24px;
+        text-align: center;
+    }
+    .util-list {
+        > li {
+            display: inline-block;
+            position: relative;
+
+            + li {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 1px;
+                    height: 16px;
+                    background-color: #e5e5e5;
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+        .se-btn {
+            padding: 0 30px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #acacac;
+        }
+    }
+}
+
+/* 로그인 인풋 */
+.ipt-signin { display: inline-block; width: 100%; height: 100%; appearance: none; border-radius: 0; border: none; outline: none; box-sizing: border-box; }
+
+.ipt-signin {
+    height: 56px;
+    padding: 0 20px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    &::placeholder {
+        color: #d4d5df;
+    }	
+    
+}
+
+
+/* 로그인 버튼 */
+.se-btn.btn-signin {
+    min-width: 340px;
+    height: 60px;
+    border-radius: 6px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #1b6dfa;
+}
+
+/*---------------------------------------------
+	page-error #에러페이지
+---------------------------------------------*/
+.page-error {
+    position: relative;
+    height: 100%;
+    min-width: 1280px;
+    min-height: 710px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    background-image: url('../image/layout/bg_error.png');
+    background-repeat: no-repeat;
+    background-size: 807px;
+    background-position: center top calc(50% - 190px);
+}
+
+.error-pack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -234px;
+    text-align: center;
+
+    .img-wrap {
+        width: 410px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info-wrap {
+        margin-top: 55px;
+
+        .txt {
+            font-size: 28px;
+            font-weight: 900;
+
+            .pointC1 {
+                color: #2476fd;
+            }
+        }
+    }
+    .btn-wrap {
+        margin-top: 15px;
+    }
+}
+
+/* 홈으로 버튼 */
+.se-btn.btn-gohome {
+    min-width: 340px;
+    height: 60px;
+    border-radius: 6px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #1b6dfa;
+}
+
+/*---------------------------------------------
+	layout-loading #로딩
+---------------------------------------------*/
+.layout-loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    .loading-img {
+        overflow: hidden;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        border: 1px solid #ededed;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/*---------------------------------------------
+	layout-popup #팝업
+---------------------------------------------*/
+.layout-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    white-space: nowrap;
+
+    &::before {
+        content: '';
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 0;
+	    height: 100%;
+    }
+
+    .popup {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+        width: 366px;
+
+        .popup-inner {
+            
+            border-radius: 6px;
+            background-color: #fff;
+            text-align: left;
+        }
+        .popup-header {
+            position: relative;
+            padding: 20px 76px 12px 28px;
+            box-sizing: border-box;
+
+            .popup-title {
+                font-size: 24px;
+                font-weight: 900;
+            }
+            .se-btn.btn-popup-close {
+                position: absolute;
+                top: 20px;
+                right: 17px;
+            }
+        }
+        .popup-body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-height: 500px;
+            padding: 0 28px;
+            box-sizing: border-box;
+
+            &:first-child {
+                padding-top: 30px;
+            }
+        }
+        .popup-footer {
+            padding: 20px 28px 30px;
+            box-sizing: border-box;
+
+            .btn-wrap {
+                text-align: center;
+
+                .se-btn {
+                    + .se-btn {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.layout-popup.on {
+    display: block;
+}
+
+.se-btn.btn-popup-close {
+    width: 38px;
+    height: 38px;
+    background-image: url('../image/component/icon_popup_close.png');
+    background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+}

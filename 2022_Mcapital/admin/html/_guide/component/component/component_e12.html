@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>select, input - text, textarea 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../../z_eilab/template/guide/guide.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; select, input - text, textarea &gt;</h1>
+
+<!-- <div class="example_box">
+	<div class="ex_title">title h2~h6</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_wrap">
+			<div class="source_code">
+소스
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div> -->
+
+<div class="example_box">
+	<div class="ex_title">select</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.se-select</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-select" data-stove="select">
+	<select class="" title="select title">
+		<option value="" disabled selected hidden>선택하세요</option>
+		<option value="0">option 00</option>
+		<option value="1" disabled>option 01</option>
+		<option value="2">option 02</option>
+		<option value="3" hidden>option 03</option>
+		<option value="4">option 04</option>
+		<option value="5">option 05</option>
+		<option value="6">option 06</option>
+	</select>
+	<div class="e-select-dim"></div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">disabled</span><span class="class_name">.se-select select[disabled]</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-select" data-stove="select">
+	<select class="" title="select title" disabled>
+		<option value="" disabled selected hidden>선택하세요</option>
+		<option value="0">option 00</option>
+		<option value="1" disabled>option 01</option>
+		<option value="2">option 02</option>
+		<option value="3" hidden>option 03</option>
+		<option value="4">option 04</option>
+		<option value="5">option 05</option>
+		<option value="6">option 06</option>
+	</select>
+	<div class="e-select-dim"></div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">input - text</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.se-textfld</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" />
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">readonly</span><span class="class_name">.se-textfld input[readonly]</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" readonly />
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">disabled</span><span class="class_name">.se-textfld input[disabled]</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" disabled />
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">error</span><span class="class_name">.se-textfld input[data-status="error"]</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" data-status="error" />
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">message</span><span class="class_name">.se-textfld p</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" />
+	<p>input msg</p>
+	<p>input msg</p>
+</div>
+<br>
+<div class="se-textfld">
+	<input type="text" title="" placeholder="placeholder" data-status="error" />
+	<p>input msg</p>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="example_box">
+	<div class="ex_title">datepicker</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">날짜선택</span><span class="class_name">[data-datepicker="el"]</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-datepicker" data-datepicker="el">
+	<input type="text" title="날짜" placeholder="" />
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기간선택</span><span class="class_name">[data-dateRange="el"]</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<ul class="sp-input-row" data-dateRange="el">
+	<li>
+		<div class="se-datepicker from ei-w160">
+			<input type="text" title="시작날짜" placeholder="" />
+		</div>
+	</li>
+	<li>
+		~
+	</li>
+	<li>
+		<div class="se-datepicker to ei-w160">
+			<input type="text" title="종료날짜" placeholder="" />
+		</div>
+	</li>
+</ul>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기간선택(시작날짜 오늘날짜기준)</span><span class="class_name">[data-dateRange="el"].ty-min</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<ul class="sp-input-row ty-min" data-dateRange="el">
+	<li>
+		<div class="se-datepicker from ei-w160">
+			<input type="text" title="시작날짜" placeholder="" />
+		</div>
+	</li>
+	<li>
+		~
+	</li>
+	<li>
+		<div class="se-datepicker to ei-w160">
+			<input type="text" title="종료날짜" placeholder="" />
+		</div>
+	</li>
+</ul>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="example_box">
+	<div class="ex_title">textarea</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.se-textarea</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-textarea">
+	<textarea class="" id="textarea01" rows="8" placeholder="placeholder" title=""></textarea>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+<!-- E : layout -->
+
+<!-- zEiLAB - Guide(가이드에만 선언) -->
+<script src="../../../../z_eilab/template/guide/guide.js"></script>
+
+</body>
+</html>

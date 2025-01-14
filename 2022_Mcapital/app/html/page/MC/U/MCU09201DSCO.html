@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>공동인증서 내보내기</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				공동인증서 내보내기
+			</div>
+			<!-- <div class="right">
+				
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+                <div class="section-jumbotron">
+                    <h3 class="se-title">
+                        PC에 보이는<br> 인증번호를 입력해주세요.
+                    </h3>
+                </div>
+                <div class="section">
+                    <div class="cert-img-pack">
+                        <div class="cert-img">
+                            <img src="../../../../resource/image/contents/img_cert02.png" alt="공동인증서 가져오기">
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sp-formset">
+                        <h6 class="p-title">인증번호</h6>
+                        <div class="sp-formgrid ty-cardnum">
+                            <div class="p-col">
+                                <div class="se-textfld">	
+                                    <input type="number" placeholder="" value="" title=""><!-- 에러시, has-error 클래스추가-->	
+                                </div>
+                            </div>
+                            <div class="p-sign va-hypen"></div>
+                            <div class="p-col">
+                                <div class="se-textfld">	
+                                    <input type="number" placeholder="" value="" title="">	
+                                </div>
+                            </div>
+                            <div class="p-sign va-hypen"></div>
+                            <div class="p-col">
+                                <div class="se-textfld">	
+                                    <input type="number" placeholder="" value="" title="">	
+                                </div>
+                            </div>
+                            <div class="p-sign va-hypen"></div>
+                            <div class="p-col">
+                                <div class="se-textfld">	
+                                    <input type="number" placeholder="" value="" title="">	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 에러시, 노출-->
+                        <!-- <p class="p-error-msg">인증번호가 일치하지 않습니다.  다시 시도해주세요.</p> -->
+                    </div>
+
+                    <div class="info-bg-box">
+                        <ul class="sp-bullet-list ty-circle">
+                            <li>스마트폰에 저장된 인증서는 삭제되지 않습니다.</li><!-- 20220615 텍스트 수정 -->
+                            <li>인증서 복사 후 PC와 스마트폰 모두 사용할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="section-linebar">
+                <div class="section">
+                    <h6 class="se-title fw-900">공동인증서를 PC에서 내보내는 방법</h6>
+                    <!-- 20220719 수정: 문구 -->
+                    <div class="cert-guide-list">
+                        <div class="category">
+                            <span class="se-badge ty-normal clr-01">PC</span>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <div class="col">
+                                    <span class="step">1</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">PC M캐피탈 홈페이지 접속</div>
+                                    <div class="subtxt"> www.capital-m.co.kr</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col">
+                                    <span class="step">2</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">인증센터 선택</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col">
+                                    <span class="step">3</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">공동인증서 가져오기 버튼 선택</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col">
+                                    <span class="step">4</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">인증번호 확인 </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="category">
+                            <span class="se-badge ty-normal clr-03">스마트폰</span>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <div class="col">
+                                    <span class="step">5</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">PC에서 확인한 인증번호 입력</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col">
+                                    <span class="step">6</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">인증서 선택 및 인증서 비밀번호 입력</div><!-- 20220622 수정: 문구 -->
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="category">
+                            <span class="se-badge ty-normal clr-01">PC</span>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <div class="col">
+                                    <span class="step">7</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">인증서 가져오기 버튼 선택</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col">
+                                    <span class="step">8</span>
+                                </div>
+                                <div class="col-right">
+                                    <div class="txt">내보내기 완료</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// 20220719 수정: 문구 -->
+                </div>
+
+			</div>
+			<!-- //contents-inner -->
+
+            <!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<button type="button" class="se-btn btn-main" disabled>확인</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

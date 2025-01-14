@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>차량검색</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				차량검색 
+			</div>
+			<!-- 20220325 수정내역 : 닫기 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220325 수정내역 : 닫기 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				
+				<div class="section-jumbotron">
+					<h3 class="se-title">키워드를 입력해주세요.</h3><!-- 20220506 수정내역: 문구수정 -->
+				</div> 
+
+				<div class="section space-s">
+					<div class="sp-tabset">
+						<ul class="se-tabbtn ty-main">							
+							<li>
+								<button type="button" class="se-btn">차량번호 검색</button>
+							</li>
+							<!-- on -->
+							<li class="on">
+								<button type="button" class="se-btn">차종 검색</button>
+							</li>
+						</ul>
+
+						<ul class="p-tab-panel">
+							<li>CONTS1</li>
+							<!-- on -->
+							<li class="on">
+								<div class="search-car-wrap">
+									<div class="search-car-conts">
+										<!-- 20220726 수정: 검색폼 수정, 검색필터 삭제 -->
+										<div class="sp-form-btn ty-search">
+											<div class="sp-formgrid">
+												<div class="p-col">
+													<div class="se-textfld" data-fld-clear="on">	
+														<input type="text" placeholder="브랜드/모델명 입력" value="싼타페" title="브랜드/모델명">	
+													</div>
+												</div>	
+												<div class="p-col">
+													<div class="se-textfld" data-fld-align="right">	
+														<input type="text" placeholder="연식 입력" value="2018" title="연식">	
+														<span class="e-back">
+															<span class="unit">년식</span>
+														</span>	
+													</div>
+												</div>
+											</div>
+											<div class="p-side-btn">
+												<button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+											</div>
+										</div>
+										<!--// 20220726 수정: 검색폼 수정, 검색필터 삭제 -->
+									</div>
+
+									<div class="search-result-conts">
+										<!-- 검색 후 - 결과있음 -->
+										<div class="conts">
+											<div class="keyword-pack">
+												<h5 class="se-title">검색결과 <span class="count">12</span></h5>
+											</div>
+											<ul class="list">
+												<li>
+													<!-- 20220520 수정내역 : 구조 변경 -->
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<div class="col">
+																<span class="name">
+																	현대 싼타페 가솔린 1.6 르블랑
+																</span>
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</div>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car02.png" alt="자동차모델" />
+																</span>
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+													<!-- //20220520 수정내역 : 구조 변경 -->
+												</li>		
+												<li>
+													<!-- 20220520 수정내역 : 구조 변경 -->
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<div class="col">
+																<span class="name">
+																	현대 싼타페 가솔린 1.6 르블랑
+																</span>
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</div>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car02.png" alt="자동차모델" />
+																</span>
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+													<!-- //20220520 수정내역 : 구조 변경 -->
+												</li>	
+												<li>
+													<!-- 20220520 수정내역 : 구조 변경 -->
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<div class="col">
+																<span class="name">
+																	현대 싼타페 가솔린 1.6 르블랑
+																</span>
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</div>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car02.png" alt="자동차모델" />
+																</span>
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+													<!-- //20220520 수정내역 : 구조 변경 -->
+												</li>	
+												<li>
+													<!-- 20220520 수정내역 : 구조 변경 -->
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<div class="col">
+																<span class="name">
+																	현대 싼타페 가솔린 1.6 르블랑
+																</span>
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</div>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car02.png" alt="자동차모델" />
+																</span>
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+													<!-- //20220520 수정내역 : 구조 변경 -->
+												</li>									
+											</ul>
+										</div>
+										<!-- 검색 후 - 결과없음 -->
+										<!-- <div class="conts">
+											<div class="noresult">
+												<div class="row">
+													<span class="se-ico ico-search-noresult"></span>
+												</div>
+												<p class="text">검색결과가 없습니다.</p>
+											</div>
+										</div> -->
+									</div>
+								</div>
+							</li>				
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

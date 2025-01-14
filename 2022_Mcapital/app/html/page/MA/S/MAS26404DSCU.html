@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>서류제출</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<div class="popup-title">서류제출</div><!-- 20220506 수정내역: 타이틀 수정 -->   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section">
+					<div class="process-pack">
+						<div class="se-ico process-type wait"></div>
+						<h4 class="se-title"><!-- 20220506 수정내역: 문구 수정 -->   
+							서류제출 중입니다.
+						</h4>
+						<p class="sub-msg"><!-- 20220401 텍스트 수정 | 20220506 수정내역: 문구 수정 -->
+							제출이 완료 되기 전 앱을 종료 시<br>
+							서류제출이 되지 않습니다.<br>
+							완료 메시지가 나올 때까지 잠시만 기다려주세요.	
+						</p>
+						<!-- 20220506 수정내역: 마크업 추가 -->
+						<div class="progress-pack">
+							<div class="progress-bar ty-doc">
+								<div class="bar" style="width: 50%;"></div>
+							</div>
+							<div class="progress-fraction">
+								<span class="clr-02">1</span> / 10
+							</div>
+						</div>
+						<!--// 20220506 수정내역: 마크업 추가 -->
+					</div>
+				</div> 				      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<!-- <div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<button type="button" class="se-btn btn-main"></button>
+				</div>
+			</div>
+		</div> -->
+    </div>
+
+
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

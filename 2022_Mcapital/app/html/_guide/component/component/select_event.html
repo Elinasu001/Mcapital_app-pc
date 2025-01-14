@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>커스텀 셀렉트 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+
+	<style>
+		p { margin-bottom: 10px; }
+		.area { margin-top: 10px; }
+	</style>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+
+
+<div style="padding: 20px; box-sizing: border-box;">
+	<p >이벤트 가이드는 문서 하단의 스크립트 참고</p>
+
+	<div id="select01" class="se-select" data-stove="select" data-uicase="slide">
+		<div class="e-hidden-title">option hidden title</div>
+		<select required="" title="">
+			<option value="" hidden="">default</option>
+			<option value="0">option 00</option>
+			<option value="1">option 01</option>
+			<option value="2">option 02</option>
+			<option value="3" disabled="">option 03</option>
+			<option value="4" disabled="">option 04</option>
+			<option value="5">option 05</option>
+			<option value="6">option 06</option>
+			<option value="7">option 07</option>
+			<option value="8">option 08</option>
+			<option value="9">option 09</option>
+			<option value="10">option 10</option>
+		</select>		
+	</div>
+
+	<div class="area"></div>
+
+</div> 
+
+
+</div>
+<!-- E : layout -->
+
+<script>
+	$('#select01 select').on('change', function(){
+		$('.area').append('<div>value : '+$(this).val()+' / selected text : '+$(this).find('option[value="'+$(this).val()+'"]').text()+'</div>')
+
+		if ( $(this).val() == '1' ){
+			$('.area').append('<div style="color:red;">option 1을 선택함</div>')
+		}
+	})
+</script>
+
+
+</body>
+</html>

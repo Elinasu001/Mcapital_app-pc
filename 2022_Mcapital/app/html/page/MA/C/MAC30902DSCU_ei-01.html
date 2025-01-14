@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>약정정보입력</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				약정정보입력 
+			</div>
+			<!-- 20220506 수정내역 : 헤더 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220506 수정내역 : 헤더 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="section-jumbotron">
+					<h2 class="se-title">청구서정보등록</h2><!-- 20220506 수정내역: 타이틀 수정 -->
+				</div>
+				
+				<div class="section">
+
+					<div class="conts-part">
+						
+						<div class="sp-formset">
+							<h6 class="se-title">청구서수령방법</h6>
+
+							<div class="se-formtab">
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd100">
+									<label for="rd100">SMS</label>
+								</div>
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd101" checked>
+									<label for="rd101">E-mail</label>
+								</div>
+							</div>
+						</div>
+						
+						<!-- sms 선택 시 노출 -->
+						<!-- <div class="sp-formset">
+							<h6 class="se-title">휴대폰번호</h6>
+
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="tel" placeholder="휴대폰번호 입력" value="" title="휴대폰번호 입력">	
+							</div>
+						</div> -->
+
+						<!-- email 선택 시 노출 -->
+						<div class="sp-formset">
+							<h6 class="se-title">E-mail</h6>
+							
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="email" placeholder="E-mail 입력" value="" title="E-mail 입력">	
+							</div>
+						</div>							
+					</div>
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+
+						<!-- 버튼 활성화 시 disabled 삭제 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

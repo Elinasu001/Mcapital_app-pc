@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>M Capital 관리자 | 레이아웃</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- container -->
+	<div id="container" class="container">
+		<!-- sidenav-area  -->
+		<div class="sidenav-area" style="background-color: beige; display: flex; justify-content: center; align-items: center;">
+			sidenav-area 영역
+		</div>
+		<!--// sidenav-area -->
+
+		<!-- contents-area -->
+		<div class="contents-area">
+
+
+			<!-- contents : 콘텐츠 영역 -->
+			<div class="contents">
+				<div class="conts-head">
+					<div class="breadcrumb-sec">
+						<div class="se-breadcrumbs">
+							<a href="#">depth 1</a>
+							<a href="#">depth 2</a>
+							<a href="#">depth 3</a>
+						</div>
+					</div>	
+					<div class="title-sec">
+						<h2 class="se-title">타이틀</h2>
+					</div>
+				</div>
+				<div class="conts-body">
+					<!-- section-wrap: section-jumbotron, section 묶는 단위 -->
+					<div class="section-wrap">
+						<!-- section-jumbotron: 서브타이틀, 텍스트 묶는 단위-->
+						<div class="section-jumbotron">
+							<h3 class="se-title">서브타이틀</h3>
+						</div>
+						<!--// section-jumbotron -->
+						<!-- section: 콘텐츠 묶는 단위 -->
+						<div class="section">
+
+                            <div class="sp-tab ty-01">
+								<!-- tab btn -->
+								<ul class="se-tabtrigger">
+									<li><button type="button" class="se-btn"><span>tab<br>btn</span></button></li>
+									<!-- 활성화 시 on -->
+									<li class="on"><button type="button" class="se-btn"><span>tab</span></button></li>
+									<li><button type="button" class="se-btn"><span>tab</span></button></li>
+									<li><button type="button" class="se-btn"><span>tab</span></button></li>
+								</ul>
+								<!-- //tab btn -->
+								
+								<!-- tab conts -->
+								<ul class="se-tabconts">
+									<li>
+										conts 1
+									</li>
+									<!-- 활성화 시 on -->
+									<li class="on">
+
+										<div class="sp-tbl ty-mix">
+											<table>
+												<caption>테이블 캡션</caption>
+												<colgroup>
+													<col style="width: 15%;">
+													<col style="width: 35%;">
+													<col style="width: 15%;">
+													<col style="width: 35%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">title</th>
+														<td>
+															text
+														</td>
+														<th scope="row">title</th>
+														<td>
+															text
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="sub-text ei-mt10">
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										</div>
+							
+										<div class="sp-tab ty-02">
+											<!-- tab btn -->
+											<ul class="se-tabtrigger">
+												<li><button type="button" class="se-btn"><span>tab<br>btn</span></button></li>
+												<!-- 활성화 시 on -->
+												<li class="on"><button type="button" class="se-btn"><span>tab</span></button></li>
+												<li><button type="button" class="se-btn"><span>tab</span></button></li>
+											</ul>
+											<!-- //tab btn -->
+											
+											<!-- tab conts -->
+											<ul class="se-tabconts">
+												<li>
+													conts 1
+												</li>
+												<!-- 활성화 시 on -->
+												<li class="on">
+
+													<div class="sp-tbl ty-mix">
+														<table>
+															<caption>테이블 캡션</caption>
+															<colgroup>
+																<col style="width: 15%;">
+																<col style="width: 35%;">
+																<col style="width: 15%;">
+																<col style="width: 35%;">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th scope="row">title</th>
+																	<td colspan="3">
+																		<div class="se-textarea ei-w-p100">
+																			<textarea class="" id="textarea01" rows="20" placeholder="placeholder" title=""></textarea>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<th scope="row">title</th>
+																	<td>
+																		<div class="se-textfld ei-w-p100">
+																			<input type="text" title="" placeholder="placeholder">
+																		</div>
+																	</td>
+																	<th scope="row">title</th>
+																	<td>
+																		<ul class="sp-input-row">
+																			<li>
+																				<div class="se-textfld ei-w170">
+																					<input type="text" title="" placeholder="placeholder">
+																				</div>
+																			</li>
+																			<li>
+																				<button type="button" class="se-btn ty-03 small">btn</button>
+																			</li>
+																		</ul>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</li>
+												<li>
+													conts 3
+												</li>
+											</ul>
+											<!-- //tab conts -->
+										</div>
+							
+									</li>
+									<li>
+										conts 3
+									</li>
+									<li>
+										conts 4
+									</li>
+								</ul>
+								<!-- //tab conts -->
+							</div>
+
+							<div class="sp-btn-row">
+								<button type="button" class="se-btn ty-01">btn</button>
+								<button type="button" class="se-btn ty-02">btn</button>
+							</div>
+
+						</div>
+						<!--// section -->
+					</div>
+					<!--// section-wrap -->
+				</div>
+			</div>
+			<!-- //contents -->
+
+
+
+		</div>
+		<!--// contents-area -->
+		
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer" class="footer" style="background-color: lightblue; display: flex; justify-content: center; align-items: center;">
+		footer 영역
+	</div>
+	<!--// footer -->
+
+</div>
+<!-- //layout -->
+
+
+
+</body>
+
+
+</html>

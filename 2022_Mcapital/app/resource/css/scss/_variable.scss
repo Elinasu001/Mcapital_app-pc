@@ -1,0 +1,192 @@
+@charset "utf-8";
+/*
+	variable ($변수이름 : 속성값; ) 
+*/  
+/* font */
+$default-font: 14px;
+
+/* image path */
+$imgPath: '../image';
+
+/* form */
+// form size
+$textfldH: 38px;
+$textfldFs: 21px; 
+$textareaFs: 14px; 
+
+// form color
+$textfldLineDefault: #e9ebee;
+$textfldLineReadonly: transparent;
+$textfldLineDisabled: transparent;
+$textfldLineError: #E42939;
+$textfldLineFocus: #1B6DFA;
+$textfldBgDefault: #fff;
+$textfldTextDefault: #303030;
+$textfldTextPlaceholder: #c8c8c8;
+$textfldTextReadonly: #707070;
+$textfldTextDisabled: #707070;	
+
+$textareaLineDefault: #e9ebee;
+$textareaLineReadonly: #E9EBEE;
+$textareaLineDisabled: #E9EBEE;
+$textareaLineError: #E42939;
+$textareaLineFocus: #1B6DFA;
+$textareaBgDefault: #fff;
+$textareaBgReadonly: #FAFAFA;
+$textareaBgDisabled: #FAFAFA;
+$textareaTextDefault: #303030;
+$textareaTextPlaceholder: #c8c8c8;
+$textareaTextReadonly: #707070;
+$textareaTextDisabled: #c8c8c8;	
+
+
+/*
+	mixin
+*/ 
+/* form field */ 
+// form field style
+@mixin formFieldStyle($tagName) {
+	@if $tagName == 'input' or $tagName == 'select' { // input or select
+		height: $textfldH;
+		padding: {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		};
+		font: {
+			size: $textfldFs;
+			weight: bold;
+		};		
+	}
+	@else if $tagName == 'textarea' { // textarea
+		padding: {
+			top: 15px;
+			right: 15px;
+			bottom: 15px;
+			left: 15px;
+		};
+		border-radius: 6px;
+		font: {
+			size: $textareaFs;
+			weight: normal;
+		};	
+	}	
+}
+
+// form field status
+@mixin formFieldStatus($tagName, $attr){	
+	@if $tagName == 'input' { // input
+		@if $attr == 'default' { // default
+			border-bottom: 2px solid $textfldLineDefault;
+			background-color: $textfldBgDefault;
+			color: $textfldTextDefault;
+		}
+		@else if $attr == 'placeholder' { // placeholder				
+			color: $textfldTextPlaceholder;					
+		}
+		@else if $attr == 'readonly' { // readonly
+			opacity: 1;
+			border-bottom-color: $textfldLineReadonly;		
+			color: $textfldTextReadonly;					
+		}
+		@else if $attr == 'disabled' { // disabled
+			opacity: 1;
+			border-bottom-color: $textfldLineDisabled;		
+			color: $textfldTextDisabled;		
+		}		
+		@else if $attr == 'error' { // error
+			border-bottom-color: $textfldLineError;				
+		}
+		
+	}
+
+	@else if $tagName == 'select' { // select
+		@if $attr == 'default' { // default
+			border-bottom: 2px solid $textfldLineDefault;
+			background-color: $textfldBgDefault;
+			color: $textfldTextDefault;
+		}
+		@else if $attr == 'placeholder' { // placeholder				
+			color: $textfldTextPlaceholder;					
+		}
+		@else if $attr == 'readonly' { // readonly
+			opacity: 1;
+			border-bottom-color: $textfldLineReadonly;		
+			color: $textfldTextReadonly;					
+		}
+		@else if $attr == 'disabled' { // disabled
+			opacity: 1;
+			border-bottom-color: $textfldLineDisabled;		
+			color: #707070;		
+		}		
+		@else if $attr == 'error' { // error
+			border-bottom-color: $textfldLineError;				
+		}
+		
+	}
+	@else if $tagName == 'textarea' { // textarea
+		@if $attr == 'default' { // default
+			border: 1px solid $textareaLineDefault;
+			background-color: $textareaBgDefault;
+			color: $textareaTextDefault;
+		}
+		@else if $attr == 'placeholder' { // placeholder				
+			color: $textareaTextPlaceholder;				
+		}
+		@else if $attr == 'readonly' { // readonly
+			opacity: 1;
+			border-color: $textareaLineReadonly;	
+			background-color: $textareaBgReadonly;		
+			color: $textareaTextReadonly;					
+		}
+		@else if $attr == 'disabled' { // disabled
+			opacity: 1;
+			border-color: $textareaLineDisabled;
+			background-color: $textareaBgDisabled;		
+			color: $textareaTextDisabled;		
+		}		
+		@else if $attr == 'error' { // error
+			border-color: $textareaLineError;				
+		}
+	}
+}
+
+// form field action
+@mixin formFieldAction($tagName, $attr) {
+	@if $tagName == 'input' or $tagName == 'select' { // input or select
+		@if $attr == 'focus' { // focus		
+			border-bottom-color: $textfldLineFocus;							
+		}
+	}
+	@else if $tagName == 'textarea' { // textarea
+		@if $attr == 'focus' { // focus		
+			border-color: $textareaLineFocus;							
+		}
+	}	
+}
+
+// 폼탭 디자인 리셋
+@mixin formtabReset {
+	.se-radio,
+	.se-chkbx {	
+		&:not(:nth-child(3n + 1)) {
+			input {	
+				&:checked:disabled + label,
+				&:checked[disabled="disabled"] + label {				
+
+					&:after {						
+						left: -1px;
+						width: calc(100% + 2px);							
+					}
+				}
+			}			
+		}
+		input {		
+			+ label {
+				border-left-color: #E9EBEE;
+				border-top-color: #E9EBEE;
+			}
+		}
+	}
+}

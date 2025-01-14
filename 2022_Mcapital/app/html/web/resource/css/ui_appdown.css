@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* v2.9 | 2022-07-05 */
+/*---------------------------------------------
+	폰트
+---------------------------------------------*/
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	src: url('../font/SpoqaHanSansNeo-Regular.eot');
+	src: url('../font/SpoqaHanSansNeo-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/SpoqaHanSansNeo-Regular.woff') format('woff');
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	src: url('../font/SpoqaHanSansNeo-Medium.eot');
+	src: url('../font/SpoqaHanSansNeo-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../font/SpoqaHanSansNeo-Medium.woff') format('woff');
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
+	src: url('../font/SpoqaHanSansNeo-Bold.eot');
+	src: url('../font/SpoqaHanSansNeo-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/SpoqaHanSansNeo-Bold.woff') format('woff');
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: 900;
+}
+
+
+/*---------------------------------------------
+	리셋
+---------------------------------------------*/
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body { line-height: 1.5; letter-spacing: -1px; font-family: 'SpoqaHanSansNeo', 'malgun gothic', 'sans-serif', 'dotum'; font-size: 14px; color: #303030; }
+ul, ol, li { list-style: none; }
+a, a:link, a:visited, a:hover { text-decoration: none; color: inherit; }
+img { width: 100%; }
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+button { -webkit-appearance: none; appearance: none; -webkit-box-sizing: border-box; box-sizing: border-box; text-decoration: none; border: none; outline: none; cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0); background-color: transparent; font-family: 'SpoqaHanSansNeo', 'malgun gothic', 'sans-serif', 'dotum'; }
+
+
+/*---------------------------------------------
+	헬퍼
+---------------------------------------------*/
+.clr-01 { color: #1B6DFA !important; }
+
+
+/*---------------------------------------------
+	레이아웃
+---------------------------------------------*/
+/* 헤더 */
+.header { height: 50px; padding: 10px 15px; }
+h1.logo { width: 100px; font-size: 0; }
+
+/* 섹션 */
+.section { margin-top: 40px; padding: 0 15px; }
+.conts-part + .conts-part { margin-top: 30px; }
+.btn-wrap { margin-top: 10px; }
+
+
+/*---------------------------------------------
+	앱 다운로드
+---------------------------------------------*/
+.app-jumbotron { margin-top: 7px; padding: 0 15px; }
+.app-jumbotron .title { font-size: 22px; font-weight: 900; }
+.app-jumbotron .conts { margin-top: 20px; }
+
+ol.step-list { counter-reset: step; }
+ol.step-list > li { position: relative; padding-left: 30px; font-size: 13px; font-weight: bold; line-height: 22px; }
+ol.step-list > li:before { content: counter(step); counter-increment: step; display: inline-block; position: absolute; top: 0; left: 0; width: 22px; height: 22px; border-radius: 9px; text-align: center; font-weight: 900; color: #707070; background-color: #F4F4F5; }
+ol.step-list > li + li { margin-top: 10px; }
+
+.app-down-box { padding: 22px 20px 25px; border-radius: 12px; border: 1px solid #E9EBEE; background-color: #fff; }
+.app-down-box .text { font-size: 18px; font-weight: 900; }
+.app-down-box .info { display: flex; align-items: center; margin-top: 9px; }
+.app-down-box .info .col-right { flex-shrink: 0; margin-left: auto; }
+.app-down-box .version { display: inline-block; min-width: 48px; height: 24px; line-height: 24px; border-radius: 12px; padding: 0 2px; text-align: center; font-size: 12px; font-weight: bold; color: #707070; background-color: #F4F4F5;}
+.btn-app-down { width: 100%; min-height: 42px; border-radius: 12px; font-size: 14px; font-weight: bold; color: #fff; background-color: #1B6DFA;}

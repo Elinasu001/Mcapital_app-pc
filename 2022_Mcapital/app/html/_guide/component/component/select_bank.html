@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>은행선택 fake 셀렉트 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+
+	<style>
+		p { margin-bottom: 10px; }
+		.area { margin-top: 10px; }
+	</style>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+
+
+<div style="padding: 20px; box-sizing: border-box;">
+    
+    <p>
+        이벤트 가이드는 문서 하단의 스크립트 참고
+    </p>
+    <button type="button" class="se-btn btn-fake-slt" id="tempSltBtn">
+        <span class="placeholder">은행 선택</span>
+        <span class="value">은행명</span>
+    </button>
+
+    <br><br><br>
+    <br><br><br>
+
+    <p>비활성화시: disabled 클래스 추가</p>
+    <button type="button" class="se-btn btn-fake-slt selected disabled">
+        <span class="placeholder">은행 선택</span>
+        <span class="value">은행명</span>
+    </button>
+
+    <br><br><br>
+
+
+    <p>에러시: has-error 클래스 추가</p>
+    <button type="button" class="se-btn btn-fake-slt selected has-error">
+        <span class="placeholder">은행 선택</span>
+        <span class="value">은행명</span>
+    </button>
+
+</div> 
+
+
+</div>
+<!-- E : layout -->
+
+<!-- 은행 슬라이드 팝업 -->
+<div id="tempPopup00" class="layout-slide">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">은행</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <div class="section">
+                    <ul class="bank-slt-list">
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_kb.png" alt="국민은행">
+                                </span>
+                                <span class="name">국민은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_ibk.png" alt="IBK기업은행">
+                                </span>
+                                <span class="name">IBK기업은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_nh.png" alt="NH농협">
+                                </span>
+                                <span class="name">NH농협</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_sh.png" alt="신한은행">
+                                </span>
+                                <span class="name">신한은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_wr.png" alt="우리은행">
+                                </span>
+                                <span class="name">우리은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_hn.png" alt="하나은행">
+                                </span>
+                                <span class="name">하나은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_keb.png" alt="외환은행">
+                                </span>
+                                <span class="name">외환은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_citi.png" alt="씨티은행">
+                                </span>
+                                <span class="name">씨티은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_bnk.png" alt="BNK부산은행">
+                                </span>
+                                <span class="name">BNK부산은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_dgb.png" alt="대구은행">
+                                </span>
+                                <span class="name">대구은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_k.png" alt="케이뱅크">
+                                </span>
+                                <span class="name">케이뱅크</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_sc.png" alt="SC제일은행">
+                                </span>
+                                <span class="name">SC제일은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="se-btn bank">
+                                <span class="logo">
+                                    <img src="../../../../resource/image/contents/logo/logo_bank_kko.png" alt="카카오뱅크">
+                                </span>
+                                <span class="name">카카오뱅크</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>			
+        </div>       
+    </div>
+</div>
+
+<script>
+	$('#tempSltBtn').on('click', function() {
+        $('#tempPopup00').addClass('slide-up');
+    });
+
+    $('#tempPopup00 .popup-close').on('click', function() {
+        $('#tempPopup00').removeClass('slide-up');
+    });
+
+    $('#tempPopup00 .bank-slt-list .bank').on('click', function() {
+        var bankName = $(this).text();
+
+        $('#tempPopup00').removeClass('slide-up');
+        $('#tempSltBtn').addClass('selected');
+        $('#tempSltBtn').find('.value').text(bankName);
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기존--약정정보입력</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+
+	<style>
+		.hide { display:none; }
+	</style>
+
+	
+</head>
+<body>
+
+
+<div class="inputBox">
+	<label for="user">아이디 : </label>
+	<input type="email" inputmode="email" placeholder="영문소문자/숫자로 입력해주세요." data-cefilter="filter:ENG{@.}">
+</div>
+
+<div class="inputBox">
+	<input type="password" inputmode="none" class="passemail"  onclick="emailformchange();">
+	<input type="email" inputmode="email" class="email hide" id="email"  placeholder="your@email.com">
+</div>
+
+<script>
+	function emailformchange() {
+		$(".email").removeClass("hide");
+		$(".email").focus();
+		$(".passemail").addClass("hide");
+		return;
+		
+	};
+</script>
+</body>
+</html>

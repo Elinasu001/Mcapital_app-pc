@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>견적조회요청</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+        <div class="popup-header">			  
+			<div class="popup-title">업무진행현황상세</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-jumbotron">
+						<div class="jumbotron-badge">
+							<span class="se-badge ty-normal clr-01">신용정보조회동의 요청</span>
+						</div>
+						<h3 class="se-title"><!-- 20220525 수정: 텍스트 | 20220527 문구 -->
+							<span>김겨울</span> 고객님에게<br> 
+							신용정보조회동의 요청 URL을 <br>
+							전송했습니다.
+						</h3>
+						<div class="btn-pack space-m">
+							<button type="button" class="se-btn btn-solid-point">URL 재전송</button>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="conts-part">
+							<h6 class="se-title">담당자정보</h6>
+
+							<div class="sp-tbl ty-box">
+								<table>
+									<caption>담당자정보</caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">담당자이름</th><!-- 20220615 텍스트 변경 -->
+											<td>김겨울</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div> 
+						</div>
+
+						<div class="conts-part">
+							<h6 class="se-title">기본정보</h6>
+
+							<div class="sp-tbl ty-box">
+								<table>
+									<caption>기본정보</caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">고객이름</th>
+											<td>김봄</td>			
+										</tr>
+										<!-- 20220622 수정내역 : 생년월일 추가 -->
+										<tr>
+											<th scope="row">생년월일</th>
+											<td>1988.00.00</td>			
+										</tr>
+										<!-- //20220622 수정내역 : 생년월일 추가 -->
+										<tr>
+											<th scope="row">휴대폰번호</th>
+											<td>010-1111-1111</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div> 
+						</div>					
+					</div>					
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<!-- <div class="popup-footer">
+			<div class="bottom-btn-area">				
+				<div class="btn-wrap">	
+					<button type="button" class="se-btn btn-main" disabled>button</button>
+				</div>				
+			</div>			
+		</div> -->
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

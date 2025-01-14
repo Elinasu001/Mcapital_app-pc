@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>M Capital 관리자 | 중첩팝업예시</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+    
+	<!-- container -->
+	<div id="container" class="container">
+		<!-- sidenav-area  -->
+		<div class="sidenav-area">
+			<div class="logo-sec">
+				<h1 class="logo">
+					<a href="#none" class="se-btn">
+						<img src="../../../../resource/image/layout/logo.png" alt="M캐피탈 로고">
+					</a>
+				</h1>
+			</div>
+			<div class="gnb-sec">
+				<ul class="gnb depth1">
+					<li class="now on"><!-- 현재페이지: now, 열림: on -->
+						<div class="menu">
+							<a href="#none"><span class="txt">1뎁스</span></a>
+							<button type="button" class="se-btn btn-gnb-open"></button>
+						</div>
+						<ul class="depth2">
+							<li class="now on">
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+								<ul class="depth3">
+									<li class="now">
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="menu">
+							<a href="#none"><span class="txt">1뎁스</span></a>
+							<button type="button" class="se-btn btn-gnb-open"></button>
+						</div>
+						<ul class="depth2">
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+								<ul class="depth3">
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="menu">
+							<a href="#none"><span class="txt">1뎁스</span></a>
+							<button type="button" class="se-btn btn-gnb-open"></button>
+						</div>
+						<ul class="depth2">
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+								<ul class="depth3">
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="menu">
+							<a href="#none"><span class="txt">1뎁스</span></a>
+							<button type="button" class="se-btn btn-gnb-open"></button>
+						</div>
+						<ul class="depth2">
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+								<ul class="depth3">
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+									<li>
+										<div class="menu">
+											<a href="#none"><span class="txt">3뎁스</span></a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="#none"><span class="txt">2뎁스</span></a>
+									<button type="button" class="se-btn btn-gnb-open"></button>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="profile-sec">
+				<div class="profile">
+					<div class="info">
+						<div class="row">
+							<span class="name">김아무개</span>과장님
+						</div>
+						<div class="row">
+							<div class="team">
+								디지털사업부
+							</div>
+						</div>
+					</div>
+					<button type="button" class="se-btn btn-signout"></button>
+				</div>
+			</div>
+		</div>
+		<!--// sidenav-area -->
+
+		<!-- contents-area -->
+		<div class="contents-area">
+
+
+			<!-- contents : 콘텐츠 영역 -->
+			<div class="contents">
+				<div class="conts-head">
+					<div class="breadcrumb-sec">
+						<div class="se-breadcrumbs">
+							<a href="#">depth 1</a>
+							<a href="#">depth 2</a>
+							<a href="#">depth 3</a>
+						</div>
+					</div>	
+					<div class="title-sec">
+						<h2 class="se-title">타이틀</h2>
+					</div>
+				</div>
+				<div class="conts-body">
+					시작<br>
+                    <button type="button" onclick="modalPop.open('#popTempId00')">팝업1 오픈</button><br>
+					scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>
+					scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>
+					scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>scroll<br><br><br><br><br><br><br><br><br>
+					끝
+				</div>
+			</div>
+			<!-- //contents -->
+
+
+
+		</div>
+		<!--// contents-area -->
+		
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer" class="footer">
+		<div class="footer-inner">
+			<div class="col">
+				<div class="copy">Copyright ⓒ 2022 M Capital All rights reserved.</div>
+			</div>
+			<div class="col-right">
+				<div class="footer-logo">
+					<img src="../../../../resource/image/layout/logo_footer.png" alt="M캐피탈 로고">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// footer -->
+</div>
+<!-- //layout -->
+
+<!-- layout popup1 -->
+<div id="popTempId00" class="layout-popup"><!-- 열기 : on-->
+    <div class="popup ei-w600">
+        <div class="popup-inner">
+            <div class="popup-header">
+                <div class="popup-title">
+                    제목
+                </div> 
+                <button type="button" class="se-btn btn-popup-close"></button>
+            </div>
+            <div class="popup-body">
+                <div class="popup-contents">
+                    <button type="button" onclick="modalPop.open('#popTempId01')">팝업오픈2</button><br>
+                    팝업 콘텐츠 1
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-wrap">
+                    <button type="button" class="se-btn ty-02">버튼</button>
+                    <button type="button" class="se-btn ty-01">버튼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// layout popup1 -->
+<!-- layout popup2 -->
+<div id="popTempId01" class="layout-popup"><!-- 열기 : on-->
+    <div class="popup  ei-w400">
+        <div class="popup-inner">
+            <div class="popup-header">
+                <div class="popup-title">
+                    제목
+                </div> 
+                <button type="button" class="se-btn btn-popup-close"></button>
+            </div>
+            <div class="popup-body">
+                <div class="popup-contents">
+                
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    <button type="button" onclick="modalPop.open('#popTempId02')">팝업오픈3</button><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2<br><br><br><br>
+                    팝업콘텐츠 2
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-wrap">
+                    <button type="button" class="se-btn ty-02">버튼</button>
+                    <button type="button" class="se-btn ty-01">버튼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// layout popup2 -->
+<!-- layout popup3 -->
+<div id="popTempId02" class="layout-popup"><!-- 열기 : on-->
+    <div class="popup">
+        <div class="popup-inner">
+            <div class="popup-header">
+                <div class="popup-title">
+                    제목
+                </div> 
+                <button type="button" class="se-btn btn-popup-close"></button>
+            </div>
+            <div class="popup-body">
+                <div class="popup-contents">
+                    팝업콘텐츠 3
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-wrap">
+                    <button type="button" class="se-btn ty-02">버튼</button>
+                    <button type="button" class="se-btn ty-01">버튼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// layout popup3 -->
+
+<script>
+    modalPop.open('#popTempId00'); // 팝업열기
+</script>
+</body>
+
+
+</html>

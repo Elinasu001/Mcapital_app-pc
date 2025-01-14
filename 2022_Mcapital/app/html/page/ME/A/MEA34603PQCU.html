@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+	
+	<title>만기매입(양수)안내</title>
+	
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">만기매입(양수)안내</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section">
+						<div class="conts-part">
+							<h6 class="se-title">만기정산내역</h6>
+							<div class="sp-tbl ty-box has-tfoot">
+								<table>
+									<caption>만기정산내역</caption>
+									<colgroup>
+										<col style="width: 50%;">
+										<col style="width: 50%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">보증금<span class="circle-num">1</span></th>
+											<td>16,676,000 원</td>			
+										</tr>
+										<tr>
+											<th scope="row">잔존가치<span class="circle-num">2</span></th>
+											<td>24,180,200 원</td>
+										</tr>
+										<tr>
+											<th scope="row">범칙금예치금<span class="circle-num">3</span></th>
+											<td>300,000 원</td>			
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th>합계 <span class="circle-num">3</span>+<span class="circle-num">2</span>-<span class="circle-num">1</span></th>
+											<td class="fw-bold">7,804,200 원</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<ul class="sp-bullet-list ty-circle">
+								<li>만기일 내에 미입금시 본계약에서 정한 연체이자율로 반영되오니 유의바랍니다.</li>
+							</ul>
+						</div>
+						<div class="conts-part">
+							<h6 class="se-title">1. 매입(양수)시 안내사항</h6>
+							<div class="conts-text-pack">
+								<ul class="sp-bullet-list ty-hypen">
+									<li>
+										명의자는 렌트이용자 본인명의로만 가능합니다.​<br>
+										(자동차관리법 12조3항에 의거 3자 양도불가능)​
+									</li>
+									<li>잔존가치 금액 입금 또는 보증금과 상계 후 양도 가능합니다.</li>
+									<li>렌트 차량 매입(양수) 후 15일 이내에 명의 이전 시 과태료가 발생합니다. (자산매각 계산서 발행일 기준)</li>
+									<li>자동차 등록명의 이전 후 이전된 등록증 사본은 Fax로 당사에 접수하여야 이전절차가 마무리됩니다.​</li>
+									<li>소유권 이전 비용과 명의이전 시까지 발생하는 자동차세, 환경개선부담금, 범칙금 등은 고객이 부담하셔야 하며 이에 따라 만기 정산금이 발생할 수 있으며, 마지막회차 렌트료에 합산청구 됩니다.​</li>
+									<li>차량 취등록세, 공채 등 이전에 따른 부대비용은 고객님께서 별도로 부담하셔야 합니다.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="conts-part">
+							<h6 class="se-title">2. 명의이전 구비서류</h6>
+							<div class="conts-text-pack">
+								<div class="bold-text">개인/개인사업자</div>
+								<ul class="sp-bullet-list ty-hypen">
+									<li>양도증명서</li>
+									<li>자동차등록증</li>
+									<li>
+										보험가입증명서<br>
+										(렌트 최종연도 보험 만기 전 반드시 보험 가입 요망)
+									</li>
+									<li>인감증명서 1부</li>
+									<li>신분증</li>
+									<li>인감도장</li>
+								</ul>
+								<div class="text">
+									이용자 명의일 경우 당사에 만기일 전 설정해지서류를 요청해 주시기 바랍니다.
+								</div>
+							</div>
+						</div>
+						<div class="conts-part">
+							<h6 class="se-title">3. 명의이전 등록비용</h6>
+							<div class="conts-text-pack">
+								<ul class="sp-bullet-list ty-hypen">
+									<li>취득세: 자동차 7%, 이륜차/승합차 5%</li>
+									<li>도시철도채권: 배기량에 따라 요율적용 (지역별 상이)</li>
+									<li>
+										매입(양수)일로부터 15일 이내 명의 미이전시 과태료 발생<br>
+										(자동차 최고 50만원)
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr class="section-linebar" />
+					<div class="section">
+						<div class="se-chkbx ty-row">
+							<input type="checkbox" name="ex00" id="chk1">
+							<label for="chk1"><!-- 20220525 수정: 문구 -->
+								만기시 조건(인수, 반납)을 선택하여 처리 완료한 후에는 번복하실 수 없습니다. 상기 내용에 동의하며 2021년 1월 7일자로 차량매입(양수)을 신청합니다.
+							</label>
+						</div>
+					</div>
+				</div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<!-- 버튼 비활성화 시 disabled 추가 -->
+					<button type="button" class="se-btn btn-main">다음</button>
+				</div>		
+			</div>			
+		</div>
+    </div>
+</div>
+<!-- //slide popup -->
+
+</body>
+</html>

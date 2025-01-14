@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>연체이자율</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+
+	<div class="popup-layer">
+
+        <div class="popup-header">			
+			<div class="popup-title">연체이자율</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-jumbotron">						
+						<h3 class="se-title">
+                            연체이자율은 <span class="clr-02">20%</span> 입니다.
+						</h3>
+					</div>
+
+					<hr class="linebar">
+
+					<div class="section">
+						<div class="conts-part space-m">
+							<!-- 20220615 수정: 전반적(내용추가) -->
+							<div class="terms-conts-pack">
+								<div class="conts">
+									<div class="title">연체이자율(지연배상금률)</div>
+                                    <div class="text">
+                                        연체이자율은 [대출이자율 + 연체가산이자율]로 적용되며, 법정최고금리인 20% 이내로 적용됩니다. (연체가산이율은 연 3%) 다만 상품에 따라 연체이자율이 일부 달라지는 경우가 있으므로, 유의하여 주시기 바랍니다.
+                                    </div>
+									<div class="text">
+										연체이자(지연배상금)을 내셔야 하는 경우
+										<ul class="sp-bullet-list ty-circle">
+											<li>
+												<span class="fw-bold">“이자를 납입하기로 약정한 날” 에 납입하지 아니한 때</span>
+												<ul class="sp-bullet-list ty-hypen">
+													<li>
+														이자를 납입하여야 할 날의 다음날부터 30일까지는 내셔야 할 약정이자에 대해 연체이자가 적용되고, 30일이 경과하면 기한이익상실로 인하여 대출원금에 연체이율을 곱한 연체 이자를 내셔야 합니다.
+													</li>
+												</ul>
+											</li>
+											<li>
+												<span class="fw-bold">“원금을 상환하기로 약정한 날” 에 상환하지 아니한 때</span>
+												<ul class="sp-bullet-list ty-hypen">
+													<li>
+														원금을 상환하여야 할 날의 다음날부터는 대출원금에 대한 연체이자를 내셔야 합니다.
+													</li>
+												</ul>
+											</li>
+											<li>
+												<span class="fw-bold">“분할상환금(또는 분할상환 원리금)을 상환하기로 한 날” 에 상환하지 아니한 때</span>
+												<ul class="sp-bullet-list ty-hypen">
+													<li>
+														분할상환금(또는 분할상환 원리금)을 상환하여 할 날의 다음날부터는 해당 분할상환금(또는 분할 상환원리금)에 대한 연체이자를, 2회 이상 연속하여 지체한 때에는 기한이익상실로 인하여 대출원금잔액에 대한 연체이자를 내셔야 합니다.
+													</li>
+												</ul>
+											</li>
+											<li>
+												<span class="fw-bold">기타 여신거래기본약관 제8조에서 정한 대출기한 전의 채무변제의무 사유에 해당되어 기한의 이익이 상실된 때</span>
+												<ul class="sp-bullet-list ty-hypen">
+													<li>
+														기한의 이익이 상실 된 때에는 그 다음 날부터 대출원금에 대한 연체이자를 내셔야 합니다.
+													</li>
+												</ul>
+											</li>
+											<li>
+												예시) 원금 1억2천만원(월1백만원 분할상환), 약정이자율 연 5% 연체가산이자율 연 3%인 신용대출의 분할상환금(1백만원) 및 이자(50만원)를 미납하여 연체가 발생하고, 연체발생 후 2개월 시점에 납부할 경우 연체이자
+												<div class="sp-tbl ty-view ty02">
+													<table>
+														<caption>연체이자 계산방법</caption>
+														<colgroup>
+															<col style="width: 25%;">
+															<col style="width: 50%;">
+															<col style="width: 25%;">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">연체기간</th>
+																<th scope="col">연체이자 계산방법</th>
+																<th scope="col">연체이자</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>				
+																<td>연체발생 ~ 30일분</td>
+																<td>지체된 분할상환금 및 약정이자(150만원)X연8%(5%+3%)X30/365</td>
+																<td>9,863원</td>
+															</tr>
+															<tr>				
+																<td>연체31일~60일분</td>
+																<td>원금(1억2천만원)X연8%(5%+3%)X30/365</td>
+																<td>789,041원</td>				
+															</tr>
+															<tr>
+																<td>계</td>
+																<td></td>
+																<td>798,904원</td>
+															</tr>		
+														</tbody>
+													</table>
+													<ul class="sp-bullet-list ty-star">
+														<li>
+															분할상환금 및 기한이익상실전 발생한 약정이자는 별도
+														</li>
+														<li>
+															위 내용은 이해를 돕기 위해 연체이자만을 1개월을 30일로 보고 단순하게 계산한 예시입니다. 연체이자는 대출조건, 이자일수계산, 대출종류 등에 따라 달라질 수 있으며, 실제 납부금액은 연체이자에 약정이자 및 분할상환금을 포함하여 계산됩니다.
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+                                </div>
+							</div>
+							<!--// 20220615 수정: 전반적(내용추가) -->
+						</div>
+						<div class="conts-part">
+                            <p class="text">
+                                상기 내용을 확인 하였습니다.
+                            </p>
+                        </div>
+					</div>
+				</div>		 	      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>						
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">			
+				<div class="btn-wrap">	
+					<button type="button" class="se-btn btn-main">
+						확인
+					</button>					
+				</div>
+			</div>			
+		</div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>신규계좌등록</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">신규계좌등록</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section">
+						<div class="sp-formset nospace">
+							<h6 class="p-title">은행</h6><!-- 20220513 수정내역: 타이틀 수정-->
+							<!-- 
+								20220511 수정내역: 셀렉트 -> fake셀렉트 수정
+								버튼 클릭시, 해당 슬라이드 팝업 호출
+							-->
+							<!-- 20220513 수정내역: 은행선택 마크업수정 -->
+							<button type="button" class="se-btn btn-fake-slt selected">
+								<span class="placeholder">은행 선택</span>
+								<span class="value">국민은행</span>
+							</button>
+						</div>
+						<!-- 20220629 수정내역 : 계좌번호 조회 버튼 제거, 예금주 조회 버튼 추가 -->
+						<div class="sp-formset">
+							<h6 class="p-title">계좌번호</h6>
+							<div class="se-textfld" data-fld-clear="on"><!-- 20220531 data-fld-clear="on" 속성 추가 -->	
+								<input type="number" placeholder="계좌번호 입력" value="" title="계좌번호">	
+							</div>
+						</div>
+						<div class="sp-formset">
+							<h6 class="p-title">예금주</h6>
+							<div class="se-textfld" data-fld-clear="on"><!-- 20220531 data-fld-clear="on" 속성 추가 -->
+								<input type="text" placeholder="예금주 입력" value="" title="예금주" />
+								<span class="e-back">
+									<button type="button" class="se-btn btn-solid-point size-xs">조회</button>
+								</span>
+							</div>
+						</div>
+						<!-- //20220629 수정내역 : 계좌번호 조회 버튼 제거, 예금주 조회 버튼 추가 -->
+						<!-- 사용가능한 경우 -->
+						<div class="ordinary-text">
+							<div class="text">
+								사용 가능한 계좌입니다.
+							</div>
+						</div>
+						<!-- 에러가 발생한 경우 -->
+						<div class="ordinary-text">
+							<div class="text error">
+								계좌 검증에 실패하였습니다. 확인 후 다시 입력하여 주십시오.
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">
+				<div class="btn-wrap">
+					<!-- 버튼 비활성화 시 disabled 추가 -->
+					<button type="button" class="se-btn btn-main-light size-s">취소</button>
+					<!-- 활성화 시 disabled 제거 -->
+					<button type="button" class="se-btn btn-main" disabled>확인</button>
+				</div>		
+			</div>			
+		</div>
+		
+    </div>
+</div>
+<!-- //slide popup -->
+
+</body>
+</html>

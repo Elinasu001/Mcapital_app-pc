@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>중고차유형선택</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- slide popup -->
+<!-- 팝업 open시에 슬라이드 애니메이션 클래스(.slide-up) 추가 -->
+<div id="tempPopup00" class="layout-slide slide-up">
+    <div class="popup-layer">
+
+        <div class="popup-header">
+            <div class="popup-title">중고차선택</div>  <!-- 20220527 수정: 타이틀 -->
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- s : 팝업 컨텐츠 -->
+                <div class="section">
+					<ul class="pop-conts-list">
+						<!-- 20220511 수정내역: 항목수정 -->  
+						<li>
+							<button type="button" class="se-btn btn-arrow-right">					
+								<span class="conts">
+									<span class="text">모델명을 알고 계신가요?</span>
+									<span class="title">차량검색으로 진행</span>
+								</span>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="se-btn btn-arrow-right">			
+								<span class="conts">
+									<span class="text">브랜드와 차종을 직접 선택 하시겠어요?</span>
+									<span class="title">차량선택으로 진행</span>
+								</span>
+							</button>
+						</li>	
+						<!--// 20220511 수정내역: 항목수정 -->  					
+					</ul>
+				</div>
+                <!-- e : 팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+		
+    </div>
+</div>
+<!-- //slide popup -->
+
+
+</body>
+</html>

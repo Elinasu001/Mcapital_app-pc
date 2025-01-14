@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>M Capital 관리자 | 중첩팝업예시</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+<!--
+    ● 팝업 사이즈 지정
+    - 헬퍼클래스 사용: ei-w##
+        * component > helper 참고
+-->
+<!-- layout popup -->
+<div id="popTempId00" class="layout-popup"><!-- 열기 : on-->
+    <div class="popup ei-w600">
+        <div class="popup-inner">
+            <div class="popup-header">
+                <div class="popup-title">
+                    제목
+                </div> 
+                <button type="button" class="se-btn btn-popup-close"></button>
+            </div>
+            <div class="popup-body">
+                <div class="popup-contents">
+                    팝업 콘텐츠 <br>
+                    사이즈예시 ei-600
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-wrap">
+                    <button type="button" class="se-btn ty-02">버튼</button>
+                    <button type="button" class="se-btn ty-01">버튼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// layout popup -->
+
+<script>
+    modalPop.open('#popTempId00'); // 팝업열기
+</script>
+</body>
+
+
+</html>

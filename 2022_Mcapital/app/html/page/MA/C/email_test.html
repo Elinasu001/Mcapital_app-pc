@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기존--약정정보입력</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+	<!-- s : 2023-10-13 수정: 이메일폼수정 -->
+	<style>
+		.se-textfld input.hide { display:none; }
+	</style>
+	<!-- e : 2023-10-13 수정: 이메일폼수정 -->
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				약정정보입력 
+			</div>
+			<!-- 20220506 수정내역 : 헤더 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220506 수정내역 : 헤더 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="section-jumbotron">
+					<h2 class="se-title">이메일 폼 테스트</h2><!-- 20220506 수정내역: 타이틀 수정 -->
+				</div>
+				
+				<div class="section">
+
+					<div class="conts-part">
+						
+						<!-- s : 2023-10-13 수정: 이메일폼수정 -->
+						<div class="sp-formset">
+							<h6 class="se-title">E-mail - 확인용</h6>
+							
+							<div class="sp-formgrid ty-mail">
+								<div class="p-col">
+									<div class="se-textfld" data-fld-clear="on">	
+										<input type="email" inputmode="email" placeholder="E-mail 입력" value="" title="E-mail"  data-cefilter="filter:ENG{@.}">	
+									</div>
+								</div>
+							</div>
+
+						
+							<h6 class="se-title">E-mail - 편법용2</h6>
+							<div class="sp-formgrid ty-mail">
+								<div class="p-col">
+									<div class="se-textfld" data-fld-clear="on">	
+										<input type="password" class="passemail" inputmode="none" placeholder="E-mail 입력" value="" title="E-mail"  onclick="emailformchange();">
+										<input type="email" class="email hide" inputmode="email" placeholder="E-mail 입력" value="" title="E-mail">
+									</div>
+								</div>
+							</div>
+							
+						</div>	
+						<!--e : 2023-10-13 수정: 이메일폼수정 -->
+					</div>
+				</div>
+
+				
+			</div>
+			<!-- //contents-inner -->
+
+		</div>
+		<!-- //contents -->
+
+		<!-- s : 2023-10-13 수정: 이메일폼 스크립트 추가 -->
+		<script>
+			function focusnow() {
+				$(".passemail2").focus();
+				return;
+				
+			};
+
+			function emailformchange() {
+				$(".email").removeClass("hide");
+				$(".email").focus();
+				$(".passemail").addClass("hide");
+				return;
+				
+			};
+		</script>
+		<!-- e : 2023-10-13 수정: 이메일폼 스크립트 추가 -->
+		
+	</div>
+	<!-- //container -->
+</div>
+<!-- //layout -->
+
+</body>
+</html>

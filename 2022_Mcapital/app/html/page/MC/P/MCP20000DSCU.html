@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>홈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+    <!-- 메인용 CSS -->
+    <link rel="stylesheet" href="../../../../resource/css/ui_main.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout main">
+
+	<!-- header -->
+	<div id="header" class="header ty-bg bg-01">
+		<div class="header-inner">
+			<div class="left">
+			</div>
+
+			<!-- <div class="title">
+				타이틀 
+			</div> -->
+			<div class="right">
+				<button type="button" class="se-btn btn-menu alarm new"><!-- 새로운 알림있을 시, new 클래스추가-->
+					<span>알림</span>
+				</button>
+				<button type="button" class="se-btn btn-menu cart new"><!-- 견적있을 시, new 클래스추가-->
+					<span>견적보관함</span>
+				</button>
+				<button type="button" class="se-btn btn-menu-open">
+					<span>전체메뉴열기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+				
+				<div class="intro-page">
+                    <div class="main-tabset">
+                        <div class="tabbtn">
+                            <button type="button" class="se-btn on">홈</button><!-- 활성화시, on 클래스추가 -->
+                            <button type="button" class="se-btn">자동차</button>
+                        </div>
+                        <div class="tabpanel">
+                            <!-- S: 홈 -->
+                            <div class="panel on"><!-- 활성화시, on 클래스추가 -->
+                                <!-- 20220429 수정내역: 마크업수정 -->
+                                <div class="main-intro-ban">
+                                    <div class="main-intro">
+                                        <div class="inner">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 20220429 수정내역: 마크업수정 -->
+            
+                                <div class="main-sec full">
+                                    <div class="main-title">
+                                        <span class="title">금융상품</span>
+                                    </div>
+                                    <div class="main-cont">
+                                        <div class="main-prod-list">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <!-- 20220429 수정내역: 마크업 수정 -->
+                                                    <!-- 20220520 수정내역: 금융상품 TBD내용 추가 -->
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차운용리스</div>
+                                                            <div class="txt">
+                                                                신차구매 부담은 줄이고<br>
+                                                                차량유지는 편리한 금융서비스 
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차금융리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                신차구매 부담을 줄이고<br>저렴한 비용으로 자동차를<br> 사용할 수 있는 금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                신차구매 부담을 줄이고<br>  저렴한 비용으로 자동차를<br> 사용할 수 있는 할부금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차장기렌터카</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                신차구매 부담은 줄이고<br> 차량 유지 &middot; 관리는 편리한<br> 차량임대서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide"><!-- 20220506 수정내역: 항목순서변경 -->
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">중고할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                M캐피탈 제휴 매매상사로<br> 중고차 구입자금을<br> 지급해드리는 할부금융 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">중고오토론</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                중고차 구입자금을<br> 고객님께 지급해드리는 대출상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                인증중고 차량 구입자금이<br> 공식딜러사로 지급되는<br> 할부금융 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고론</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                인증중고 차량을 구입하실 때<br> 빠르고 저렴하게 이용할 수 있는<br> 대출상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고운용리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                매월 납부하시는 리스료 전액<br> 비용처리 가능한 리스 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고금융리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                매월 납부하시는 리스료 중<br> 이자가 비용처리 가능한 리스 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-bike"><!-- 바이크 클래스추가: ty-bike -->
+                                                            <div class="title">바이크할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                바이크구매 부담은 줄이고<br> 차량유지는 편리한 금융서비스 
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-bike"><!-- 바이크 클래스추가: ty-bike -->
+                                                            <div class="title">바이크운용리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                바이크구매 부담은 줄이고<br> 저렴한 비용으로 바이크를<br> 사용할 수 있는 금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-bike"><!-- 바이크 클래스추가: ty-bike -->
+                                                            <div class="title">바이크금융리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                바이크구매 부담을 줄이고<br> 저렴한 비용으로 바이크를<br> 사용할 수 있는 할부금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!--// 20220520 수정내역: 금융상품 TBD내용 추가 -->
+                                                    <!--// 20220429 수정내역: 마크업수정 -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-sec">
+                                    <div class="main-title">
+                                        <span class="title">추천상품</span><!-- 20220531 수정: 타이틀 -->
+                                    </div>
+                                    <div class="main-cont">
+                                        <!-- 20220429 수정내역: 마크업수정 -->
+                                        <div class="main-recomend-ban swiper-container">
+                                            <ul class="swiper-wrapper">
+                                                <!-- 20220704 수정: 배너변경 -->
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-01">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                M캐피탈이 준비한<br>
+                                                                다양한 신차 상품을 만나보세요~
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner01.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-05">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                여유로운 하루를 보내고 싶다면,<br>
+                                                                중고차 구매로 #여행가자
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner05.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-02">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                나만의 차량 구매를 위한<br>
+                                                                상품이 필요하신가요?
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner02.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <!-- 20220622 수정: 배너추가 -->
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-04">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                M캐피탈 내차사기
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner04.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <!--// 20220704 수정: 배너변경 -->
+                                            </ul>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <!--// 20220429 수정내역: 마크업수정 -->
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- E: 홈 -->
+                            <!-- S: 자동차 -->
+                            <div class="panel">
+
+                            </div>
+                            <!-- E: 자동차 -->
+                        </div>
+                    </div>
+					
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+<!-- layout-slide-my -->
+<div id="tempPopup01" class="layout-slide-my">
+    <div class="popup-layer">
+        <div class="popup-header">
+            <button type="button" class="se-btn popup-toggle">
+				<span class="se-ico ico-pop-toggle">상세보기</span>
+			</button>
+            <div class="popup-title after-show">MY페이지</div>
+        </div>
+
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- S: 팝업 콘텐츠 -->
+                <div class="section">
+                    <!-- 팝업 열기 전 show : .after-hide 추가 -->
+                    <div class="my-preview-wrap after-hide">
+                        <!-- 로그인 전 -->
+                        <div class="my-preview-box">
+                            <div class="title">
+                                금융진행상황을 확인하시려면<br>
+                                <span class="fw-900 emp">로그인</span>해주세요.
+                            </div>
+                            <div class="conts">
+                                <button type="button" class="se-btn btn-login">로그인</button>
+                            </div>
+                        </div>
+                        <!--// 로그인 전 -->
+
+                        <!-- 로그인 후 -->
+                        <!-- <div class="my-preview-box">
+                            <div class="title">
+                                <span class="fw-900">2022</span>년 <span class="fw-900">12</span>월 납부예정금액
+                            </div>
+                            <div class="conts">
+                                <div class="amount">
+                                    <span class="val">860,000</span>
+                                    <span class="unit">원</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!--// 로그인 후 -->
+                    </div>
+                    <!--// 팝업 열기 전 show -->
+
+                    <!-- 팝업 열기 후 show : .after-show 추가 -->
+                    <div class="my-info-wrap after-show">
+                        <div class="my-info-text">
+                            <div class="text">
+                                안녕하세요, <span>김겨울</span>님
+                                <button type="button" class="se-btn btn-my-edit">
+                                    <span class="se-ico ico-my-edit">회원정보</span>
+                                </button>
+                            </div>
+                            <div class="recent">
+                                최근 접속 <span>21.12.31 11:00:29</span>
+                            </div>
+                        </div>
+
+                        <div class="my-info-conts">
+                            <div class="sp-tabset nospace">
+                                <ul class="se-tabbtn ty-sub">
+                                    <li class="on"><button type="button" class="se-btn">MY금융</button></li>
+                                    <li><button type="button" class="se-btn">상품신청현황</button></li>
+                                    <li><button type="button" class="se-btn">상환스케줄</button></li>
+                                </ul>
+                                <ul class="p-tab-panel">
+                                    <!-- S : MY금융 -->
+                                    <li class="on">
+                                        <div class="my-finance-pack">
+                                            <!-- S : 진행상품없음 -->
+                                            <div class="noresult no-ico">
+                                                <p class="text">
+                                                    진행 중인 상품이 없습니다.<br> M캐피탈의 다양한 상품을 이용해보세요~
+                                                </p>
+                                            </div>
+
+                                            <div class="finance-event-banner">
+                                                <a href="#none" class="se-btn banner">
+                                                    <div class="col">
+                                                        <div class="copy">
+                                                            신차구매 부담을 줄이고<br>
+                                                            관리도 편리한
+                                                        </div>
+                                                        <div class="title">신차운용리스</div>
+                                                        <div class="btn-pack">
+                                                            <span class="se-btn btn-fake">더 알아보기</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="img-pack">
+                                                            <img src="../../../../resource/image/contents/img_fin_prod01.png" alt="상품명">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- E : 진행상품없음 -->
+
+                                            <ul class="finance-prod-list">
+                                                <li>
+                                                    <!-- 진행중 상품 -->
+                                                    <a href="#none" class="se-btn">
+                                                        <div class="copy">
+                                                            진행 중인 금융상품이 있어요!
+                                                        </div>
+                                                        <div class="main-info">
+                                                            <div class="name">신차운용리스</div>
+                                                            <div class="date">22.12.12</div>
+                                                        </div>
+                                                        <div class="progress-bar ptn-02">
+                                                            <div class="bar" style="width: 20%;"></div>
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <span class="se-badge ty-normal clr-04 size-s">Step 2</span>
+                                                            <span class="text ing">예상납입금 확인 중</span>
+                                                        </div>
+                                                        <div class="btn-fake">
+                                                            이어서 진행하시겠어요?
+                                                            <span class="se-ico arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#none" class="se-btn">
+                                                        <div class="main-info">
+                                                            <div class="name">신차장기렌터카</div>
+                                                            <div class="date">21.12.31</div>
+                                                        </div>
+                                                        <div class="progress-bar ptn-01">
+                                                            <div class="bar" style="width: 40%;"></div>
+                                                        </div> 
+                                                        <div class="sub-info">
+                                                            <span class="se-badge ty-normal clr-05 size-s">이용중</span>
+                                                            <span class="text">36개월 중 5개월 이용 중입니다.</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <!-- 미납 상품 -->
+                                                    <a href="#none" class="se-btn">
+                                                        <div class="copy">
+                                                            미납 중인 납부금이 있어요!
+                                                        </div>
+                                                        <div class="main-info">
+                                                            <div class="name">신차운용리스</div>
+                                                            <div class="date">2회차</div>
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <span class="se-badge ty-normal clr-06 size-s">미납금</span>
+                                                            <span class="text nopay">
+                                                                <span class="amount">
+                                                                    <span class="val">860,000</span>
+                                                                    <span class="unit">원</span>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="finance-loan-list swiper">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="se-btn">
+                                                            <div class="main-info">
+                                                                <span class="title"><span>12</span>월 납부예정</span>
+                                                            </div>
+                                                            <div class="sub-info">
+                                                                <span class="amount">
+                                                                    <span class="val">860,000</span>
+                                                                    <span class="unit">원</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="desc">
+                                                                총 <span class="fw-900"><span>3</span>건</span> 대출상품이 있어요
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="se-btn">
+                                                            <div class="main-info">
+                                                                <div class="title"><span>12</span>월 납부예정</div>
+                                                                <div class="date">22.02.02</div>
+                                                            </div>
+                                                            <div class="sub-info">
+                                                                <div class="amount">
+                                                                    <span class="val">860,000</span>
+                                                                    <span class="unit">원</span>
+                                                                </div>
+                                                                <span class="name">신차금융리스</span>
+                                                            </div>
+                                                            <div class="progress-bar clr-01">
+                                                                <div class="bar" style="width: 20%;"></div>
+                                                            </div>
+                                                            <div class="desc">
+                                                                총 <span class="fw-900"><span>36</span>회</span> 중 <span class="fw-900"><span>5</span>회</span> 납부하셨어요.
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                    </li> 
+                                    <!-- E : MY금융 -->
+                                    <!-- S : 상품신청현황 -->
+                                    <li>
+                                        상품신청현황
+                                    </li>
+                                    <!-- E : 상품신청현황 -->
+                                    <!-- S : 상환스케줄 -->
+                                    <li>
+                                        상환스케줄
+                                    </li>
+                                    <!-- E : 상환스케줄 -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 팝업 열기 후 show -->
+
+
+                </div>
+                <!-- E: 팝업 콘텐츠 -->
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--// layout-slide-my -->
+
+
+<!-- 메인용 JS -->
+<script src="../../../../resource/js/ui_main.js"></script>
+<script>
+    /* 금융상품 - 스와이퍼 */
+    var mainProdSwiper = new Swiper('.main-prod-list .swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        watchOverflow: true,
+        freeMode:  { // 20220506 수정내역: 추가
+            enabled: true,
+            sticky: true,
+        }, 
+    }); 
+
+    /* 맞춤상품추천 */
+    var mainRecomendSwiper = new Swiper('.main-recomend-ban.swiper-container', {
+        effect : 'fade',
+        watchOverflow: true,
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction : false,
+            pauseOnMouseEnter : true,
+        },
+        pagination : {
+            el: '.main-recomend-ban .swiper-pagination',
+            type: 'bullets',
+			clickable: true,
+        },
+    }); 
+    if( mainRecomendSwiper.slides.length == 1){
+        mainRecomendSwiper.destroy();
+    }
+
+    /* MY금융상품 - 스와이퍼 */
+    var myLoanSwiper = new Swiper('.finance-loan-list.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        centeredSlides: true,
+        watchOverflow: true,
+        pagination : {
+            el: '.finance-loan-list .swiper-pagination',
+            type: 'bullets',
+			clickable: true,
+        }
+    });
+</script>
+
+</body>
+</html>

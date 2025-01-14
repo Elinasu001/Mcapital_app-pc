@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*
+	라이브러리
+*/
+
+// 헤더 높이
+$headerHeight : 55px;
+
+// 공통 하단 간격
+$bottomSpace : 34px;
+
+// 경로
+$iconPath : '../image/icon'; // 아이콘
+$contentsPath : '../image/contents'; // 콘텐츠
+
+// 공통 컬러 - 발생하는 순서대로 기입
+$c01 : #E42939;
+$c02 : #1B6DFA;
+$c03 : #109C9F;
+
+// gray 컬러
+$gray00 : #FFF;
+$gray01 : #707070;
+$gray02 : #E9EBEE;
+$gray03 : #909090;
+$gray04 : #c8c8c8;
+$gray05 : #303030;
+
+// breakpoint 
+$breakP320 : 320px;
+$breakP360 : 360px;
+$breakP375 : 375px;
+$breakP667 : 667px;
+$breakP768 : 768px;
+
+// 아이콘 텍스트 날리기
+@mixin hidden {
+	overflow: hidden;
+	display: inline-block;
+	position: relative;	
+	border: 0;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);	
+}
+
+// 캡션 날리기
+@mixin captionHidden {
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	z-index: -1;
+	border: 0;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+}
+
+// 말줄임
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// 인라인블록 정렬용
+@mixin pseudoInB {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+
+// 아이콘 background 기본 속성
+@mixin bgDefault {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+// 18*18 사이즈 회색 화살표
+@mixin grayArrow18($direction) {
+	background-size: 18px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@if $direction == 'up' {
+		background-image: url('../image/contents/icon_arrow_up.png');
+	}
+	@if $direction == 'down' {
+		background-image: url('../image/contents/icon_arrow_down.png');
+	}
+	@if $direction == 'left' {
+		background-image: url('../image/contents/icon_arrow_left.png');
+	}
+	@if $direction == 'right' {
+		background-image: url('../image/contents/icon_arrow_right.png');
+	}
+
+	span {
+		@include hidden;
+	}
+}

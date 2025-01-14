@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>약정진행요청</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+        <div class="popup-header">			  
+			<div class="popup-title">업무진행현황상세</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">					
+
+					<div class="section">
+						<div class="conts-part">
+							<h6 class="se-title">차량정보</h6>
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="text">
+											<span>BMW</span> 
+											<span>HP4 Race</span>
+										</div>
+										<div class="amount">
+											<span class="val">41,980,000</span>
+											<span class="unit">원</span>
+										</div>
+									</div>											
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<div class="text">신차</div>							
+									</div>	
+									<div class="conts">
+										<div class="sp-tbl ty-list line">
+											<table>
+												<caption>차량정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">	
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">차대번호</th>
+														<td>15ER146DF54323456</td>  	
+													</tr>									
+												</tbody>
+											</table>
+										</div>										
+									</div>												
+								</div>
+							</div>							
+						</div>
+
+						<!-- 바이크운용리스 -->
+						<div class="conts-part">
+							<h6 class="se-title">상품정보</h6>
+
+							<div class="amount-pack ty-box">
+								<div class="title">월 예상 리스료</div>
+								<div class="value">
+									<span class="val">300,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="title">바이크운용리스</div>
+									</div>									
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">유형</th>
+														<td>개인</td>		
+													</tr>							
+													<tr>
+														<th scope="row">이용기간</th>
+														<td>24개월</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">보증금</th>
+														<td>10,000,000원</td>		
+													</tr>							
+													<tr>
+														<th scope="row">보증율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">장기선수금</th>
+														<td>10,000,000원</td>		
+													</tr>							
+													<tr>
+														<th scope="row">장기선수율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">잔가</th>
+														<td>10,000,000원</td>		
+													</tr>							
+													<tr>
+														<th scope="row">잔가율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">자동차세</th>
+														<td>포함</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 바이크금융리스 -->
+						<div class="conts-part">
+							<h6 class="se-title">상품정보</h6>
+
+							<div class="amount-pack ty-box">
+								<div class="title">월 예상 리스료</div>
+								<div class="value">
+									<span class="val">300,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="title">바이크금용리스</div>
+									</div>									
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">유형</th>
+														<td>개인</td>		
+													</tr>							
+													<tr>
+														<th scope="row">이용기간</th>
+														<td>24개월</td>		
+													</tr>
+													<tr>
+														<th scope="row">약정주행거리</th>
+														<td>30,000km</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">선수금</th>
+														<td>10,000,000원</td>		
+													</tr>							
+													<tr>
+														<th scope="row">선수율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">리스원금</th>
+														<td>1,000,000원</td>		
+													</tr>	
+													<tr>
+														<th scope="row">자동차세</th>
+														<td>포함</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 바이크할부 -->
+						<div class="conts-part">
+							<h6 class="se-title">상품정보</h6>
+
+							<div class="amount-pack ty-box">
+								<div class="title">월 예상 할부금</div>
+								<div class="value">
+									<span class="val">300,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="title">바이크할부</div>
+									</div>									
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이 -->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">유형</th>
+														<td>개인</td>		
+													</tr>							
+													<tr>
+														<th scope="row">이용기간</th>
+														<td>24개월</td>		
+													</tr>
+													<tr>
+														<th scope="row">약정주행거리</th>
+														<td>30,000km</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">선수금</th>
+														<td>10,000,000원</td>		
+													</tr>							
+													<tr>
+														<th scope="row">선수율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">할부원금</th>
+														<td>1,000,000원</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<!-- <div class="popup-footer">
+			<div class="bottom-btn-area">				
+				<div class="btn-wrap">	
+					<button type="button" class="se-btn btn-main" disabled>button</button>
+				</div>				
+			</div>			
+		</div> -->
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>

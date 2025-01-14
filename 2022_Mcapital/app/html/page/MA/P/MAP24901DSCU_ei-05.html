@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>인증중고할부</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title"><!-- 20220513 수정내역: 타이틑 수정 -->
+				인증중고할부
+			</div>
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				<div class="section-jumbotron">
+					<h5 class="se-title">
+						<span>김겨울</span> 고객님,<br>
+						차량 및 상품이 선택되었습니다. <br>
+						예상 할부금 조회를 진행해주세요!
+					</h5>
+				</div>
+
+				<div class="section">
+
+					<div class="conts-part">
+						<h6 class="se-title">차량정보</h6>
+						<!-- 차량선택의 경우 노출 -->
+						<!-- 20220513 수정내역: 차량정보 수정 -->
+						<div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="name">현대 더 뉴 그랜저</div><!-- 차량가입력 조회의 경우 name 영역 제거 -->
+									<div class="cash">41,280,000원</div>
+								</div>
+								<div class="col-right">
+									<!-- 차량이미지 -->
+									<div class="car">
+										<img src="../../../../resource/image/contents/car/car01.png" alt="모델명">
+									</div>
+									<!--// 차량이미지 -->
+
+									<!-- 버튼 -->
+									<button type="button" class="se-btn">
+										<span class="se-ico ico-info-arrow">이동하기</span>
+									</button>
+									<!--// 버튼 -->
+								</div>
+							</div>	
+							
+							<div class="info-body">
+								<div class="conts">
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>차량정보</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">세부모델</th>
+													<td>더 뉴 그랜저 IG</td>			
+												</tr>
+												<tr>
+													<th scope="row">트림</th>
+													<td>2022년형 가솔린 1.6 르블랑</td>			
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 차량선택의 경우 노출 -->
+
+
+						<!-- 20220513 수정내역: 케이스 추가 -->
+						<!-- 20220610 수정: 차량정보 -->
+						<!-- 차종검색의 경우 노출 -->
+						<!-- <div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="name">현대 더 뉴 그랜저</div>
+									<div class="cash">41,280,000원</div>
+								</div>
+								<div class="col-right">
+									<div class="car">
+										<img src="../../../../resource/image/contents/car/car01.png" alt="모델명">
+									</div>
+									<button type="button" class="se-btn">
+										<span class="se-ico ico-info-arrow">이동하기</span>
+									</button>
+								</div>
+							</div>	
+							
+							<div class="info-body">
+								<div class="conts">
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>차량정보</caption>
+											<colgroup>
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">연식</th>
+													<td>2018년식</td>			
+												</tr>
+												<tr>
+													<th scope="row">배기량</th>
+													<td>2,500cc</td>			
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div> -->
+						<!--// 차종검색의 경우 노출 -->
+					</div>
+
+					<div class="conts-part">
+						<h6 class="se-title">
+							상품정보
+						</h6>
+
+						<div class="info-tbl-pack">
+							<div class="info-head">
+								<div class="col">
+									<div class="title">인증중고할부</div><!-- 20220513 수정내역: 타이틀 수정 -->
+								</div>
+								<div class="col-right">							
+									<button type="button" class="se-btn">
+										<span class="se-ico ico-info-arrow">이동하기</span>
+									</button>
+								</div>
+							</div>	
+							
+							<div class="info-body">
+								<div class="conts">
+
+									<!-- 20220513 수정내역: 상품정보 수정-->
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>상품정보</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">유형</th>
+													<td>개인</td>		
+												</tr>
+												<tr>
+													<th scope="row">이용기간</th>
+													<td>36개월</td>		
+												</tr>		
+											</tbody>
+										</table>
+									</div>
+
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>상품정보</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">선수금</th>
+													<td>10,000,000원</td>		
+												</tr>
+												<tr>
+													<th scope="row">선수금율</th><!-- 20220727 수정: 문구 수정-->
+													<td>25.8%</td>		
+												</tr>
+												<tr>
+													<th scope="row">할부원금</th>
+													<td>28,500,000원</td>		
+												</tr>					
+											</tbody>
+										</table>
+									</div>
+									<!--// 20220513 수정내역: 상품정보 수정-->
+								</div>
+																	
+							</div>
+						</div>
+					</div>
+					
+				</div>	
+
+				<div class="section">
+					<div class="btn-wrap">
+						<a href="tel:0000-0000" class="se-btn btn-solid-line">
+							<span class="se-ico ico-cs"></span>
+							고객센터 연결 1588-9688
+						</a>						
+					</div>
+				</div>
+			</div>	
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">			
+						<button type="button" class="se-btn btn-main">예상 할부금 조회</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>
+	</div>
+	<!-- //container -->	
+	
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

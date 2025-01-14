@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>신차운용리스</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				바이크운용리스 
+			</div>
+			<!-- <div class="right">
+				버튼자리
+			</div> -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				
+				<div class="section-jumbotron">
+					<h3 class="se-title">
+						보유면허를 선택해주세요.
+					</h3>
+				</div>
+				
+				<div class="section">
+					<div class="info-tbl-pack">
+						<div class="info-head">
+							<div class="col">
+								<div class="text">
+									<span>BMW</span> 
+									<span>HP4 Race</span>
+								</div>
+								<div class="amount">
+									<span class="val">41,980,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="info-body">
+							<div class="conts">
+								<div class="sp-tbl ty-list">
+									<table>
+										<caption>차량정보</caption>
+										<colgroup>
+											<!-- 20220615 수정:  col넓이-->
+											<col style="width: 40%;">
+											<col style="width: 60%;">		
+										</colgroup>		
+										<tbody>
+											<tr>
+												<th scope="row">신차</th>
+												<td></td>
+											</tr>
+											<!-- 중고차인경우 노출 -->
+											<!-- <tr>
+												<th scope="row">중고차</th>
+												<td>2010년식</td>
+											</tr> -->
+										</tbody>
+									</table>
+								</div>
+							</div>	
+						</div>
+					</div>						
+				</div>	
+
+				<div class="section">
+					<div class="sp-formset">
+						<h6 class="p-title">유형</h6>
+						<div class="se-textfld" data-fld-clear="on">	
+							<input type="text" placeholder="" value="개인사업자" title="유형" disabled>	
+						</div>
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">보유면허</h6>
+						<div class="se-select" data-stove="select" data-uicase="slide">
+							<div class="e-hidden-title">보유면허</div>
+							<select required="" title="">
+								<option value="" hidden="">보유면허 선택</option>
+								<option value="0">1종 소형</option>
+								<option value="1">1종 보통</option>
+								<option value="2">1종 대형</option>
+								<option value="3">1종 특수(소형 견인차)</option>
+								<option value="4">1종 특수(대형 견인차)</option>
+								<option value="5">1종 특사(구난차)</option>
+								<option value="6">2종 원동기</option>
+								<option value="7">2종 소형</option>
+								<option value="8">2종 보통</option>							
+							</select>		
+						</div>
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">면허번호</h6>
+						<div class="sp-formgrid">
+							<div class="p-col-6">
+								<div class="se-select" data-stove="select" data-uicase="slide">
+									<div class="e-hidden-title">발행기관</div>
+									<select class="" required="" title="발행기관">
+										<!-- 20220610 수정내역 : 항목 순서 변경 -->
+										<option value="" hidden="">발행기관</option>
+										<option value="1">11</option>
+										<option value="2">12</option>
+										<option value="3">13</option>
+										<option value="4">14</option>
+										<option value="5">15</option>
+										<option value="6">16</option>
+										<option value="7">17</option>
+										<option value="8">18</option>
+										<option value="9">19</option>
+										<option value="10">20</option>
+										<option value="11">21</option>
+										<option value="12">22</option>
+										<option value="13">23</option>
+										<option value="14">24</option>
+										<option value="15">25</option>
+										<option value="16">26</option>
+										<option value="17">28</option>
+										<option value="18">서울</option>
+										<option value="19">부산</option>
+										<option value="20">경기</option>
+										<option value="21">강원</option>
+										<option value="22">충북</option>
+										<option value="23">충남</option>
+										<option value="24">전북</option>
+										<option value="25">전남</option>
+										<option value="26">경북</option>
+										<option value="27">경남</option>
+										<option value="28">제주</option>
+										<option value="29">대구</option>
+										<option value="30">인천</option>
+										<option value="31">광주</option>
+										<option value="32">대전</option>
+										<option value="33">울산</option>
+										<option value="34">경기북부</option><!-- 20220629 수정: 옵션값(없음->경기북부) -->
+										<!-- //20220610 수정내역 : 항목 순서 변경 -->
+									</select>
+								</div>
+							</div>							
+							<div class="p-col-10">
+								<div class="se-textfld">	
+									<input type="number" value="" placeholder="면허번호 입력" title="면허번호 입력">	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sp-formset">
+						<h6 class="p-title">발급일자</h6>
+						<div class="se-textfld" data-fld-clear="on">	
+							<input type="text" placeholder="발급일자 입력 예) 20020101" value="" title="발급일자">	
+						</div>
+					</div>
+
+					<div class="info-bg-box">
+						<p class="text">적합면허가 없는 경우 대출 진행이 불가할 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">					
+					<div class="btn-wrap">	
+						<!-- 버튼 활성화 시 disabled 삭제 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom : 하단 영역 -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+
+</body>
+</html>

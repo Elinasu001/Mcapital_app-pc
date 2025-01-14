@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>table, pagination 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../../z_eilab/template/guide/guide.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; table, pagination &gt;</h1>
+
+<!-- <div class="example_box">
+	<div class="ex_title">title h2~h6</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류명</span><span class="class_name">셀렉터명</span></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_wrap">
+			<div class="source_code">
+소스
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div> -->
+
+<div class="example_box">
+	<div class="ex_title">table - ty-mix</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.se-tbl.ty-mix</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-tbl ty-mix">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">조회 버튼 있을 경우</span><span class="class_name">.se-tbl.ty-mix.with-inquiry</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-tbl ty-mix with-inquiry">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="area-btn-inquiry">
+		<button type="button" class="se-btn inquiry">조회</button>
+	</div>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">table - ty-list</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">default</span><span class="class_name">.se-tbl.ty-list</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-tbl ty-list">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="row">1</th>
+				<th>2</th>
+				<th>1</th>
+				<th>2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th scope="row">1</th>
+				<td>2</td>
+				<th>1</th>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">결과 없을 경우</span><span class="class_name">.se-tbl.ty-list.no-result</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-tbl ty-list no-result">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+			<col style="width: 15%;">
+			<col style="width: 35%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="row">1</th>
+				<th>2</th>
+				<th>1</th>
+				<th>2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="4">결과가 없습니다.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">테이블 수직 정렬 헬퍼 클래스</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.se-pagination</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="sp-tbl ty-list">
+	<table>
+		<caption>테이블 캡션</caption>
+		<colgroup>
+			<col style="width: 50%;">
+			<col style="width: 50%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="row">title title</th>
+				<th>title</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row" class="vat">vertical-align: top;</th>
+				<td><div style="height: 200px; background-color: antiquewhite;">contents</div></td>
+			</tr>
+			<tr>
+				<th scope="row" class="vam">vertical-align: middle;(default)</th>
+				<td><div style="height: 200px; background-color: antiquewhite;">contents</div></td>
+			</tr>
+			<tr>
+				<th scope="row" class="vab">vertical-align: bottom;</th>
+				<td><div style="height: 200px; background-color: antiquewhite;">contents</div></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">pagination</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name"></span><span class="class_name">.se-pagination</span></div>
+		<div class="source_wrap">
+			<div class="source_code">
+<div class="se-pagination">
+	<!-- 
+		first, prev, next, last 버튼 비활성화 시
+		disabled 클래스 추가 
+		(pages 안에 있는 a에는 적용되지 않음)
+	 -->
+	<ul class="prev-wrap">
+		<li><a href="#" class="se-btn first disabled"></a></li>
+		<li><a href="#" class="se-btn prev"></a></li>
+	</ul>
+	<ul class="pages">
+		<!-- 현재 페이지 시 li에 on 클래스 추가 -->
+		<li class="on"><a href="#" class="se-btn">1</a></li>
+		<li><a href="#" class="se-btn">2</a></li>
+		<li><a href="#" class="se-btn">3</a></li>
+		<li><a href="#" class="se-btn">4</a></li>
+	</ul>
+	<ul class="next-wrap">
+		<li><a href="#" class="se-btn next"></a></li>
+		<li><a href="#" class="se-btn last"></a></li>
+	</ul>
+</div>
+			</div>
+			<div class="help"><div class="inner"><button type="button" class="source">소스보기</button><button type="button" class="copy">copy</button></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+<!-- E : layout -->
+
+<!-- zEiLAB - Guide(가이드에만 선언) -->
+<script src="../../../../z_eilab/template/guide/guide.js"></script>
+
+</body>
+</html>

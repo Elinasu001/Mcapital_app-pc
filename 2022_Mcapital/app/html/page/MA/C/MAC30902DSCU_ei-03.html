@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>청구서정보등록</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				약정정보입력 
+			</div>
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="section-jumbotron">
+					<h2 class="se-title">청구서정보등록</h2>
+				</div>
+				
+				<div class="section">
+
+					<div class="conts-part">						
+						<div class="sp-formset">
+							<h6 class="se-title">청구서 수령</h6><!-- 20220513 수정내역: 타이틀 수정 -->
+
+							<div class="se-formtab">
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd100" checked>
+									<label for="rd100">우편</label>
+								</div>
+
+								<div class="se-radio">
+									<input type="radio" name="ex100" id="rd101">
+									<label for="rd101">E-mail</label>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 우편 선택 시 노출 -->
+						<div class="sp-formset">
+							<h6 class="se-title">주소</h6>
+
+							<ul class="se-tabbtn ty-main">
+                                <li class="on"> <!-- on -->
+                                    <button type="button" class="se-btn">자택</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="se-btn">직장</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="se-btn">기타</button>
+                                </li>
+                            </ul>
+    
+                            <div class="btn-pack">
+                                <button type="button" class="se-btn btn-link-box">
+                                    <span class="title"><!-- 20220525 수정: 버튼명 수정 -->
+                                        주소 선택
+                                    </span>
+                                </button>
+                            </div>
+						</div>
+
+						<!-- email 선택 시 노출 -->
+						<!-- 20220617 수정: 오류문구 추가 -->
+						<!-- 20220726 수정: 이메일폼수정 -->
+						<div class="sp-formset">
+							<h6 class="se-title">E-mail</h6>
+							
+							<div class="sp-formgrid ty-mail">
+								<div class="p-col">
+									<div class="se-textfld" data-fld-clear="on">	
+										<input type="email" placeholder="E-mail 입력" value="" title="E-mail">	
+									</div>
+								</div>
+								<div class="p-sign va-at"></div>
+								<div class="p-col">
+									<div class="se-select" data-stove="select" data-uicase="slide">
+										<div class="e-hidden-title">E-mail</div>
+										<select required="" title="E-mail">
+											<option value="" hidden="">선택하세요</option>
+											<option value="0">naver.com</option>
+											<option value="1">hanmail.net</option>
+											<option value="2">nate.com</option>
+											<option value="3">gmail.com</option>
+											<option value="4">empal.com</option>
+											<option value="5">freechal.com</option>
+											<option value="6">hanmir.com</option>
+											<option value="7">hitel.net</option>
+											<option value="8">hotmail.com</option>
+											<option value="9">korea.com</option>
+											<option value="10">lycos.co.kr</option>
+											<option value="11">netian.com</option>
+											<option value="12">paran.com</option>
+											<option value="13">yahoo.com</option>
+											<option value="14" selected>직접입력</option>				
+										</select>
+									</div>		
+								</div>
+							</div>
+							<!-- 직접입력 선택시 노출 -->
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="email" placeholder="도메인 입력" value="" title="도메인">	
+							</div>
+							<!-- 오류시 노출 -->
+							<p class="p-error-msg">
+								이메일을 다시 확인해주세요.
+							</p>
+						</div>	
+						<!--// 20220726 수정: 이메일폼수정 -->
+
+					</div>
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom : 하단 영역 -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

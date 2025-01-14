@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>차량검색</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				차량검색 
+			</div>
+			<!-- 20220325 수정내역 : 닫기 버튼 추가 -->
+			<div class="right">
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+			<!-- //20220325 수정내역 : 닫기 버튼 추가 -->
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="container">
+
+		<div class="contents">
+			<!-- 여기부터 컨텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+				
+				<div class="section-jumbotron">
+					<h3 class="se-title">키워드를 입력해주세요.</h3><!-- 20220506 수정내역: 문구수정 -->
+				</div> 
+
+				<div class="section space-s">
+					<div class="sp-tabset">
+						<ul class="se-tabbtn ty-main">
+							<!-- on -->
+							<li class="on">
+								<button type="button" class="se-btn">차량번호 검색</button>
+							</li>
+							<li>
+								<button type="button" class="se-btn">차종 검색</button>
+							</li>
+						</ul>
+
+						<ul class="p-tab-panel">
+							<!-- on -->
+							<li class="on">
+								<div class="search-car-wrap">
+									<div class="search-car-conts">
+										<!-- 20220325 수정내역: 마크업추가 -->
+										<div class="sp-formset">
+											<div class="se-textfld" data-fld-clear="on"><!-- 20220531 data-fld-clear="on" 속성 추가 -->
+												<input type="text" placeholder="차량번호 입력" value="" title="차량번호 입력">	
+												<span class="e-back"><!-- 20220506 수정내역: 마크업수정 -->
+													<button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+												</span>
+											</div>
+										</div>								
+									</div>
+
+									<div class="search-result-conts">
+										<!-- 검색 후 - 결과있음 -->
+										<div class="conts">
+											<div class="keyword-pack">
+												<h5 class="se-title">검색결과 <span class="count">12</span></h5>
+											</div>
+											<ul class="list">
+												<li>
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<span class="name">
+																현대 싼타페 가솔린 1.6 르블랑
+															</span>
+														</span>
+														<span class="row">
+															<span class="col">
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</span>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car01.png" alt="자동차모델">
+																</span>
+																<!-- 20220401 꺽쇠 추가 -->
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+												</li>		
+												<li>
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<span class="name">
+																현대 싼타페 가솔린 1.6 르블랑
+															</span>
+														</span>
+														<span class="row">
+															<span class="col">
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</span>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car02.png" alt="자동차모델">
+																</span>
+																<!-- 20220401 꺽쇠 추가 -->
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+												</li>	
+												<li>
+													<a href="#none" class="se-btn">
+														<span class="row">
+															<span class="name">
+																현대 싼타페 가솔린 1.6 르블랑
+															</span>
+														</span>
+														<span class="row">
+															<span class="col">
+																<span class="detail">
+																	<span class="val">2018년식</span>
+																	<span class="val side">2,500cc</span>
+																</span>
+																<span class="amount">
+																	<span class="val">28,500,000</span>
+																	<span class="unit">원</span>
+																</span>
+															</span>
+															<span class="col-right">
+																<span class="car">
+																	<img src="../../../../resource/image/contents/car/car03.png" alt="자동차모델">
+																</span>
+																<!-- 20220401 꺽쇠 추가 -->
+																<span class="se-ico arrow-right s18"></span>
+															</span>
+														</span>
+													</a>
+												</li>										
+											</ul>
+										</div>
+										<!-- 검색 후 - 결과없음 -->
+										<!-- <div class="conts">
+											<div class="noresult">
+												<div class="row">
+													<span class="se-ico ico-search-noresult"></span>
+												</div>
+												<p class="text">검색결과가 없습니다.</p>
+											</div>
+										</div> -->
+									</div>
+								</div>
+							</li>
+							<li>CONTS2</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- //여기까지 컨텐츠 -->
+		</div>		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*
+	라이브러리
+*/
+/* v0.2 | 2022-04-29 */
+/*---------------------------------------------
+	대분류
+---------------------------------------------*/
+/* 
+	중분류
+*/
+/*소분류 */
+/*---------------------------------------------
+	menu-edit-grid #메뉴관리
+---------------------------------------------*/
+.menu-edit-grid {
+  margin-top: 30px;
+}
+.menu-edit-grid > * {
+  float: left;
+}
+.menu-edit-grid .col-right {
+  width: calc(100% - 320px);
+  margin-left: 40px;
+}
+.menu-edit-grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 메뉴관리리스트 */
+.menu-edit-list {
+  width: 280px;
+  padding: 30px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #f2f4f8;
+}
+.menu-edit-list > ul.depth1 > li {
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.menu-edit-list > ul.depth1 > li > .menu {
+  display: inline-block;
+  position: relative;
+  padding-left: 13px;
+  box-sizing: border-box;
+  color: #303030;
+  font-weight: 900;
+}
+.menu-edit-list > ul.depth1 > li > .menu::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+}
+.menu-edit-list > ul.depth1 > li > ul.depth2 {
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+.menu-edit-list > ul.depth1 > li > ul.depth2 > li > .menu {
+  display: inline-block;
+  position: relative;
+  padding: 4px 0 4px 20px;
+  box-sizing: border-box;
+  color: #707070;
+}
+.menu-edit-list > ul.depth1 > li > ul.depth2 > li > .menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 98%;
+  border-left: 1px dotted #c8c8c8;
+}
+.menu-edit-list > ul.depth1 > li > ul.depth2 > li > .menu::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 13px;
+  height: 1px;
+  border-bottom: 1px dotted #c8c8c8;
+}
+.menu-edit-list > ul.depth1 > li > ul.depth2 > li:last-child > .menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 50%;
+  border-left: 1px dotted #c8c8c8;
+}
+.menu-edit-list > ul.depth1 > li > ul.depth2 > li.on > .menu {
+  text-decoration: underline;
+}
+.menu-edit-list > ul.depth1 > li.on > .menu {
+  color: #407aff;
+}

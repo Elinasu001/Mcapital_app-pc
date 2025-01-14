@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>M Capital 관리자 | 메뉴관리</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- container -->
+	<div id="container" class="container">
+		<!-- sidenav-area  -->
+		<div class="sidenav-area" style="background-color: beige; display: flex; justify-content: center; align-items: center;">
+			sidenav-area 영역
+		</div>
+		<!--// sidenav-area -->
+
+		<!-- contents-area -->
+		<div class="contents-area">
+
+
+			<!-- contents : 콘텐츠 영역 -->
+			<div class="contents">
+				<div class="conts-head">
+					<div class="breadcrumb-sec">
+						<div class="se-breadcrumbs">
+							<a href="#">게시물관리</a>
+							<a href="#">메뉴관리</a>
+						</div>
+					</div>	
+					<div class="title-sec">
+						<h2 class="se-title">메뉴관리</h2>
+					</div>
+				</div>
+				<div class="conts-body">
+					<div class="section-wrap">
+						<div class="section">
+							<div class="sp-tbl ty-mix with-inquiry">
+								<table>
+									<caption>테이블 캡션</caption>
+									<colgroup>
+										<col style="width: 10%;">
+										<col style="width: 40%;">
+										<col style="width: 10%;">
+										<col style="width: 40%;">
+									</colgroup>
+									<tbody>
+										<tr>
+                                            <th scope="row">메뉴구분</th>
+											<td>
+                                                <div class="se-select ei-w160" data-stove="select">
+													<select class="" title="메뉴구분">
+														<option value="" disabled="" selected="" hidden="">선택하세요</option>
+														<option value="0">option 00</option>
+														<option value="1">option 01</option>
+														<option value="2">option 02</option>
+														<option value="3">option 03</option>
+														<option value="4">option 04</option>
+														<option value="5">option 05</option>
+														<option value="6">option 06</option>
+													</select>
+													<div class="e-select-dim"></div>
+												</div>
+                                            </td>
+											<th scope="row">메뉴노출구분</th>
+											<td>
+                                                <div class="se-select ei-w160" data-stove="select">
+													<select class="" title="메뉴노출구분">
+														<option value="" disabled="" selected="" hidden="">선택하세요</option>
+														<option value="0">option 00</option>
+														<option value="1">option 01</option>
+														<option value="2">option 02</option>
+														<option value="3">option 03</option>
+														<option value="4">option 04</option>
+														<option value="5">option 05</option>
+														<option value="6">option 06</option>
+													</select>
+													<div class="e-select-dim"></div>
+												</div>
+                                            </td>
+                                           
+										</tr>
+										<tr>
+											<th scope="row">메뉴찾기</th>
+                                            <td colspan="3">
+												<ul class="sp-input-row">
+													<li>
+														<div class="se-select ei-w160" data-stove="select">
+															<select class="" title="메뉴노출구분">
+																<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																<option value="0">option 00</option>
+																<option value="1">option 01</option>
+																<option value="2">option 02</option>
+																<option value="3">option 03</option>
+																<option value="4">option 04</option>
+																<option value="5">option 05</option>
+																<option value="6">option 06</option>
+															</select>
+															<div class="e-select-dim"></div>
+														</div>
+													</li>
+													<li>
+														<div class="se-textfld">
+															<input type="text" title="" placeholder="placeholder" />
+														</div>
+													</li>
+												</ul>
+                                            </td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="area-btn-inquiry">
+                                    <button type="button" class="se-btn inquiry">조회</button>
+                                </div>
+							</div>
+
+							<div class="menu-edit-grid">
+								<div class="col">
+									<div class="menu-edit-list">
+										<ul class="depth1">
+											<li>
+												<div class="menu">금융계산기</div>
+											</li>
+											<li class="on"><!-- 활성화: on -->
+												<div class="menu">MY페이지</div>
+												<ul class="depth2">
+													<li class="on"><!-- 활성화: on -->
+														<div class="menu">MY금융</div>
+													</li>
+													<li>
+														<div class="menu">상품신청현황</div>
+													</li>
+													<li>
+														<div class="menu">상환스케줄</div>
+													</li>
+													<li>
+														<div class="menu">회원정보</div>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menu">자동차금융 </div>
+												<ul class="depth2">
+													<li>
+														<div class="menu">신차운용리스</div>
+													</li>
+													<li>
+														<div class="menu">신차금융리스</div>
+													</li>
+													<li>
+														<div class="menu">신차할부</div>
+													</li>
+													<li>
+														<div class="menu">신차장기렌터카</div>
+													</li>
+													<li>
+														<div class="menu">중고할부</div>
+													</li>
+													<li>
+														<div class="menu">중고오토론</div>
+													</li>
+													<li>
+														<div class="menu">중고운용리스</div>
+													</li>
+													<li>
+														<div class="menu">중고금융리스 </div>
+													</li>
+													<li>
+														<div class="menu">바이크운용리스</div>
+													</li>
+													<li>
+														<div class="menu">바이크금융리스</div>
+													</li>
+													<li>
+														<div class="menu">바이크할부 </div>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menu">설정</div>
+												<ul class="depth2">
+													<li>
+														<div class="menu">로그인설정</div>
+													</li>
+													<li>
+														<div class="menu">간편비밀번호 재설정</div>
+													</li>
+													<li>
+														<div class="menu">알림설정</div>
+													</li>
+													<li>
+														<div class="menu">권한정보</div>
+													</li>
+													<li>
+														<div class="menu">약관 및 정책</div>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-right">
+									<div class="conts-part">
+										<h3 class="se-title">메뉴정보</h3>
+										<div class="sp-tbl ty-mix">
+											<table>
+												<caption>메뉴정보</caption>
+												<colgroup>
+													<col style="width: 15%;">
+													<col style="width: 35%;">
+													<col style="width: 15%;">
+													<col style="width: 35%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">메뉴ID</th>
+														<td>
+															<div class="se-textfld ei-w160">
+																<input type="text" title="메뉴ID" placeholder="">
+															</div>
+														</td>
+														<th>메뉴명</th>
+														<td>
+															<div class="se-textfld ei-w160">
+																<input type="text" title="메뉴명" placeholder="">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">메뉴레벨</th>
+														<td>
+															<div class="se-select ei-w160" data-stove="select">
+																<select class="" title="메뉴레벨">
+																	<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																	<option value="0">option 00</option>
+																	<option value="1">option 01</option>
+																	<option value="2">option 02</option>
+																	<option value="3">option 03</option>
+																	<option value="4">option 04</option>
+																	<option value="5">option 05</option>
+																	<option value="6">option 06</option>
+																</select>
+																<div class="e-select-dim"></div>
+															</div>
+														</td>
+														<th>메뉴노출여부</th>
+														<td>
+															<div class="se-select ei-w160" data-stove="select">
+																<select class="" title="메뉴노출여부">
+																	<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																	<option value="0">Y</option>
+																	<option value="1">N</option>
+																</select>
+																<div class="e-select-dim"></div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">화면구동방식</th>
+														<td>
+															<div class="se-select ei-w160" data-stove="select">
+																<select class="" title="화면구동방식">
+																	<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																	<option value="0">option 00</option>
+																	<option value="1">option 01</option>
+																	<option value="2">option 02</option>
+																	<option value="3">option 03</option>
+																	<option value="4">option 04</option>
+																	<option value="5">option 05</option>
+																	<option value="6">option 06</option>
+																</select>
+																<div class="e-select-dim"></div>
+															</div>
+														</td>
+														<th>상위메뉴</th>
+														<td>
+															<div class="se-textfld ei-w160">
+																<input type="text" title="상위메뉴" placeholder="">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">URL경로</th>
+														<td colspan="3">
+															<div class="se-textfld ei-w410">
+																<input type="text" title="상위메뉴" placeholder="">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">APP/WEB구분</th>
+														<td>
+															<div class="se-select ei-w160" data-stove="select">
+																<select class="" title="메뉴노출여부">
+																	<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																	<option value="0">APP</option>
+																	<option value="1">WEB</option>
+																</select>
+																<div class="e-select-dim"></div>
+															</div>
+														</td>
+														<th>앱구분</th>
+														<td>
+															<div class="se-select ei-w160" data-stove="select">
+																<select class="" title="화면구동방식">
+																	<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																	<option value="0">option 00</option>
+																	<option value="1">option 01</option>
+																	<option value="2">option 02</option>
+																	<option value="3">option 03</option>
+																	<option value="4">option 04</option>
+																	<option value="5">option 05</option>
+																	<option value="6">option 06</option>
+																</select>
+																<div class="e-select-dim"></div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">사용 여부</th>
+														<td colspan="3">
+															<div class="se-select ei-w160" data-stove="select">
+																<select class="" title="메뉴노출여부">
+																	<option value="" disabled="" selected="" hidden="">선택하세요</option>
+																	<option value="0">Y</option>
+																	<option value="1">N</option>
+																</select>
+																<div class="e-select-dim"></div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="conts-part">
+										<h3 class="se-title">권한정보</h3>
+										<div class="sp-tbl ty-mix">
+											<table>
+												<caption>권한정보</caption>
+												<colgroup>
+													<col style="width: 15%;">
+													<col style="width: 85%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">채널구분</th>
+														<td>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox1-1" name="checkbox" value="" title="채널구분">
+																<label for="checkbox1-1">
+																	고객
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox1-2" name="checkbox" value="" title="채널구분" checked="">
+																<label for="checkbox1-2">
+																	제휴채널
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox1-3" name="checkbox" value="" title="채널구분">
+																<label for="checkbox1-3">
+																	영업관리자
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox1-4" name="checkbox" value="" title="채널구분">
+																<label for="checkbox1-4">
+																	Admin
+																</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">장비구분</th>
+														<td>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox2-1" name="checkbox" value="" title="장비구분">
+																<label for="checkbox2-1">
+																	신차
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox2-2" name="checkbox" value="" title="장비구분" checked="">
+																<label for="checkbox2-2">
+																	중고차
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox2-3" name="checkbox" value="" title="장비구분">
+																<label for="checkbox2-3">
+																	바이크
+																</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">상품구분</th>
+														<td>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox3-1" name="checkbox" value="" title="상품구분">
+																<label for="checkbox3-1">
+																	할부/론
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox3-2" name="checkbox" value="" title="상품구분" checked="">
+																<label for="checkbox3-2">
+																	리스
+																</label>
+															</div>
+															<div class="se-check">
+																<input type="checkbox" id="checkbox3-3" name="checkbox" value="" title="상품구분">
+																<label for="checkbox3-3">
+																	렌터카
+																</label>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="sp-btn-row">
+										<div class="p-left">
+											<button type="button" class="se-btn ty-03 small">초기화</button>
+										</div>
+										<div class="p-right">
+											<button type="button" class="se-btn ty-01 small">등록</button>
+											<button type="button" class="se-btn ty-01 small">수정</button>
+											<button type="button" class="se-btn ty-01 small">삭제</button>
+											<button type="button" class="se-btn ty-01 small">닫기</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //contents -->
+
+
+
+		</div>
+		<!--// contents-area -->
+		
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer" class="footer" style="background-color: lightblue; display: flex; justify-content: center; align-items: center;">
+		footer 영역
+	</div>
+	<!--// footer -->
+
+</div>
+<!-- //layout -->
+
+
+
+</body>
+
+
+</html>

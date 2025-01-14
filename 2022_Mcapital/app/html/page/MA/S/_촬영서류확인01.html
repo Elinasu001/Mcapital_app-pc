@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>촬영서류확인</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+</div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+
+        <div class="popup-header">			  
+			<div class="popup-title">서류명</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section-full">
+						
+						<div class="chk-docs">
+							<div class="inner">
+								<div class="top">
+									<div class="swiper-container docs">
+										<div class="swiper-wrapper">
+											<!-- 이용자가 찍은 사진이 들어가는 영역 -->
+											<div class="swiper-slide">
+												<img src="../../../../resource/image/temp/temp_docu.png" alt="문서이름" />
+											</div>
+										</div>
+
+										<div class="swiper-pagination"></div>
+
+										<button type="button" class="se-btn swiper-button-prev">
+											<span>이전</span>
+										</button>
+										<button type="button" class="se-btn swiper-button-next">
+											<span>다음</span>
+										</button>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="left">
+										<button type="button" class="se-btn docs-retry">
+											다시촬영
+										</button>
+									</div>
+									<div class="center">
+										<button type="button" class="se-btn docs-camera">
+											이어서촬영
+										</button>
+									</div>
+									<div class="right">
+										<button type="button" class="se-btn docs-regist">
+											등록
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+<!-- swiper -->
+<script>
+	var docsSwiper = new Swiper('.swiper-container.docs', {
+		spaceBetween: 10,
+		watchOverflow: true,
+		navigation: {
+			nextEl: '.docs .swiper-button-next',
+   			prevEl: '.docs .swiper-button-prev',
+		},
+		pagination: {
+			el: '.docs .swiper-pagination',
+			type: 'fraction',
+		},
+		on: {
+			init: function(){
+				var $this = $(this.el);
+				var $slide = $this.find('.swiper-slide');
+				if ( $slide.length <= 1 ){
+					$this.addClass('lock');
+				}
+				for ( var i = 0; i < $slide.length; i++ ){
+					var winW = $(window).outerWidth();
+					var sw = $slide.eq(i).find('img').outerWidth();
+
+					if ( sw >= winW ){
+						$slide.eq(i).addClass('set-x')
+					}
+				}
+			},
+			slideChange: function(){
+				var $this = $(this.el);
+				var $thisP = $this.closest('.chk-docs');
+				var $slide = $this.find('.swiper-slide');
+				var active = this.activeIndex;
+				if ( $slide.length > 1 ){
+					if ( active == ( $slide.length - 1 ) ){
+						$thisP.find('.bottom .center').addClass('hide');
+					} else {
+						$thisP.find('.bottom .center').removeClass('hide');
+					}
+				} 
+			}
+		}
+	});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>약정정보입력</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout">
+
+	<!-- header -->
+	<div id="header" class="header">
+		<div class="header-inner">
+			<div class="left">
+				<button type="button" class="se-btn back">
+					<span>뒤로가기</span>
+				</button>
+			</div>
+			<div class="title">
+				약정정보입력 
+			</div>
+			<div class="right">
+				<!-- 20220506 수정내역: 닫기버튼 추가 -->
+				<button type="button" class="se-btn close">
+					<span>닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container-->
+	<div id="container" class="container">
+
+		<!-- contents -->
+		<div class="contents">
+			<!-- 여기부터 콘텐츠 -->
+
+			<!-- contents-inner -->
+			<div class="contents-inner">
+
+				<div class="section">
+					<div class="step-pack">
+						<ul>
+							<li></li>
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-jumbotron">
+					<h2 class="se-title">직업정보확인</h2>
+					<div class="text">
+						M캐피탈은 자금세탁방지법 준수를 위해 <br>
+						직업정보를 수집하고 있습니다.
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="conts-part">
+						<div class="sp-formset">
+							<h6 class="p-title">직업정보</h6>
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">직업정보</div>
+								<select required="" title="">
+									<option value="" hidden="">직업정보 선택</option>
+									<option value="0" selected>농/임/광/수산업</option>
+								</select>
+							</div>
+						</div>
+						<div class="info-bg-box">
+							<ul class="sp-list">
+								<li>직업정보 추가 확인이 필요합니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="conts-part">			
+						<h6 class="se-title">
+							직업정보 추가입력
+
+							<!-- 툴팁 -->
+							<span class="se-tooltip">
+								<button type="button" class="se-btn">
+									<span class="se-ico ico-tooltip">툴팁</span>
+								</button>
+								<span class="se-tooltip-box">
+									<span class="tooltip-inner">
+										<button type="button" class="se-btn btn-tooltip-close">
+											<span class="se-ico ico-tooltip-close">툴팁 닫기</span>
+										</button>
+										<span class="conts">
+											<span class="title">
+												직장명(사업자명)이 필요한 이유는?
+											</span>
+											<span class="text">
+												금융회사는 거래고객에 대한 고객정보확인을 법률로 규정하고 있으며 이를 위해서는 직장명(사업자명) 확인은 필수사항이자 모든 금융회사의 확인 의무 사항 입니다.
+											</span>
+											<span class="caption">
+												참고 : 특정금융거래정보의 보고 및 이용 등에 관한 법률 금융기관등은 신규금융상품을 제공하기 전에 자금세탁 등의 위험을 평가할 수 있는 절차를 수립해야 함
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</h6>
+						<p class="title-msg">
+							안전하고 투명한 금융거래를 위해 아래의 내용을 확인해주세요.
+						</p>
+						<div class="sp-formset">
+							<h6 class="p-title">직장명</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="직장명 입력 예) M캐피탈 등" value="" title="직장명 입력">	
+							</div>
+						</div>
+						<div class="sp-formset">
+							<h6 class="p-title">직장주소</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="직장주소 입력" value="" title="직장주소 입력">	
+							</div>
+						</div>
+						<div class="sp-formset">
+							<h6 class="p-title">부서명</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="부서명 입력 예) 관리팀, 인사팀 등" value="" title="부서명 입력">	
+							</div>
+						</div>
+						<div class="sp-formset">
+							<h6 class="p-title">직위</h6>
+							<!-- 20220401 수정내역 : 셀렉트 -> input으로 변경 -->
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="직위 입력" value="" title="직위 입력">	
+							</div>
+							<!-- //20220401 수정내역 : 셀렉트 -> input으로 변경 -->
+						</div>
+						<div class="sp-formset">
+							<h6 class="p-title">거래목적</h6>
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">거래목적</div>
+								<select required="" title="">
+									<option value="" hidden="">거래목적 선택</option>
+									<option value="0">option 00</option>
+								</select>
+							</div>
+						</div>
+						<div class="sp-formset">
+							<h6 class="p-title">자금원천</h6>
+							<div class="se-select" data-stove="select" data-uicase="slide">
+								<div class="e-hidden-title">자금원천</div>
+								<select required="" title="">
+									<option value="" hidden="">자금원천 선택</option>
+									<option value="0">option 00</option>
+								</select>
+							</div>
+							<!-- 20220531 수정내역 : 기타소득 선택 시 input 추가 -->
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="기타소득(사유필수) 입력" value="" title="기타소득 입력">
+							</div>
+							<!-- //20220531 수정내역 : 기타소득 선택 시 input 추가 -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+			<!-- contents-bottom -->
+			<div class="contents-bottom">
+				<div class="bottom-btn-area">
+					<div class="btn-wrap">
+						<!-- disabled 제거 시 버튼 활성화 -->
+						<button type="button" class="se-btn btn-main" disabled>다음</button>
+					</div>
+				</div>
+			</div>
+			<!-- //contents-bottom -->
+
+			<!-- //여기까지 콘텐츠 -->
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+</body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>홈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+    <!-- 메인용 CSS -->
+    <link rel="stylesheet" href="../../../../resource/css/ui_main.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout main">
+
+	<!-- header -->
+	<div id="header" class="header ty-bg bg-01">
+		<div class="header-inner">
+			<div class="left">
+			</div>
+
+			<!-- <div class="title">
+				타이틀 
+			</div> -->
+			<div class="right">
+				<button type="button" class="se-btn btn-menu alarm new"><!-- 새로운 알림있을 시, new 클래스추가-->
+					<span>알림</span>
+				</button>
+				<button type="button" class="se-btn btn-menu cart new"><!-- 견적있을 시, new 클래스추가-->
+					<span>견적보관함</span>
+				</button>
+				<button type="button" class="se-btn btn-menu-open">
+					<span>전체메뉴열기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<!-- container : 콘텐츠 영역 -->
+	<div id="container" class="container">
+
+		<!-- contents : 콘텐츠 + 하단 영역 묶는 단위 / 속성 없음 -->
+		<div class="contents">
+
+			<!-- contents-inner : 콘텐츠만 묶는 단위 / 속성 있음 -->
+			<div class="contents-inner">
+				
+				<div class="intro-page">
+                    <div class="main-tabset">
+                        <div class="tabbtn">
+                            <button type="button" class="se-btn on">홈</button><!-- 활성화시, on 클래스추가 -->
+                            <button type="button" class="se-btn">자동차</button>
+                        </div>
+                        <div class="tabpanel">
+                            <!-- S: 홈 -->
+                            <div class="panel on"><!-- 활성화시, on 클래스추가 -->
+                                <div class="main-intro-ban swiper-container">
+                                    <div class="main-intro swiper-wrapper">
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="date">조회기준 22.04.10</div>
+                                                <div class="title">
+                                                    <button type="button" class="se-btn link">김겨울</button> <span class="sir">님</span>
+                                                </div>
+                                                <div class="copy"><!-- 20220506 수정내역: 문구수정 -->
+                                                    <span class="fw-900">월 리스료 심사결과를 확인</span>하시고,<br> 약정정보를 입력해주세요 !
+                                                </div>
+                                            </div>
+                                            <div class="sub-info">
+                                                <div class="title">현대 그랜저 더 뉴 그랜저 IG</div>
+                                                <div class="cont">
+                                                    <div class="col">
+                                                        <span class="txt">월 리스료</span>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <span class="amount">
+                                                            <span class="val">300,000</span>
+                                                            <span class="unit">만원</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">약정정보입력</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="date">조회기준 22.04.10</div>
+                                                <div class="title">
+                                                    <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                </div>
+                                                <div class="copy"><!-- 20220506 수정내역: 문구수정 -->
+                                                    <span class="fw-900">월 예상 리스료를 조회 중</span>입니다.
+                                                </div>
+                                            </div>
+                                            <div class="sub-info">
+                                                <div class="title">현대 그랜저 더 뉴 그랜저 IG</div>
+                                                <div class="cont">
+                                                    <div class="col">
+                                                        <span class="txt">차량가</span>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <span class="amount">
+                                                            <span class="val">300,000</span>
+                                                            <span class="unit">만원</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro ty-ing" disabled>
+                                                    <span class="title">견적조회 중 &middot;&middot;&middot;</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- 20220506 수정내역: 마크업추가 -->
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// 20220506 수정내역: 마크업추가 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner swiper-slide">
+                                            <div class="main-info">
+                                                <div class="title">
+                                                    <div class="name">
+                                                        <button type="button" class="se-btn link">김겨울</button><span class="sir">님</span>
+                                                    </div>
+                                                    나만의 차!<br>
+                                                    <span class="fw-normal">어떤 차가 좋을까요?</span>
+                                                </div>
+                                                <div class="txt">내게 꼭 맞는 자동차 찾기</div>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <button type="button" class="se-btn btn-main-intro"><span class="title">나만의 차량 찾기</span></button>
+                                            </div>
+                                            <div class="bg">
+                                                <div class="bg01">
+                                                    <img src="../../../../resource/image/main/intro_bg01.png" alt="">
+                                                </div>
+                                                <div class="bg02">
+                                                    <img src="../../../../resource/image/main/intro_bg02.png" alt="">
+                                                </div>
+                                                <div class="bg03">
+                                                    <img src="../../../../resource/image/main/intro_bg03.png" alt="">
+                                                </div>
+                                                <div class="bg04">
+                                                    <img src="../../../../resource/image/main/img_intro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+            
+                                <div class="main-sec full">
+                                    <div class="main-title">
+                                        <span class="title">금융상품</span>
+                                    </div>
+                                    <div class="main-cont">
+                                        <div class="main-prod-list">
+                                            <div class="swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <!-- 20220429 수정내역: 마크업 수정 -->
+                                                    <!-- 20220520 수정내역: 금융상품 TBD내용 추가 -->
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차운용리스</div>
+                                                            <div class="txt">
+                                                                신차구매 부담은 줄이고<br>
+                                                                차량유지는 편리한 금융서비스 
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차금융리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                신차구매 부담을 줄이고<br>저렴한 비용으로 자동차를<br> 사용할 수 있는 금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                신차구매 부담을 줄이고<br>  저렴한 비용으로 자동차를<br> 사용할 수 있는 할부금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-newcar"><!-- 신차 클래스추가: ty-newcar -->
+                                                            <div class="title">신차장기렌터카</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                신차구매 부담은 줄이고<br> 차량 유지 &middot; 관리는 편리한<br> 차량임대서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide"><!-- 20220506 수정내역: 항목순서변경 -->
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">중고할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                M캐피탈 제휴 매매상사로<br> 중고차 구입자금을<br> 지급해드리는 할부금융 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">중고오토론</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                중고차 구입자금을<br> 고객님께 지급해드리는 대출상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                인증중고 차량 구입자금이<br> 공식딜러사로 지급되는<br> 할부금융 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고론</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                인증중고 차량을 구입하실 때<br> 빠르고 저렴하게 이용할 수 있는<br> 대출상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고운용리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                매월 납부하시는 리스료 전액<br> 비용처리 가능한 리스 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-oldcar"><!-- 중고차 클래스추가: ty-oldcar -->
+                                                            <div class="title">인증중고금융리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                매월 납부하시는 리스료 중<br> 이자가 비용처리 가능한 리스 상품
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-bike"><!-- 바이크 클래스추가: ty-bike -->
+                                                            <div class="title">바이크할부</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                바이크구매 부담은 줄이고<br> 차량유지는 편리한 금융서비스 
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-bike"><!-- 바이크 클래스추가: ty-bike -->
+                                                            <div class="title">바이크운용리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                바이크구매 부담은 줄이고<br> 저렴한 비용으로 바이크를<br> 사용할 수 있는 금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <a href="#none" class="prod ty-bike"><!-- 바이크 클래스추가: ty-bike -->
+                                                            <div class="title">바이크금융리스</div>
+                                                            <div class="txt"><!-- 20220527 수정: 줄바꿈 추가  -->
+                                                                바이크구매 부담을 줄이고<br> 저렴한 비용으로 바이크를<br> 사용할 수 있는 할부금융서비스
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!--// 20220520 수정내역: 금융상품 TBD내용 추가 -->
+                                                    <!--// 20220429 수정내역: 마크업수정 -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-sec">
+                                    <div class="main-title">
+                                        <span class="title">추천상품</span><!-- 20220615 수정: 타이틀 -->
+                                    </div>
+                                    <div class="main-cont">
+                                        <div class="main-recomend-ban swiper-container">
+                                            <ul class="swiper-wrapper">
+                                                <!-- 20220704 수정: 배너변경 -->
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-01">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                M캐피탈이 준비한<br>
+                                                                다양한 신차 상품을 만나보세요~
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner01.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-05">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                여유로운 하루를 보내고 싶다면,<br>
+                                                                중고차 구매로 #여행가자
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner05.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-02">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                나만의 차량 구매를 위한<br>
+                                                                상품이 필요하신가요?
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner02.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <!-- 20220622 수정: 배너추가 -->
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="ban bg-04">
+                                                        <div class="col">
+                                                            <div class="copy">
+                                                                M캐피탈 내차사기
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <div class="img">
+                                                                <img src="../../../../resource/image/main/img_recomend_banner04.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <!--// 20220704 수정: 배너변경 -->
+                                            </ul>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- E: 홈 -->
+                            <!-- S: 자동차 -->
+                            <div class="panel">
+
+                            </div>
+                            <!-- E: 자동차 -->
+                        </div>
+                    </div>
+					
+				</div>
+
+			</div>
+			<!-- //contents-inner -->
+
+
+		</div>
+		<!-- //contents -->
+		
+	</div>
+	<!-- //container -->
+
+</div>
+<!-- //layout -->
+
+<!-- 메인용 JS -->
+<script src="../../../../resource/js/ui_main.js"></script>
+<script>
+    
+    /* 메인인트로 - 스와이퍼 */
+    var mainIntroSwiper = new Swiper('.main-intro-ban.swiper-container', {
+        watchOverflow: true,
+        pagination : {
+            el: '.main-intro-ban .swiper-pagination',
+            type: 'bullets',
+			clickable: true,
+        },
+        on: {  // 20220704 수정: 슬라이드 10건 이상인 경우 추가
+            init: function(){
+                if ( this.slides.length > 10 ) {
+                    this.params.pagination.type = 'fraction';
+                }
+            }
+        }
+    }); 
+
+    
+    /* 금융상품 - 스와이퍼 */
+    var mainProdSwiper = new Swiper('.main-prod-list .swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        watchOverflow: true,
+        freeMode:  { // 20220506 수정내역: 추가
+            enabled: true,
+            sticky: true,
+        }, 
+    }); 
+
+    /* 맞춤상품추천 */
+    var mainRecomendSwiper = new Swiper('.main-recomend-ban.swiper-container', {
+        effect : 'fade',
+        watchOverflow: true,
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction : false,
+            pauseOnMouseEnter : true,
+        },
+        pagination : {
+            el: '.main-recomend-ban .swiper-pagination',
+            type: 'bullets',
+			clickable: true,
+        },
+    }); 
+    if( mainRecomendSwiper.slides.length == 1){
+        mainRecomendSwiper.destroy();
+    }
+</script>
+
+</body>
+</html>

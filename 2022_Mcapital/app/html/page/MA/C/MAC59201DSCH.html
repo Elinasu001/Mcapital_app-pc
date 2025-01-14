@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0,
+	maximum-scale=1.0' name='viewport'>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>약정진행요청</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../../resource/css/ui_style.css">
+	
+	<!-- Publishing JS -->
+	<script src="../../../../resource/js/jquery-3.2.0.min.js"></script>
+	<script src="../../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<!-- layout -->
+<div id="layout" class="layout"></div>
+<!-- //layout -->
+
+<!-- fullpopup -->
+<div id="tempPopup00" class="layout-fullpop">
+	<div class="popup-layer">
+        <div class="popup-header">			  
+			<div class="popup-title">약정진행요청</div>   
+			<button type="button" class="se-btn popup-close"><span class="se-ico ico-pop-close">닫기</span></button>         
+        </div>        
+        
+        <div class="popup-container">
+            <div class="popup-contents">
+
+                <!-- 팝업 컨텐츠 -->
+				<div class="section-wrap">
+					<div class="section space-s">
+
+						<div class="conts-part">
+							<h6 class="se-title">기본정보</h6><!-- 20220411 수정내역: 타이틀번호삭제-->
+
+							<div class="sp-tbl ty-box">
+								<table>
+									<caption>기본정보</caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">고객이름</th>
+											<td>김봄</td>			
+										</tr>
+										<tr>
+											<th scope="row">생년월일</th>
+											<td>1988.01.01</td>			
+										</tr>
+										<tr>
+											<th scope="row">휴대폰번호</th>
+											<td>010-1111-1111</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div> 
+						</div>
+
+						<div class="conts-part">
+							<h6 class="se-title">차량정보</h6><!-- 20220411 수정내역: 타이틀번호삭제-->
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="name">BMW HP4 Race</div>
+										<div class="cash">41,980,000원</div>
+									</div>
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<!-- 20220506 수정내역: 항목-->
+									<div class="sp-tbl ty-list">
+										<table>
+											<caption>차량정보</caption>
+											<colgroup>
+												<!-- 20220615 수정:  col넓이-->
+												<col style="width: 40%;">
+												<col style="width: 60%;">		
+											</colgroup>		
+											<tbody>
+												<tr>
+													<th scope="row">신차</th>
+													<td></td>			
+												</tr>
+												<!-- 중고차인경우 노출 -->
+												<!-- <tr>
+													<th scope="row">중고차</th>
+													<td>2010년식</td>			
+												</tr> -->
+											</tbody>
+										</table>
+									</div>	
+									</div>
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">차대번호 <span class="sub-text">(선택)</span></h6><!-- 20220511 sub-text 영역 추가 -->									
+								<div class="se-textfld" data-fld-clear="on">	
+									<input type="text" placeholder="차대번호 입력" value="" title="차대번호 입력">									
+								</div>
+							</div>
+						</div>						
+
+						<div class="conts-part">
+							<h6 class="se-title">상품정보</h6><!-- 20220411 수정내역: 타이틀번호삭제-->							
+	
+							<div class="info-tbl-pack">
+								<div class="info-head">
+									<div class="col">
+										<div class="title">바이크할부</div>
+									</div>									
+								</div>	
+								
+								<div class="info-body">
+									<div class="conts">
+										<!-- 20220727 수정내역 : 상품정보 목록 스토리보드 현행화 -->
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>
+													<tr>
+														<th scope="row">유형</th>
+														<td>
+															개인
+														</td>		
+													</tr>
+													<tr>
+														<th scope="row">이용기간</th>
+														<td>24개월</td>		
+													</tr>
+													<tr>
+														<th scope="row">금리</th>
+														<td>3.3%</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="sp-tbl ty-list">
+											<table>
+												<caption>상품정보</caption>
+												<colgroup>
+													<!-- 20220615 수정:  col넓이-->
+													<col style="width: 40%;">
+													<col style="width: 60%;">		
+												</colgroup>		
+												<tbody>									
+													<tr>
+														<th scope="row">선수금</th>
+														<td>10,000,000원</td>		
+													</tr>
+													<tr>
+														<th scope="row">선수율</th>
+														<td>23.8%</td>		
+													</tr>
+													<tr>
+														<th scope="row">할부원금</th>
+														<td>10,000,000원</td>		
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+										<div class="sp-tbl ty-list">
+											<h6 class="sub-title">지급수수료</h6>
+	
+											<div class="sub-conts">
+												<div class="sp-tbl ty-list">
+													<table>
+														<caption>상품정보</caption>
+														<colgroup>
+															<col style="width: 40%;">
+															<col style="width: 60%;">		
+														</colgroup>		
+														<tbody>
+															<tr>
+																<th scope="row">AG</th>
+																<td>10.0%</td>		
+															</tr>
+															<tr>
+																<th scope="row">CM</th>
+																<td>3.2%</td>		
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>	
+										</div>
+										<!-- //20220727 수정내역 : 상품정보 목록 스토리보드 현행화 -->
+									</div>													
+								</div>
+							</div>
+						</div>
+						
+						<div class="conts-part">
+							<h6 class="se-title">신청조건</h6><!-- 20220411 수정내역: 타이틀번호삭제-->
+
+							<div class="amount-pack ty-box">
+								<div class="title">차량가격</div>
+								<div class="value">
+									<span class="val">41,280,000</span>
+									<span class="unit">원</span>
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">기본차량가</h6>								
+								<div class="se-textfld" data-fld-align="right">	
+									<input type="tel" placeholder="기본차량가 입력" value="41,280,000" title="기본차량가 입력" disabled>	
+									<span class="e-back">
+										<span class="unit">원</span>
+									</span>									
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">옵션</h6>								
+								<div class="se-textfld" data-fld-align="right">	
+									<input type="tel" placeholder="옵션가 입력" value="" title="옵션가 입력">	
+									<span class="e-back">
+										<span class="unit">원</span>
+									</span>									
+								</div>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">할인</h6>								
+								<div class="se-textfld" data-fld-align="right">	
+									<input type="tel" placeholder="할인가 입력" value="" title="할인가 입력">	
+									<span class="e-back">
+										<span class="unit">원</span>
+									</span>									
+								</div>
+							</div>
+						</div>
+
+						<hr class="section-linebar"><!-- 20220610 구분선 추가 -->
+
+						<!-- 20220511 수정내역 : 딜러사 추가 -->
+						<div class="conts-part">
+							<h6 class="se-title">딜러사</h6>
+							<div class="se-textfld" data-fld-clear="on">	
+								<input type="text" placeholder="딜러사 입력" value="" title="딜러사"><!-- 20220520 수정내역: placeholder수정-->
+								<span class="e-back">
+									<button type="button" class="se-btn btn-solid-point size-xs">검색</button>
+								</span>
+							</div>
+							<!-- 조회시 노출 -->
+							<div class="sp-tbl ty-box has-close">
+								<button type="button" class="se-btn"><span class="se-ico ico-close gray">닫기</span></button>
+								<table>
+									<caption>딜러사</caption>
+									<colgroup>
+										<!-- 20220615 수정:  col넓이-->
+										<col style="width: 40%;">
+										<col style="width: 60%;">		
+									</colgroup>		
+									<tbody>
+										<tr>
+											<th scope="row">딜러사</th>
+											<td>효성</td>			
+										</tr>
+										<tr>
+											<th scope="row">사업자번호</th>
+											<td>105-81-87072</td>			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //20220511 수정내역 : 딜러사 추가 -->
+
+						<!-- 20220511 수정내역 : 은행명, 계좌번호 추가 -->
+						<div class="conts-part">
+							<div class="sp-formset">
+								<h6 class="se-title">은행</h6><!-- 20220520 수정내역: 타이틀 수정 -->				
+								<!-- 20220520 수정내역: 은행선택 수정-->
+								<button type="button" class="se-btn btn-fake-slt">
+									<span class="placeholder">은행 선택</span>
+									<span class="value">은행명</span>
+								</button>
+							</div>
+
+							<div class="sp-formset">
+								<h6 class="se-title">계좌번호</h6>								
+								<div class="se-textfld" data-fld-clear="on"><!-- 20220615 수정: data attr -->	
+									<input type="number" placeholder="계좌번호 입력" value="" title="계좌번호 입력">
+								</div>
+							</div>
+
+							<!-- 20220615 수정: 예금주 -->
+							<div class="sp-formset">
+								<h6 class="se-title">예금주</h6>								
+								<div class="se-textfld" data-fld-clear="on">	
+									<input type="text" placeholder="예금주 입력" value="" title="예금주 입력">
+								</div>
+							</div>
+						</div>
+						<!-- //20220511 수정내역 : 은행명, 계좌번호 추가 -->
+
+					</div>					
+				</div>								      
+                <!-- //팝업 컨텐츠 -->
+
+            </div>			
+        </div>
+
+		<div class="popup-footer">
+			<div class="bottom-btn-area">				
+				<div class="btn-wrap">	
+					<button type="button" class="se-btn btn-main" disabled>약정진행요청</button>
+				</div>				
+			</div>			
+		</div>
+    </div>
+
+</div>
+<!-- //fullpopup -->
+
+
+</body>
+</html>
